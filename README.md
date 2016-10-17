@@ -336,13 +336,13 @@ Retorno do Pedido XML
 Retorno Meios de Pagamento XML
 ------------------------------
 
-| Tag  | Explicação | Valor | 
-|:-----|:-----------|:------| 
+| Tag                | Explicação                       | Valor       | 
+|:-------------------|:-------------------------------- |:------------|
 | &lt;ArrayOfRetornoMeiosPagamento&gt; | Raíz do XML de retorno      | 1 ou mais Elementos do tipo RetornoMeiosPagamento | 
 | &lt;RetornoMeiosPagamento&gt; | Bloco RetornoMeiosPagamento |     |                                              | 
 
-| Tag  | Explicação | Valor | 
-|:------|:--------|:--------|
+| Tag                | Explicação                       | Valor       | 
+|:-------------------|:-------------------------------- |:------------|
 | &lt;RetornoMeiosPagamento&gt; | Raíz do Bloco ||
 |&lt;Nome&gt; | Nome do meio de pagamento utilizado para fazer o pedido  |String - <br>"CIELO-VISA" <br>"ITAU-BOLETO" <br>etc...    |  
 | &lt;Tipo&gt; |  | String - <br>CREDITO <br>BOLETO <br>DEBITO | 
