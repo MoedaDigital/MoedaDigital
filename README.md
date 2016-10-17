@@ -328,7 +328,7 @@ Retorno do Pedido XML
 | &lt;NSU&gt;              |                                  | String      | 
 | &lt;Mensagem&gt;         |                                  | String      | 
 | &lt;Retorno&gt;          |                                  |             | 
-| &lt;PedidoStatus&gt;     | Status atual do Pedido**         | <nobr>-APROVADO <br> -INVALIDO<br> -PENDENTE<br> -NEGADO<br> -CANCELADO<br> -CHARGEBACK</nobr> |
+| &lt;PedidoStatus&gt;     | Status atual do Pedido        |String- <nobr>-APROVADO <br> -INVALIDO<br> -PENDENTE<br> -NEGADO<br> -CANCELADO<br> -CHARGEBACK</nobr> |
 | &lt;Conteúdo&gt;         |                                  | String      | 
 | &lt;PedidoNumeroLoja&gt; | Identificador do pedido na loja. | String      | 
 
@@ -349,4 +349,20 @@ Retorno Meios de Pagamento XML
 | &lt;Parcelado&gt;    | Se o meio aceita parcelas | "S" ou "N"  | 
 | &lt;Imagem&gt; | URL com uma imagem que representa o meio de pagamento | String - URL | 
 | &lt;Mensagem&gt; | |String|   
+
+-------------
+Retorno Status Pagamento XML
+============================
+
+| Tag                      | Explicação                           | Valor    | 
+|:-------------------------|:-------------------------------------|:---------| 
+| &lt;RetornoStatusPagamento&gt; | Elemento raíz do retorno.            |          | 
+| &lt;PedidoNumeroLoja&gt;       | Identificador do pedido na loja      | String   | 
+| &lt;Status&gt;                 | Status to pedido                     | String - <br>BAIXO <br>MEDIO <br>ALTO <br>"" | 
+| &lt;Modulo&gt;                 | Tipo de pagamento usado              | String   | 
+| &lt;MeioPagamento&gt;          | Forma de pagamento usada             | String   | 
+| &lt;DataPagamento&gt;          | Data do pagamento                    | String   | 
+| &lt;ValorPago&gt;              | Valor total pago                     | Decimal  | 
+| &lt;Mensagem&gt;               |                                      | String   | 
+| &lt;NivelRisco&gt;             | Indicador do risco de ser uma fraude | String -  <nobr>-APROVADO <br> -INVALIDO<br> -PENDENTE<br> -NEGADO<br> -CANCELADO<br> -CHARGEBACK</nobr> | 
 
