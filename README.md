@@ -1,10 +1,13 @@
+===================
 MANUAL DE INTEGRÇÃO
 ===================
 
 Introdução
----------------
+=========
 
-###**Moeda Digital**
+Moeda Digital
+-------------
+
 Somos uma empresa que oferece soluções para facilitar o processo de recebimentos online; sempre prezando segurança, simplicidade e aumento das vendas. 
 
 Oferecemos diversas maneiras de uma  pessoa ou empresa começar a receber pagamentos de forma segura e conforme as necessidades de cada um; essas maneiras são chamadas de formas de integração, e cada uma possui aplicações distintas além de esforços diferentes para coloca-las em prática.
@@ -249,8 +252,6 @@ Consultar Status
  - Identificador do pedido: Pedido 
 
 Você receberá como resposta o XML Retorno Status Pagamento descrito mais a baixo.
-Parametros XML:
-
 
 --------------
 WebHook - URL de retorno
@@ -319,7 +320,7 @@ Pedido XML
 
 -----------
 Retorno do Pedido
-================
+-----------------
 
 | Tag                | Explicação                       | Valor       | 
 |:-------------------|:-------------------------------- |:------------| 
