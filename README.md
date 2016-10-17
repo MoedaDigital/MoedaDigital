@@ -316,3 +316,17 @@ Pedido XML
 | PortadorNome        | Nome que está no cartão | String | Depende\*  | 
 
 \*Apenas para compras no cartão.
+
+-----------
+Retorno do Pedido
+================
+
+| Tag                | Explicação                       | Valor       | 
+|:-------------------|:-------------------------------- |:------------| 
+| &lt;RetornoPedido&gt;    | Elemento raíz do retorno.        |             | 
+| &lt;NSU&gt;              |                                  | String      | 
+| &lt;Mensagem&gt;         |                                  | String      | 
+| &lt;Retorno&gt;          |                                  |             | 
+| &lt;PedidoStatus&gt;     | Status atual do Pedido**         | - APROVADO - INVALIDO - PENDENTE - NEGADO - CANCELADO - CHARGEBACK  | 
+| &lt;Conteúdo&gt;         |                                  | String      | 
+| &lt;PedidoNumeroLoja&gt; | Identificador do pedido na loja. | String      | 
