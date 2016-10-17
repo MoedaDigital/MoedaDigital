@@ -358,7 +358,7 @@ Retorno Status Pagamento XML
 |:-------------------------|:-------------------------------------|:---------| 
 | &lt;RetornoStatusPagamento&gt; | Elemento raíz do retorno.            |          | 
 | &lt;PedidoNumeroLoja&gt;       | Identificador do pedido na loja      | String   | 
-| &lt;Status&gt;                 | Status to pedido                     | String - <br>BAIXO <br>MEDIO <br>ALTO <br>"" | 
+| &lt;Status&gt;                 | Status to pedido                     | String: <br>-BAIXO <br>-MEDIO <br>-ALTO <br>-"" | 
 | &lt;Modulo&gt;                 | Tipo de pagamento usado              | String   | 
 | &lt;MeioPagamento&gt;          | Forma de pagamento usada             | String   | 
 | &lt;DataPagamento&gt;          | Data do pagamento                    | String   | 
@@ -395,7 +395,7 @@ Cliente XML
 | &lt;NascAbertura&gt; | Data de nascimento ou de abertura da empresa       | String                                 | Apenas para PF | 
 | &lt;Login&gt;        | Bairro                                             | String                                 | Não            | 
 | &lt;Moeda&gt;        | DDD                                                | String - Sempre utilizar o valor "BRL" | Sim            | 
-| &lt;Idioma&gt;       | Telefone                                           | String - Idioma do cliente: <nobr><br>PT-BR<br>EN_US<br>ES_ES</nobr>  
+| &lt;Idioma&gt;       | Telefone                                           | String - Idioma do cliente: <nobr><br>PT-BR<br>EN_US<br>ES_ES</nobr>  | Sim |
 | &lt;IpCadastro&gt;   | Ip do cliente| String - Formato: <nobr>"ddd.ddd.ddd.ddd"</nobr>     | Não    | 
 | &lt;Notas&gt;        | Notas adicionais sobre o cliente                   | String | Não            | 
 
