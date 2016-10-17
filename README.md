@@ -352,7 +352,7 @@ Retorno Meios de Pagamento XML
 
 -------------
 Retorno Status Pagamento XML
-============================
+---------------------------
 
 | Tag                      | Explicação                           | Valor    | 
 |:-------------------------|:-------------------------------------|:---------| 
@@ -366,3 +366,16 @@ Retorno Status Pagamento XML
 | &lt;Mensagem&gt;               |                                      | String   | 
 | &lt;NivelRisco&gt;             | Indicador do risco de ser uma fraude | String -  <nobr>-APROVADO <br> -INVALIDO<br> -PENDENTE<br> -NEGADO<br> -CANCELADO<br> -CHARGEBACK</nobr> | 
 
+------------
+Retorno Parcelas XML
+--------------------
+
+| Tag                     | Explicação                | Valor                                 | 
+|-------------------------|---------------------------|---------------------------------------| 
+| &lt;ConsultaParcelasArray&gt; | Raiz do Bloco             | 1 ou mais elementos &lt;RetornoParcelas&gt; | 
+| &lt;RetornoParcelas&gt;       | Elemento Retorno Parcelas |                                       | 
+| &lt;Parcela&gt;               | Número de parcelas        | Int                                   | 
+| &lt;ValorTotal&gt;            | Valor total da compra     | Decimal                               | 
+| &lt;ValorParcela&gt;          | Valor de cada parcela     | Decimal                               | 
+| &lt;Obs&gt;                   |                           | String                                | 
+| &lt;Mensagem&gt;              |                           | String                                | 
