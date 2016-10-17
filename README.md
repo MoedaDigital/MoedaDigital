@@ -399,3 +399,20 @@ Cliente XML
 | &lt;IpCadastro&gt;   | Ip do cliente| String - Formato: <nobr>"ddd.ddd.ddd.ddd"</nobr>     | Não    | 
 | &lt;Notas&gt;        | Notas adicionais sobre o cliente                   | String | Não            | 
 
+-------------
+Endereço XML
+------------
+
+| Tag           | Explicação       | Valor                                    | Obrigatório | 
+|---------------|------------------|------------------------------------------|-------------| 
+| &lt;Cidade&gt;      | Cidade           | String                                   | Sim         | 
+| &lt;UF &gt;         | Sigla do estado  | String - Sigla 2 digitos em maiúsculo.   | Sim         | 
+| &lt;CEP&gt;         | Código postal    | String - Formato "ddddd-ddd"             | Sim         | 
+| &lt;Pais&gt;        | Sigla do país    | String - Sigla 2 digitos em maiúsculo.   | Sim         | 
+| &lt;Tipo&gt;        | Tipo do endereço | String - ex : "Residêncial", "Comercial" | Sim         | 
+| &lt;Numero&gt;      | Número do local  | String                                   | Não         | 
+| &lt;Complemento&gt; | Complemento      | String                                   | Não         | 
+| &lt;Bairro&gt;      | Bairro           | String                                   | Não         | 
+| &lt;DDD&gt;         | DDD              | String                                   | Não         | 
+| &lt;Telefone&gt;    | Telefone         | String                                   | Não         | 
+
