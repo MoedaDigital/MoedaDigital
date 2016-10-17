@@ -327,6 +327,6 @@ Retorno do Pedido
 | &lt;NSU&gt;              |                                  | String      | 
 | &lt;Mensagem&gt;         |                                  | String      | 
 | &lt;Retorno&gt;          |                                  |             | 
-| &lt;PedidoStatus&gt;     | Status atual do Pedido**         | - APROVADO - INVALIDO - PENDENTE - NEGADO - CANCELADO - CHARGEBACK  | 
+| &lt;PedidoStatus&gt;     | Status atual do Pedido**         | -APROVADO <br> -INVALIDO<br> -PENDENTE<br> -NEGADO<br> -CANCELADO<br> -CHARGEBACK |
 | &lt;Conteúdo&gt;         |                                  | String      | 
 | &lt;PedidoNumeroLoja&gt; | Identificador do pedido na loja. | String      | 
