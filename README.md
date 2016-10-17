@@ -344,7 +344,7 @@ Retorno Meios de Pagamento XML
 | Tag                | Explicação                       | Valor       | 
 |:-------------------|:-------------------------------- |:------------|
 | &lt;RetornoMeiosPagamento&gt; | Raíz do Bloco ||
-|&lt;Nome&gt; | Nome do meio de pagamento utilizado para fazer o pedido  |String - <br>"CIELO-VISA" <br>"ITAU-BOLETO" <br>etc...    |  
+|&lt;Nome&gt; | Nome do meio de pagamento utilizado para fazer o pedido  |String - <br>"<nobr>CIELO-VISA" <br>"ITAU-BOLETO"</nobr> <br>etc...    |  
 | &lt;Tipo&gt; |  | String - <br>CREDITO <br>BOLETO <br>DEBITO | 
 | &lt;Parcelado&gt;    | Se o meio aceita parcelas | "S" ou "N"  | 
 | &lt;Imagem&gt; | URL com uma imagem que representa o meio de pagamento | String - URL | 
