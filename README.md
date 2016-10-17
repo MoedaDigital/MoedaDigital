@@ -379,3 +379,23 @@ Retorno Parcelas XML
 | &lt;ValorParcela&gt;          | Valor de cada parcela     | Decimal                               | 
 | &lt;Obs&gt;                   |                           | String                                | 
 | &lt;Mensagem&gt;              |                           | String                                | 
+
+----------
+Cliente XML
+-----------
+
+| Tag            | Explicação                                         | Valor                                  | Obrigatório    | 
+|----------------|----------------------------------------------------|----------------------------------------|----------------| 
+| &lt;DataCadastro&gt; | Data de cadastro do cliente                        | String - Formato: <nobr>"dd/mm/aaaa"</nobr>         | Não            | 
+| &lt;Nome&gt;         | Sigla do estado                                    | String  | Sim            | 
+| &lt;Sobrenome&gt;    | Código postal                                      | String - Formato "ddddd-ddd"           | Apenas para PF | 
+| &lt;RazaoSocial&gt;  | Razão social da empresa no caso de pessoa júridica | String | Apenas para PJ | 
+| &lt;Genero&gt;       | Gênero do cliente | Opções:  <nobr>"J" - pessoa juridica <br>"M" - pessoa física do sexo Masculino <br>"F" - pessoa física do sexo Feminino</nobr>                               | Sim            | 
+| &lt;CpfCnpj&gt;      | CPF ou CNPJ                                        | String                                 | Sim            | 
+| &lt;NascAbertura&gt; | Data de nascimento ou de abertura da empresa       | String                                 | Apenas para PF | 
+| &lt;Login&gt;        | Bairro                                             | String                                 | Não            | 
+| &lt;Moeda&gt;        | DDD                                                | String - Sempre utilizar o valor "BRL" | Sim            | 
+| &lt;Idioma&gt;       | Telefone                                           | String - Idioma do cliente: <nobr><br>PT-BR<br>EN_US<br>ES_ES</nobr>  
+| &lt;IpCadastro&gt;   | Ip do cliente| String - Formato: <nobr>"ddd.ddd.ddd.ddd"</nobr>     | Não    | 
+| &lt;Notas&gt;        | Notas adicionais sobre o cliente                   | String | Não            | 
+
