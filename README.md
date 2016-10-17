@@ -319,8 +319,8 @@ Pedido XML
 \*Apenas para compras no cartão.
 
 -----------
-Retorno do Pedido
------------------
+Retorno do Pedido XML
+---------------------
 
 | Tag                | Explicação                       | Valor       | 
 |:-------------------|:-------------------------------- |:------------| 
@@ -331,3 +331,22 @@ Retorno do Pedido
 | &lt;PedidoStatus&gt;     | Status atual do Pedido**         | -APROVADO <br> -INVALIDO<br> -PENDENTE<br> -NEGADO<br> -CANCELADO<br> -CHARGEBACK |
 | &lt;Conteúdo&gt;         |                                  | String      | 
 | &lt;PedidoNumeroLoja&gt; | Identificador do pedido na loja. | String      | 
+
+---------
+Retorno Meios de Pagamento XML
+------------------------------
+
+| Tag  | Explicação | Valor | 
+|:-----|:-----------|:------| 
+| &lt;ArrayOfRetornoMeiosPagamento&gt; | Raíz do XML de retorno      | 1 ou mais Elementos do tipo RetornoMeiosPagamento | 
+| &lt;RetornoMeiosPagamento&gt; | Bloco RetornoMeiosPagamento |                                                   | 
+
+| Tag  | Explicação | Valor | 
+|:------|:--------|:--------|
+| &lt;RetornoMeiosPagamento&gt; | Raíz do Bloco ||
+|&lt;Nome&gt; | Nome do meio de pagamento utilizado para fazer o pedido  |String - <br>"CIELO-VISA" <br>"ITAU-BOLETO" <br>etc...    |  
+| &lt;Tipo&gt; |  | String - <br>CREDITO <br>BOLETO <br>DEBITO               |  | 
+| &lt;Parcelado&gt;    | Se o meio aceita parcelas | "S" ou "N"  |  | 
+| &lt;Imagem&gt; | URL com uma imagem que representa o meio de pagamento | String - URL |  | 
+| &lt;Mensagem&gt; | |String|   
+
