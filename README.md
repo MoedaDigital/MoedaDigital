@@ -290,7 +290,7 @@ Pedido XML
 | LojaChaveAcesso     | Identificador da loja | String -Token da loja | Sim  | 
 | LojaApp             | Nome da Aplicação   | String - Nome da aplicação | Sim | 
 | LojaCanal          | Tipo de Aplicação  | "string ""WEB"" , ""Mobile"" etc.." | Sim | 
-| MeiosdePagamento   | O código do meio de pagamento configurado na aplicação  | String: <br>-"Visa"<br>-"Mastercard"<br>-"Diners"<br>-"Elo"<br>-"Amex"<br>-"Boleto" | Sim |
+| MeiosdePagamento   | O código do meio de pagamento configurado na aplicação  | <nobr>String: <br>-"Visa"<br>-"Mastercard"<br>-"Diners"<br>-"Elo"<br>-"Amex"<br>-"Boleto" </nobr> | Sim |
 | PedidoCodigo        | Identificador do pedido na Loja e Aplicação ( serve para o acompanhamento do pedido) | String | Sim |
 | PedidoNumeroLoja    | Identificador do pedido na própria loja.| Pode ser igual ao &lt;PedidoCodigo&gt; | Sim | 
 | PedidoVencimento    | Data de vencimento do pedido para ser informada ao cliente. | "Formato: "dd/mm/aaaa" | Sim | 
@@ -301,13 +301,13 @@ Pedido XML
 | PedidoItens         | Quantidade de itens que compõe o pedido| Int | Sim | 
 | PedidoParcelas      | Número de parcelas do pagamento| Int - (deve ser compatível com as configurações da aplicação) | Sim |
 | PedidoValorParcelas | O valor individual de cada parcela.|Int - Valor sem pontuação ex: para R$1000,00 colocar 100000  | Sim | 
-| PedidoFinanciador   | Define se o financiamento dos juros é por conta da loja ou da administradora de cartões | "Int -  Administradora ""1"" , Loja ""2""" | Sim |
-| PedidoEmissao     | Data e hora da emissão do pedido| "Formato: ""dd/mm/aaaa hh:mm:ss"""| Não | 
+| PedidoFinanciador   | Define se o financiamento dos juros é por conta da loja ou da administradora de cartões | "Int:  <nobr><br>Administradora: "1"<br>Loja: "2"</nobr> | Sim |
+| PedidoEmissao     | Data e hora da emissão do pedido| Formato: <nobr>"dd/mm/aaaa hh:mm:ss"</nobr>| Não | 
 | PedidoMulta         | Multa para o caso de pagamento após o vencimento. | Int - Valor sem pontuação  (Válido para boleto) Caso não haja colocar 0. | Sim |
 | PedidoJuros         | Valor total do juros cobrado para parcelamento.| Int - Valor sem pontuação Caso não haja colocar 0. | Sim|       
 | PedidoInstrucoes   | Campo para escrever informações extras| String| Não | 
 | PortadorCartao      | Número do Cartão| String| Depende\* |  
-| PortadorValidade    | Data de expiração do cartão| "Formato: ""mm/aa""" | Depende\*   | 
+| PortadorValidade    | Data de expiração do cartão| Formato: "mm/aa" | Depende\*   | 
 | PortadorCVV         | Código de validação do cartão | Int | Depende\*  |
 | PortadorNome        | Nome que está no cartão | String | Depende\*  | 
 
@@ -427,7 +427,7 @@ Retorno Meios de Pagamento XML
 | Tag                | Explicação                       | Valor       | 
 |:-------------------|:-------------------------------- |:------------|
 | &lt;RetornoMeiosPagamento&gt; | Raíz do Bloco ||
-|&lt;Nome&gt; | Nome do meio de pagamento utilizado para fazer o pedido  |String - <br>"<nobr>CIELO-VISA" <br>"ITAU-BOLETO"</nobr> <br>etc...    |  
+|&lt;Nome&gt; | Nome do meio de pagamento utilizado para fazer o pedido  |<nobr>String: <br>-"Visa"<br>-"Mastercard"<br>-"Diners"<br>-"Elo"<br>-"Amex"<br>-"Boleto" </nobr>  |  
 | &lt;Tipo&gt; |  | String - <br>CREDITO <br>BOLETO <br>DEBITO | 
 | &lt;Parcelado&gt;    | Se o meio aceita parcelas | "S" ou "N"  | 
 | &lt;Imagem&gt; | URL com uma imagem que representa o meio de pagamento | String - URL | 
@@ -441,7 +441,7 @@ Retorno Status Pagamento XML
 |:-------------------------|:-------------------------------------|:---------| 
 | &lt;RetornoStatusPagamento&gt; | Elemento raíz do retorno.            |          | 
 | &lt;PedidoNumeroLoja&gt;       | Identificador do pedido na loja      | String   | 
-| &lt;Status&gt;                 | Status to pedido                     | String: <br>-BAIXO <br>-MEDIO <br>-ALTO <br>-"" | 
+| &lt;Status&gt;                 | Status to pedido                     | String: <br>-BAIXO <br>-MEDIO <br>-ALTO <br>-" " | 
 | &lt;Modulo&gt;                 | Tipo de pagamento usado              | String   | 
 | &lt;MeioPagamento&gt;          | Forma de pagamento usada             | String   | 
 | &lt;DataPagamento&gt;          | Data do pagamento                    | String   | 
