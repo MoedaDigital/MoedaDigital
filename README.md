@@ -15,7 +15,7 @@ Oferecemos diversas maneiras de uma  pessoa ou empresa começar a receber pagame
 Integrações
 ----------------
 
-##Botão de Compras e Link de Pagamento
+###Botão de Compras e Link de Pagamento
 
 ####Descrição
 
