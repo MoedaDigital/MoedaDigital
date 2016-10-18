@@ -271,8 +271,8 @@ Para cada aplicação é possível fornecer uma **URL** de retorno que será cha
 
 
 
-PARÂMETROS
-===========
+PARÂMETROS XML
+==============
 
 Pedido XML
 -----------------
