@@ -12,8 +12,6 @@ Somos uma empresa que oferece soluções para facilitar o processo de recebiment
 
 Oferecemos diversas maneiras de uma  pessoa ou empresa começar a receber pagamentos de forma segura e conforme as necessidades de cada um; essas maneiras são chamadas de formas de integração, e cada uma possui aplicações distintas além de esforços diferentes para coloca-las em prática.
 
-
-----------
 Integrações
 ----------------
 
@@ -79,7 +77,6 @@ Deve-se escolher as opções de recebimento ( cartão, juros, boleto, número de
  
 6. Receber!
 
-------------------------
 
 Criando Conta
 --------------------
@@ -91,7 +88,7 @@ Criar uma conta na Moeda Digital é muito simples, basta:
 
 Feito isso, você conseguirá entrar na plataforma da Moeda Digital através do site da Moeda digital clicando em "Acessar"; de lá você pode verificar relatórios, criar aplicações, fazer testes de integração entre outras funcionalidades. 
 
----------------------
+
 Criando Aplicação
 -------------------------
 
@@ -127,7 +124,6 @@ Aqui você encontrará um campo de seleção com a opção "Criar uma Nova Aplic
 |Desconto a vista para Boleto e TEF| | |
 
 
-----------
 INTEGRANDO
 ===========
 
@@ -169,7 +165,6 @@ Link e Botão de Compras
 |Tipo |Escolhe entre Link, URL e Botão| Fornece diferentes modos de formatação.|
 
 
------------
 Check-out Transparente
 ---------------------------------
 
@@ -253,7 +248,7 @@ Consultar Status
 
 Você receberá como resposta o XML Retorno Status Pagamento descrito mais a baixo.
 
---------------
+
 WebHook - URL de retorno
 -------------------------------------
 
@@ -275,7 +270,7 @@ Para cada aplicação é possível fornecer uma **URL** de retorno que será cha
 
 
 
------------------
+
 PARÂMETROS
 ===========
 
@@ -332,7 +327,7 @@ Retorno do Pedido XML
 | &lt;Conteúdo&gt;         |                                  | String      | 
 | &lt;PedidoNumeroLoja&gt; | Identificador do pedido na loja. | String      | 
 
----------
+
 Retorno Meios de Pagamento XML
 ------------------------------
 
@@ -350,7 +345,7 @@ Retorno Meios de Pagamento XML
 | &lt;Imagem&gt; | URL com uma imagem que representa o meio de pagamento | String - URL | 
 | &lt;Mensagem&gt; | |String|   
 
--------------
+
 Retorno Status Pagamento XML
 ---------------------------
 
@@ -380,7 +375,7 @@ Retorno Parcelas XML
 | &lt;Obs&gt;                   |                           | String                                | 
 | &lt;Mensagem&gt;              |                           | String                                | 
 
-----------
+
 Cliente XML
 -----------
 
@@ -399,7 +394,7 @@ Cliente XML
 | &lt;IpCadastro&gt;   | Ip do cliente| String - Formato: <nobr>"ddd.ddd.ddd.ddd"</nobr>     | Não    | 
 | &lt;Notas&gt;        | Notas adicionais sobre o cliente                   | String | Não            | 
 
--------------
+
 Endereço XML
 ------------
 
