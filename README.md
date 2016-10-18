@@ -314,6 +314,10 @@ Pedido XML
 | PortadorNome        | Nome que está no cartão | String | Depende\*  | 
 
 
+\*Apenas para compras no cartão.
+
+###Exemplo
+
 ```
 <?xml version="1.0" encoding="utf-16"?>
 <clsPedido>
