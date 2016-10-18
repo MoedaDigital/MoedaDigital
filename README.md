@@ -289,18 +289,18 @@ Pedido XML
 | email3              | Terceiro email do cliente   | &lt;email&gt;String&lt;/email&gt; | Não |  
 | LojaChaveAcesso     | Identificador da loja | String -Token da loja | Sim  | 
 | LojaApp             | Nome da Aplicação   | String - Nome da aplicação | Sim | 
-| LojaCanal          | Tipo de Aplicação  | "string ""WEB"" , ""Mobile"" etc.." | Sim | 
+| LojaCanal          | Tipo de Aplicação  | String: <br>-"WEB"<br>-"Mobile" | Sim | 
 | MeiosdePagamento   | O código do meio de pagamento configurado na aplicação  | <nobr>String: <br>-"Visa"<br>-"Mastercard"<br>-"Diners"<br>-"Elo"<br>-"Amex"<br>-"Boleto" </nobr> | Sim |
 | PedidoCodigo        | Identificador do pedido na Loja e Aplicação ( serve para o acompanhamento do pedido) | String | Sim |
 | PedidoNumeroLoja    | Identificador do pedido na própria loja.| Pode ser igual ao &lt;PedidoCodigo&gt; | Sim | 
-| PedidoVencimento    | Data de vencimento do pedido para ser informada ao cliente. | "Formato: "dd/mm/aaaa" | Sim | 
-| PedidoExpiracao     | Data e hora que o pedido será cancelado caso não estiver pago | "Formato: "dd/mm/aaaa hh:mm:ss"  | Sim | 
+| PedidoVencimento    | Data de vencimento do pedido para ser informada ao cliente. | Formato: "dd/mm/aaaa" | Sim | 
+| PedidoExpiracao     | Data e hora que o pedido será cancelado caso não estiver pago | <nobr>Formato: "dd/mm/aaaa hh:mm:ss"</nobr>  | Sim | 
 | PedidoRecorrente    | Identificar se o pedido é recorrente | S ou N | Sim | 
 | PedidoValor         | Valor total do pedido | Int - Valor sem pontuação ex: para R$1000,00 colocar 100000  | Sim | 
 | PedidoValorSemJuros | Valor total do pedido desconsiderando os juros| Int - Valor sem pontuação ex: para R$1000,00 colocar 100000  | Sim | 
 | PedidoItens         | Quantidade de itens que compõe o pedido| Int | Sim | 
-| PedidoParcelas      | Número de parcelas do pagamento| Int - (deve ser compatível com as configurações da aplicação) | Sim |
-| PedidoValorParcelas | O valor individual de cada parcela.|Int - Valor sem pontuação ex: para R$1000,00 colocar 100000  | Sim | 
+| PedidoParcelas      | Número de parcelas do pagamento| Int: (deve ser compatível com as configurações da aplicação) | Sim |
+| PedidoValorParcelas | O valor individual de cada parcela.|Int: Valor sem pontuação ex: para R$1000,00 colocar 100000  | Sim | 
 | PedidoFinanciador   | Define se o financiamento dos juros é por conta da loja ou da administradora de cartões | "Int:  <nobr><br>Administradora: "1"<br>Loja: "2"</nobr> | Sim |
 | PedidoEmissao     | Data e hora da emissão do pedido| Formato: <nobr>"dd/mm/aaaa hh:mm:ss"</nobr>| Não | 
 | PedidoMulta         | Multa para o caso de pagamento após o vencimento. | Int - Valor sem pontuação  (Válido para boleto) Caso não haja colocar 0. | Sim |
