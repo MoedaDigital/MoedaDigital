@@ -313,6 +313,94 @@ Pedido XML
 
 \*Apenas para compras no cartão.
 
+```
+<?xml version="1.0" encoding="utf-16"?>
+<clsPedido xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Cliente>
+        <DataCadastro></DataCadastro>
+        <Nome></Nome>
+        <Sobrenome></Sobrenome>
+        <RazaoSocial></RazaoSocial>
+        <Genero></Genero>
+        <CpfCnpj></CpfCnpj>
+        <NascAbertura></NascAbertura>
+        <Login></Login>
+        <Moeda></Moeda>
+        <Idioma> </Idioma>
+        <IpCadastro></IpCadastro>
+        <Notas></Notas>
+    </Cliente>
+    <Endereco1>
+        <Endereco></Endereco>
+        <Numero></Numero>
+        <Complemento></Complemento>
+        <Bairro></Bairro>
+        <Cidade> </Cidade>
+        <UF></UF>
+        <CEP></CEP>
+        <Pais> </Pais>
+        <DDD></DDD>
+        <Telefone></Telefone>
+        <Tipo></Tipo>
+    </Endereco1>
+    <Endereco2>
+        <Endereco></Endereco>
+        <Numero></Numero>
+        <Complemento></Complemento>
+        <Bairro></Bairro>
+        <Cidade> </Cidade>
+        <UF></UF>
+        <CEP></CEP>
+        <Pais> </Pais>
+        <DDD></DDD>
+        <Telefone></Telefone>
+        <Tipo></Tipo>
+    </Endereco2>
+    <Email1>
+        <Email></Email>
+    </Email1>
+    <Email2>
+        <Email></Email>
+    </Email2>
+    <Email3>
+        <Email></Email>
+    </Email3>
+    <LojaChaveAcesso></LojaChaveAcesso>
+    <LojaApp></LojaApp>
+    <LojaCanal></LojaCanal>
+    <MeiosdePagamento></MeiosdePagamento>
+    <PedidoCodigo></PedidoCodigo>
+    <PedidoNumeroLoja></PedidoNumeroLoja>
+    <PedidoEmissao></PedidoEmissao>
+    <PedidoVencimento></PedidoVencimento>
+    <PedidoExpiracao></PedidoExpiracao>
+    <PedidoRecorrente></PedidoRecorrente>
+    <PedidoValor></PedidoValor>
+    <PedidoValorSemJuros></PedidoValorSemJuros>
+    <PedidoMulta></PedidoMulta>
+    <PedidoJuros></PedidoJuros>
+    <PedidoItens></PedidoItens>
+    <PedidoParcelas></PedidoParcelas>
+    <PedidoValorParcelas></PedidoValorParcelas>
+    <PedidoFinanciador></PedidoFinanciador>
+    <PedidoInstrucoes></PedidoInstrucoes>
+    <Rateios>
+        <Rateio> 
+            <SubConta></SubConta>
+            <Valor></Valor>
+        </Rateio>
+        <Rateio>
+            <SubConta></SubConta>
+            <Valor></Valor>
+        </Rateio>
+    </Rateios>
+    <PortadorCartao></PortadorCartao>
+    <PortadorValidade>MM/AA</PortadorValidade>
+    <PortadorCVV></PortadorCVV>
+    <PortadorNome></PortadorNome>
+</clsPedido>
+```
+
 -----------
 Retorno do Pedido XML
 ---------------------
