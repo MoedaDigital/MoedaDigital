@@ -328,7 +328,7 @@ Retorno do Pedido XML
 | &lt;NSU&gt;              |                                  | String      | 
 | &lt;Mensagem&gt;         |                                  | String      | 
 | &lt;Retorno&gt;          |                                  |             | 
-| &lt;PedidoStatus&gt;     | Status atual do Pedido        |String- <nobr>-APROVADO <br> -INVALIDO<br> -PENDENTE<br> -NEGADO<br> -CANCELADO<br> -CHARGEBACK</nobr> |
+| &lt;PedidoStatus&gt;     | Status atual do Pedido        |String: <nobr><br>-APROVADO <br> -INVALIDO<br> -PENDENTE<br> -NEGADO<br> -CANCELADO<br> -CHARGEBACK</nobr> |
 | &lt;Conteúdo&gt;         |                                  | String      | 
 | &lt;PedidoNumeroLoja&gt; | Identificador do pedido na loja. | String      | 
 
@@ -364,7 +364,7 @@ Retorno Status Pagamento XML
 | &lt;DataPagamento&gt;          | Data do pagamento                    | String   | 
 | &lt;ValorPago&gt;              | Valor total pago                     | Decimal  | 
 | &lt;Mensagem&gt;               |                                      | String   | 
-| &lt;NivelRisco&gt;             | Indicador do risco de ser uma fraude | String -  <nobr>-APROVADO <br> -INVALIDO<br> -PENDENTE<br> -NEGADO<br> -CANCELADO<br> -CHARGEBACK</nobr> | 
+| &lt;NivelRisco&gt;             | Indicador do risco de ser uma fraude | String: <nobr><br>-APROVADO <br> -INVALIDO<br> -PENDENTE<br> -NEGADO<br> -CANCELADO<br> -CHARGEBACK</nobr> | 
 
 ------------
 Retorno Parcelas XML
