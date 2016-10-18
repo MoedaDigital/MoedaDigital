@@ -182,12 +182,13 @@ Check-out Transparente
 
 1. (Opcional) Consultar Meios de Pagamento:
 
- A consulta meios de pagamento serve para ver os Meios de pagamento que estão habilitados pela aplicação. Para fazer essa consulta deve-se enviar uma requisição HTTP através dos métodos **GET** ou **POST** para a URL: https://moeda.digital/gateway.asmx/ConsultaMeiosDePagamento
-<br>Na consulta devem ser enviados como parâmetros:
+	A consulta meios de pagamento serve para ver os Meios de pagamento que estão habilitados pela aplicação. Para fazer essa consulta deve-se enviar uma requisição HTTP através dos métodos **GET** ou **POST** para a URL: https://moeda.digital/gateway.asmx/ConsultaMeiosDePagamento
 
-- Número da Loja: **Loja**
-- Nome da aplicação: **Aplicação**
-- \* Meios de pagamento: **Meios**
+	Na consulta devem ser enviados como parâmetros:
+
+ - Número da Loja: **Loja**
+ - Nome da aplicação: **Aplicação**
+ - \* Meios de pagamento: **Meios**
 
 	<br>*Com esse parâmetro você pode verificar a disponibilidade de um meio específico ou verificar todos os disponíveis, os valores aceitos são ( "Todos" , "Credito", "Debito", "Boleto" , etc..) 
 
