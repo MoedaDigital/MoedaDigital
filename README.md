@@ -15,7 +15,7 @@ Oferecemos diversas maneiras de uma  pessoa ou empresa começar a receber pagame
 Integrações
 ----------------
 
-###Botão de Compras e Link de Pagamento
+##Botão de Compras e Link de Pagamento
 
 ####Descrição
 
@@ -318,7 +318,7 @@ Pedido XML
 
 ```
 <?xml version="1.0" encoding="utf-16"?>
-<clsPedido xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<clsPedido>
     <Cliente>
         <DataCadastro></DataCadastro>
         <Nome></Nome>
@@ -398,7 +398,7 @@ Pedido XML
         </Rateio>
     </Rateios>
     <PortadorCartao></PortadorCartao>
-    <PortadorValidade>MM/AA</PortadorValidade>
+    <PortadorValidade></PortadorValidade>
     <PortadorCVV></PortadorCVV>
     <PortadorNome></PortadorNome>
 </clsPedido>
