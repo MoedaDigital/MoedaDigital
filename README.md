@@ -35,7 +35,7 @@ Algumas aplicações podem ser:
 
 ####Descrição
 
-No check-out transparente todo o processo de compra ocorre na página do E-commerce, o usuário não percebe a existência da Moeda Digital e o lojista tem a possibilidade de costumizar todas as etapas em sua página.
+No check-out transparente todo o processo de compra ocorre na página do E-commerce, o usuário não percebe a existência da Moeda Digital e o lojista tem a possibilidade de customizar todas as etapas em sua página.
 
 ####Indicação
 
@@ -183,7 +183,7 @@ Check-out Transparente
 1. (Opcional) Consultar Meios de Pagamento:
 
  A consulta meios de pagamento serve para ver os Meios de pagamento que estão habilitados pela aplicação. Para fazer essa consulta deve-se enviar uma requisição HTTP através dos métodos **GET** ou **POST** para a URL: https://moeda.digital/gateway.asmx/ConsultaMeiosDePagamento
-<br>Na consulta devem ser enviados como parametros:
+<br>Na consulta devem ser enviados como parâmetros:
 
 - Número da Loja: **Loja**
 - Nome da aplicação: **Aplicação**
@@ -197,7 +197,7 @@ Check-out Transparente
 
 	Nesta etapa pode-se consultar o valores das parcelas  habilitados na aplicação para um devido valor.  Para fazer essa consulta deve-se enviar uma requisição HTTP através dos métodos GET ou POST para a URL: https://moeda.digital/gateway.asmx/ConsultaParcelasXML
 
-	Na consulta devem ser enviados como parametros:
+	Na consulta devem ser enviados como parâmetros:
 
  - Número da Loja: **Loja**
  - Nome da aplicação: **Aplicação**
@@ -209,17 +209,17 @@ Check-out Transparente
 
 	Nesta etapa a sua aplicação deverá enviar  um XML contendo as informações do pedido para ser registrado na Moeda Digital, esta retornará um XML contendo, entre outras informações, um código  HTML a ser exibido ao cliente.
 
-	O XML contendo o pedido deve ser enviado como parametro através dos métodos **GET** ou **POST** para a URL: https://moeda.digital/gateway.asmx/IniciarPagamento
+	O XML contendo o pedido deve ser enviado como parâmetro através dos métodos **GET** ou **POST** para a URL: https://moeda.digital/gateway.asmx/IniciarPagamento
 
-	Nome do parametro: ***PedidoXML***
+	Nome do parâmetro: ***PedidoXML***
 
-	O PedidoXML está definido no item Parametros XML.
+	O PedidoXML está definido no item Parâmetros XML.
 
 4. Exibir o código ao cliente:
 
 	O passo 2 retorna um XML com informações e o status do pedido, em caso de ter sido bem sucedido, ele possui um código HTML para ser exibido ao cliente para proceder o pagamento.
 
-	O Retorno do Pedido está definido no item Parametros XML.
+	O Retorno do Pedido está definido no item Parâmetros XML.
 	
 5. Cole o texto copiado junto ao corpo do E-mail ou mensagem de cobrança a ser enviada.
 
@@ -227,7 +227,7 @@ Check-out Transparente
 
 	Após o pedido ser registrado, ele pode ser acompanhado através de métodos disponibilizados para consulta pela Moeda Digital e por meio de WebHook, descritos neste manual nas áreas : Consultar Status do Pedido e WebHook - URL de retorno
 
-####Parametros XML:
+####Parâmetros XML:
 
 -----------
 ACOMPANHAMENTO DOS PEDIDOS
@@ -238,9 +238,9 @@ Consultar Status
 
 ####Como utilizar:
 
- O status de cada pedido pode ser consultado fazendo de requisições HTTP utilizando os metodos POST ou GET para a URL: https://moeda.digital/gateway.asmx/ConsultaStatusPagamento 
+ O status de cada pedido pode ser consultado através de requisições HTTP utilizando os metodos POST ou GET para a URL: https://moeda.digital/gateway.asmx/ConsultaStatusPagamento 
  
- Na consulta devem ser enviados como parametros:
+ Na consulta devem ser enviados como parâmetros:
 
  - Número da Loja: Loja
  - Nome da aplicação: Aplicação
