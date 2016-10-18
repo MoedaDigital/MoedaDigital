@@ -313,9 +313,6 @@ Pedido XML
 | PortadorCVV         | Código de validação do cartão | Int | Depende\*  |
 | PortadorNome        | Nome que está no cartão | String | Depende\*  | 
 
-\*Apenas para compras no cartão.
-
-###Exemplo
 
 ```
 <?xml version="1.0" encoding="utf-16"?>
