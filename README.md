@@ -277,6 +277,7 @@ PARÂMETROS
 Pedido XML
 -----------------
 
+###Campos
 
 | Tag | Explicação | Valor  | Obrigatório  | 
 |:----- |:----------  | :------- | :------| 
@@ -312,6 +313,8 @@ Pedido XML
 | PortadorNome        | Nome que está no cartão | String | Depende\*  | 
 
 \*Apenas para compras no cartão.
+
+###Exemplo
 
 ```
 <?xml version="1.0" encoding="utf-16"?>
@@ -479,7 +482,7 @@ Cliente XML
 | &lt;Login&gt;        | Bairro                                             | String                                 | Não            | 
 | &lt;Moeda&gt;        | DDD                                                | String - Sempre utilizar o valor "BRL" | Sim            | 
 | &lt;Idioma&gt;       | Telefone                                           | String - Idioma do cliente: <nobr><br>PT-BR<br>EN_US<br>ES_ES</nobr>  | Sim |
-| &lt;IpCadastro&gt;   | Ip do cliente| String - Formato: <nobr>"ddd.ddd.ddd.ddd"</nobr>     | Não    | 
+| &lt;IpCadastro&gt;   | Ip do cliente| String: Formato: <nobr>"ddd.ddd.ddd.ddd"</nobr>     | Não    | 
 | &lt;Notas&gt;        | Notas adicionais sobre o cliente                   | String | Não            | 
 
 
