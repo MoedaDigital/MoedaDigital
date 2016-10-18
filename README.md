@@ -113,15 +113,15 @@ Aqui você encontrará um campo de seleção com a opção "Criar uma Nova Aplic
 
 | Campo    | O que é | O que faz|
 | :-----------------| :---- | :--- |
-| Sigla da Aplicação| Identificador único de cada aplicação dentro de sua conta MD|Identificar a aplicação referente a cada pedido.|
+| Código da Aplicação| Identificador único de cada aplicação dentro de sua conta MD|Identificar a aplicação referente a cada pedido.|
 | Token | Identificador único de cada conta MD|Identificar a qual conta MD o pedido se refere.|
 | Tipo de Aplicação|Campo que define que tipo de integração foi escolhida para a aplicação|Mostra como o pedido deve proceder.|
 |URL de Retorno|Um link para a Moeda Digital avisar as mudanças de status de cada pedido.|Quando um pedido muda de status a Moeda Digtal faz uma requisição ao link avisando sobre a mudança.|
 |Meios de Pagamento|Os meios de pagamento que serão aceitos por você|Permite que o cliente pague apenas com os meios selecionados.|
-|Parcelamento sem Juros| | |
-|Parcelamento com Juros| | |
-|Valor mínimo da parcela| | |
-|Desconto a vista para Boleto e TEF| | |
+|Quantidade Máxima de Parcelas| Campo com as opções de parcelamento | Determina até quantas vezes o cliente poderá parcelar a compra no cartão  |
+|Não cobrar juros para as parcelas|Campo com opções de parcelamento  | Determina a quantidade de parcelas que não serão cobrados juros do cliente |
+|Valor mínimo da parcela| Valores mínimos para aceitar parcelemaneto | Define o valor mínimo que será aceito para cada parcela de uma compra |
+|Conceder desconto a vista para Boleto e TEF| % de desconto para compras a vista | Define valor a ser utilizado no cálculo de desconto para compras a vista em boleto ou TEF |
 
 
 INTEGRANDO
@@ -290,7 +290,7 @@ Pedido XML
 | LojaChaveAcesso     | Identificador da loja | String -Token da loja | Sim  | 
 | LojaApp             | Nome da Aplicação   | String - Nome da aplicação | Sim | 
 | LojaCanal          | Tipo de Aplicação  | "string ""WEB"" , ""Mobile"" etc.." | Sim | 
-| MeiosdePagamento   | O código do meio de pagamento configurado na aplicação  | ex: "CIELO-Visa" | Sim |
+| MeiosdePagamento   | O código do meio de pagamento configurado na aplicação  | String: <br>-"Visa"<br>-"Mastercard"<br>-"Diners"<br>-"Elo"<br>-"Amex"<br>-"Boleto" | Sim |
 | PedidoCodigo        | Identificador do pedido na Loja e Aplicação ( serve para o acompanhamento do pedido) | String | Sim |
 | PedidoNumeroLoja    | Identificador do pedido na própria loja.| Pode ser igual ao &lt;PedidoCodigo&gt; | Sim | 
 | PedidoVencimento    | Data de vencimento do pedido para ser informada ao cliente. | "Formato: "dd/mm/aaaa" | Sim | 
