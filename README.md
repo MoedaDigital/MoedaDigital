@@ -104,7 +104,6 @@ Criando Aplicação
 Aqui você encontrará um campo de seleção com a opção "Criar uma Nova Aplicação"
  
 3. Preencha os campos com as configurações escolhidas e clique em Salvar.
-
 >**Nota:** Você encontrará uma descrição dos campos mais abaixo. 
  
 4. Pronto, você possui uma nova aplicação.
@@ -194,7 +193,7 @@ Check-out Transparente
 
 	Você receberá como resposta o XML Array de Retorno Meios Pagamento XML descrito mais a baixo.
 
-	Exemplos: <div class="code-sample-options">[Code](Samples.md)<div>
+	Exemplos: <div class="code-sample-options">[Code](/Samples.md)<div>
 	
 	
 2. (Opcional) Consultar Parcelas:
