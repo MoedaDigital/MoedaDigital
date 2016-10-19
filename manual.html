@@ -44,12 +44,15 @@
     });
 
     function changeCode(codeSampleNumber , input){
-      console.log(input);
-      var codeSampleNumber = $('.code-sample-code')[codeSampleNumber];
-      console.log(codeSampleNumber);
 
+      var selectedInput = $(input).val();
+      var selectedCodeBlock = $('.code-sample-codes')[codeSampleNumber];
+      
+      $(selectedCodeBlock).children('pre').each(function(i){$(selectedCodeBlock).children('pre').hide()})
+      $($(selectedCodeBlock).children('pre')[selectedInput]).show()
     }
     
+    // Buscar todos os links dentro de um div com a classe '.code-sample-options' e substituir por um selecionador de codigo
     function replaceCodeSample(){
 		  
 		   $('.code-sample-options').each(function(codeSampleNumber){
@@ -58,9 +61,10 @@
 			var href = $div.find('a').attr('href');
       var radioName = 'codeSampleRadioName' + codeSampleNumber;
 
-      $div.html('<div class="btn-group" data-toggle="buttons"><input type="radio" name="'+ radioName + '" onclick=changeCode('+ codeSampleNumber +')value="'+ null +'">Esconder</input></div><div class="code-sample-code" ></div>');
+      $div.html('<div class="btn-group" data-toggle="buttons"><input type="radio" name="'+ radioName + '" onclick=changeCode('+ codeSampleNumber +') value="-1">Esconder</input></div><div class="code-sample-codes" ></div>');
 
       $optionsDiv = $div.children('div.btn-group');
+      $codesDiv = $div.children('div.code-sample-codes');
       
       $.get(href).success(function(markdown){
           console.log(markdown)
@@ -72,7 +76,10 @@
           titles.each(function(i){
 
               var title = $(titles[i]).text();
-              $optionsDiv.append('<input type="radio" name="'+ radioName + '" onclick="changeCode('+ codeSampleNumber +', this )" value="'+ i +'">'+ title +'</input>');      
+              $optionsDiv.append('<input type="radio" name="'+ radioName + '" onclick="changeCode('+ codeSampleNumber +', this )" value="'+ i +'">'+ title +'</input>');
+
+              $codesDiv.append(codes);
+              codes.hide();
 
           })
       });
