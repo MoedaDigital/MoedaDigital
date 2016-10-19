@@ -42,7 +42,21 @@
     Flatdoc.run({
       fetcher: Flatdoc.github('rick2ricks/moedadigital')
     });
-
+    
+    function replaceCodeSample(){
+		
+		   $('.code-sample-options').each(function(){
+			var $div = $(this);
+			var href = $div.find('a').attr('href');
+			console.log(href);
+			var data = Flatdoc.parser.parse('https://github.com/rick2ricks/moedadigital/blob/master/Samples.md');
+			console.log(data);
+		});
+	}
+	
+	$(document).on('flatdoc:ready', function() {
+		replaceCodeSample();
+	});
     
   </script>
 </head>
