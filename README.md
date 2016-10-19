@@ -193,6 +193,9 @@ Check-out Transparente
 	<br>*Com esse parâmetro você pode verificar a disponibilidade de um meio específico ou verificar todos os disponíveis, os valores aceitos são ( "Todos" , "Credito", "Debito", "Boleto" , etc..) 
 
 	Você receberá como resposta o XML Array de Retorno Meios Pagamento XML descrito mais a baixo.
+
+	Exemplos: <div class="code-sample-options">[Code](Samples.md)<div>
+	
 	
 2. (Opcional) Consultar Parcelas:
 
@@ -318,7 +321,7 @@ Pedido XML
 
 ###Exemplo
 
-```
+```xml
 <?xml version="1.0" encoding="utf-16"?>
 <clsPedido>
     <Cliente>
