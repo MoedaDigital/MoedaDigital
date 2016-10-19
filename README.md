@@ -179,7 +179,7 @@ Check-out Transparente
 
 ####Como utilizar:
 
-1. (Opcional) Consultar Meios de Pagamento:
+1. **(Opcional) Consultar Meios de Pagamento**:
 
 	A consulta meios de pagamento serve para ver os Meios de pagamento que estão habilitados pela aplicação. Para fazer essa consulta deve-se enviar uma requisição HTTP através dos métodos **GET** ou **POST** para a URL: https://moeda.digital/gateway.asmx/ConsultaMeiosDePagamento
 
@@ -187,16 +187,16 @@ Check-out Transparente
 
  - Número da Loja: **Loja**
  - Nome da aplicação: **Aplicação**
- - \* Meios de pagamento: **Meios**
+ - Meios de pagamento: **Meios** \*
 
-	<br>*Com esse parâmetro você pode verificar a disponibilidade de um meio específico ou verificar todos os disponíveis, os valores aceitos são ( "Todos" , "Credito", "Debito", "Boleto" , etc..) 
+	\* Com esse parâmetro você pode verificar a disponibilidade de um meio específico ou verificar todos os disponíveis, os valores aceitos são ( "Todos" , "Credito", "Debito", "Boleto" , etc..) 
 
 	Você receberá como resposta o XML Array de Retorno Meios Pagamento XML descrito mais a baixo.
 
-	Exemplos: <div class="code-sample-options">[Code](code-example/ConsultarMeiosDePagamento.md)<div>
-	
-	
-2. (Opcional) Consultar Parcelas:
+	Exemplos:
+	<div class="code-sample-options">[Code](code-example/ConsultarMeiosDePagamento.md)<div>
+
+1. **(Opcional) Consultar Parcelas:**
 
 	Nesta etapa pode-se consultar o valores das parcelas  habilitados na aplicação para um devido valor.  Para fazer essa consulta deve-se enviar uma requisição HTTP através dos métodos GET ou POST para a URL: https://moeda.digital/gateway.asmx/ConsultaParcelasXML
 
@@ -208,9 +208,9 @@ Check-out Transparente
 
 	Você receberá como resposta o XML Retorno Parcelas XML descrito mais a baixo.
 
-3. Iniciar Pagamento:
+1. **Iniciar Pagamento**:
 
-	Nesta etapa a sua aplicação deverá enviar  um XML contendo as informações do pedido para ser registrado na Moeda Digital, esta retornará um XML contendo, entre outras informações, um código  HTML a ser exibido ao cliente.
+	Nesta etapa a sua aplicação deverá enviar  um XML contendo as informações do pedido para ser registrado na Moeda Digital, esta retornará um XML contendo, entre outras informações, um código  HTML a ser exibido ao cliente nos casos dos meios diferentes de crédito.
 
 	O XML contendo o pedido deve ser enviado como parâmetro através dos métodos **GET** ou **POST** para a URL: https://moeda.digital/gateway.asmx/IniciarPagamento
 
@@ -218,15 +218,15 @@ Check-out Transparente
 
 	O PedidoXML está definido no item Parâmetros XML.
 
-4. Exibir o código ao cliente:
+1. **Exibir o código ao cliente**:
+	
+	>Nota: Caso o meio de pagamento seja Crédito, não há o que ser exibido ao cliente, pular para o passo 5.
 
 	O passo 2 retorna um XML com informações e o status do pedido, em caso de ter sido bem sucedido, ele possui um código HTML para ser exibido ao cliente para proceder o pagamento.
 
 	O Retorno do Pedido está definido no item Parâmetros XML.
-	
-5. Cole o texto copiado junto ao corpo do E-mail ou mensagem de cobrança a ser enviada.
 
-6. Acompanhar o Status do pedido:
+1. **Acompanhar o Status do pedido**:
 
 	Após o pedido ser registrado, ele pode ser acompanhado através de métodos disponibilizados para consulta pela Moeda Digital e por meio de WebHook, descritos neste manual nas áreas : Consultar Status do Pedido e WebHook - URL de retorno
 
@@ -313,10 +313,9 @@ Pedido XML
 | PortadorCartao      | Número do Cartão| String| Depende\* |  
 | PortadorValidade    | Data de expiração do cartão| Formato: "mm/aa" | Depende\*   | 
 | PortadorCVV         | Código de validação do cartão | Int | Depende\*  |
-| PortadorNome        | Nome que está no cartão | String | Depende\*  | 
+| PortadorNome        | Nome que está no cartão | String | Depende\* | 
 
-
-\*Apenas para compras no cartão.
+\* Apenas para compras no cartão.
 
 ###Exemplo
 
