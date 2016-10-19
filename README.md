@@ -193,7 +193,7 @@ Check-out Transparente
 
 	Você receberá como resposta o XML Array de Retorno Meios Pagamento XML descrito mais a baixo.
 
-	Exemplos: <div class="code-sample-options">[Code](https://github.com/rick2ricks/moedadigital/blob/master/Samples.md)<div>
+	Exemplos: <div class="code-sample-options">[Code](code-example/ConsultarMeiosDePagamento.md)<div>
 	
 	
 2. (Opcional) Consultar Parcelas:
