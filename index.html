@@ -41,10 +41,12 @@
   <!-- Initializer -->
   <script>
 	 $( document ).ready(function() {
-
+         
+         console.log('documentready');
 	 var hostname = $('meta[name=hostname]').attr("content");
 		 
 	$(document).on('flatdoc:ready', function() {
+		console.log('flatdocready');
 		replaceCodeSample();
 	});
 
