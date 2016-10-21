@@ -9,7 +9,7 @@ Introdução
     participant Alice
     participant Bob
     participant Bob2
-    Alice->>John: Hello John, how are you?</div>
+    Alice->>John: 1- Hello John, how are you?</div>
 <div class="mermaid">sequenceDiagram
   participant Cliente
   participant Loja
