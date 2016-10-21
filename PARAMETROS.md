@@ -147,6 +147,7 @@ Retorno do Pedido XML
 | &lt;PedidoNumeroLoja&gt; | Identificador do pedido na loja. | String      | 
 
 
+-----------------------
 Retorno Meios de Pagamento XML
 ------------------------------
 
@@ -165,8 +166,9 @@ Retorno Meios de Pagamento XML
 | &lt;Mensagem&gt; | |String|   
 
 
+---------------
 Retorno Status Pagamento XML
----------------------------
+-----------------------------
 
 | Tag                      | Explicação                           | Valor    | 
 |:-------------------------|:-------------------------------------|:---------| 
@@ -194,7 +196,7 @@ Retorno Parcelas XML
 | &lt;Obs&gt;                   |                           | String                                | 
 | &lt;Mensagem&gt;              |                           | String                                | 
 
-
+-----------
 Cliente XML
 -----------
 
