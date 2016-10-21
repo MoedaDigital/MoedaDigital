@@ -27,7 +27,7 @@
   <meta content="https://moedadigital.github.io/" name="hostname">
 
   <!-- Initializer -->
-   <script>
+  <script>
 
    $(document).on('flatdoc:ready', function() {
     replaceCodeSample();
@@ -38,17 +38,16 @@
       //fetcher: Flatdoc.github('MoedaDigital/MoedaDigital')      
       fetcher: Flatdoc.file([hostname+'README.md',hostname+'INTEGRACOES.md',hostname+'PARAMETROS.md',hostname+'MODULOS.md'])
     });
- });
 
 
-function changeCode(codeSampleNumber , input){
+   function changeCode(codeSampleNumber , input){
 
-  var selectedInput = $(input).val();
-  var selectedCodeBlock = $('.code-sample-codes')[codeSampleNumber];
-  
-  $(selectedCodeBlock).children('pre').each(function(i){$(selectedCodeBlock).children('pre').hide()})
-  $($(selectedCodeBlock).children('pre')[selectedInput]).show()
-}
+    var selectedInput = $(input).val();
+    var selectedCodeBlock = $('.code-sample-codes')[codeSampleNumber];
+    
+    $(selectedCodeBlock).children('pre').each(function(i){$(selectedCodeBlock).children('pre').hide()})
+    $($(selectedCodeBlock).children('pre')[selectedInput]).show()
+  }
 
     // Buscar todos os links dentro de um div com a classe '.code-sample-options' e substituir por um selecionador de codigo
     function replaceCodeSample(){
