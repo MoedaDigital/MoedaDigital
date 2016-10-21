@@ -814,6 +814,13 @@ a.big.button:hover:visited {
   font-size: 0.9em;
   padding-left: 10px;
 }
+.menu .level-3 {
+  display: none;
+}
+.menu .active + .level-3,
+.menu .active + .level-3 .level-3 {
+  display: block;
+}
 .menu a.active {
   font-weight: bold !important;
 }

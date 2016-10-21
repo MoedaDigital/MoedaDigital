@@ -16,7 +16,17 @@
       }
     });
   });
-
+ 
+    $("h3").scrollagent(function(cid, pid, currentElement, previousElement) {
+      if (pid) {
+       $("[href='#"+pid+"']").removeClass('active');
+      }
+      if (cid) {
+       $("[href='#"+cid+"']").addClass('active');
+      }
+    });
+  });
+  
  /*
   * Anchor jump links.
   */
