@@ -40,32 +40,24 @@
 
   <!-- Initializer -->
   <script>
-	 $( document ).ready(function() {
-         
-         console.log('documentready');
-	 var hostname = $('meta[name=hostname]').attr("content");
-		 
-	$(document).on('flatdoc:ready', function() {
-		console.log('flatdocready');
-		replaceCodeSample();
-	});
-
 	Flatdoc.run({
 	//fetcher: Flatdoc.github('MoedaDigital/MoedaDigital')      
 	fetcher: Flatdoc.file([hostname+'README.md',hostname+'INTEGRACOES.md',hostname+'PARAMETROS.md',hostname+'MODULOS.md'])
     	});
 	});
-function changeCode(codeSampleNumber , input){
+	 
+
+    function changeCode(codeSampleNumber , input){
 
       var selectedInput = $(input).val();
       var selectedCodeBlock = $('.code-sample-codes')[codeSampleNumber];
       
-      $(selectedCodeBlock).children('pre').each(function(i){$(selectedCodeBlock).children('pre').hide()});
+      $(selectedCodeBlock).children('pre').each(function(i){$(selectedCodeBlock).children('pre').hide()})
       $($(selectedCodeBlock).children('pre')[selectedInput]).show()
     }
     
     // Buscar todos os links dentro de um div com a classe '.code-sample-options' e substituir por um selecionador de codigo
-      function replaceCodeSample(){
+    function replaceCodeSample(){
 		  
 		   $('.code-sample-options').each(function(codeSampleNumber){
 			
@@ -98,7 +90,10 @@ function changeCode(codeSampleNumber , input){
 
 		});
 	}
-    
+	
+	$(document).on('flatdoc:ready', function() {
+		replaceCodeSample();
+	});
     
   </script>
 </head>
