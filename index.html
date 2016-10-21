@@ -43,6 +43,7 @@
 	 $( document ).ready(function() {
 
 	 var hostname = $('meta[name=author]').attr("content");
+		 
 	$(document).on('flatdoc:ready', function() {
 		replaceCodeSample();
 	});
@@ -50,7 +51,8 @@
 	Flatdoc.run({
 	//fetcher: Flatdoc.github('MoedaDigital/MoedaDigital')      
 	fetcher: Flatdoc.file([hostname+'README.md',hostname+'INTEGRACOES.md',hostname+'PARAMETROS.md',hostname+'MODULOS.md'])
-    });
+    	});
+	});
 function changeCode(codeSampleNumber , input){
 
       var selectedInput = $(input).val();
