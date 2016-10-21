@@ -4,7 +4,7 @@
 
 Introdução
 =========
-
+<pre>
 <div class='mermaid'>sequenceDiagram
     participant Alice
     participant Bob
@@ -18,6 +18,7 @@ Introdução
     Loja->>MD: 2 - Consultar Meios de Pagamento
     MD-->>Loja: 3 - Retorno Meios de Pagamento
 </div>
+</pre>
 
 Moeda Digital
 -------------
