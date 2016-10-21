@@ -27,74 +27,14 @@
   <meta content="https://moedadigital.github.io/" name="hostname">
 
   <!-- Initializer -->
-  <script>
-
-   $(document).on('flatdoc:ready', function() {
-    replaceCodeSample();
-  });
-
-   Flatdoc.run({
-      //fetcher: Flatdoc.github('MoedaDigital/MoedaDigital')      
-      fetcher: Flatdoc.file([hostname+'README.md',hostname+'INTEGRACOES.md',hostname+'PARAMETROS.md',hostname+'MODULOS.md'])
-    });
- });
-
-
-function changeCode(codeSampleNumber , input){
-
-  var selectedInput = $(input).val();
-  var selectedCodeBlock = $('.code-sample-codes')[codeSampleNumber];
-  
-  $(selectedCodeBlock).children('pre').each(function(i){$(selectedCodeBlock).children('pre').hide()})
-  $($(selectedCodeBlock).children('pre')[selectedInput]).show()
-}
-
-    // Buscar todos os links dentro de um div com a classe '.code-sample-options' e substituir por um selecionador de codigo
-    function replaceCodeSample(){
-
-     $('.code-sample-options').each(function(codeSampleNumber){
-
-      var $div = $(this);
-      var href = $div.find('a').attr('href');
-      var radioName = 'codeSampleRadioName' + codeSampleNumber;
-
-      $div.html('<div class="btn-group" data-toggle="buttons"><input type="radio" name="'+ radioName + '" onclick=changeCode('+ codeSampleNumber +') value="-1" checked="checked">Esconder</input></div><div class="code-sample-codes" ></div>');
-
-      $optionsDiv = $div.children('div.btn-group');
-      $codesDiv = $div.children('div.code-sample-codes');
-      
-      $.get(href).success(function(markdown){
-
-        var data = Flatdoc.parser.parse(markdown, Flatdoc.runner.prototype.highlight);
-        var $content = data.content;
-        var titles = $content.find('h2');
-        var codes = $content.find('pre');
-
-        titles.each(function(i){
-
-          var title = $(titles[i]).text();
-          $optionsDiv.append('<input type="radio" name="'+ radioName + '" onclick="changeCode('+ codeSampleNumber +', this )" value="'+ i +'">'+ title +'</input>');
-
-          $codesDiv.append(codes);
-          codes.hide();
-
-        })
-      });
-
-    });
-   }
-
-
-
- </script>
+ 
 </head>
 <body class='no-literate' role='flatdoc'>
   <div class='header'>
     <div class='left'>
       <h1>Moeda Digital</h1>
       <ul>
-        <li><a href='https://github.com/USER/REPO'>View on GitHub</a></li>
-        <li><a href='https://github.com/USER/REPO/issues'>Issues</a></li>
+
       </ul>
     </div>
     <div class='right'>
