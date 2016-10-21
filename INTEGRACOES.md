@@ -44,7 +44,7 @@ Check-out Transparente
 
 ####Pré-requisitos:
 
---- Possuir Aplicação configurada como "**Integração com desenvolvimento próprio**" 
+--- Possuir Aplicação configurada como "**Integração com desenvolvimento próprio**"
 
 ####Aplicabilidade:
 
@@ -52,6 +52,23 @@ Check-out Transparente
  - Maior controle sobre as vendas.
  - Maior capacidade de costumização do processo.
 
+####Fluxo:
+
+<div class="mermaid">
+sequenceDiagram
+    participant Cliente
+    participant Loja
+    participant MD
+    Cliente->>Loja: 1 - Comprar
+    Loja->>MD: 2 - Consultar Meios de Pagamento
+    MD-->>Loja: 3 - Retorno Meios de Pagamento
+    Loja-->>Cliente: 4 - Html com meios de pagamento
+    Cliente->>Loja: 5 - Dados de Pagamento
+    Loja->>MD: 6 - Iniciar Pagamento
+    MD-->>Loja: 7 - Retorno do Pedido
+    Loja->>Cliente: 8 - Compra Finalizada.
+</div>  
+    
 ####Como utilizar:
 
 1. **(Opcional) Consultar Meios de Pagamento**:

@@ -39,6 +39,14 @@
 
   <!-- Initializer -->
   <script>
+
+   var config = {
+            startOnLoad:false,
+            flowchart:{
+                    useMaxWidth:false,
+            }
+        };
+    mermaid.initialize(config);
     Flatdoc.run({
       fetcher: Flatdoc.github('MoedaDigital/moedadigital.github.io')
       //fetcher: Flatdoc.file(['README.md','INTEGRACOES.md','PARAMETROS.md','MODULOS.md'])
@@ -90,6 +98,7 @@
 	
 	$(document).on('flatdoc:ready', function() {
 		replaceCodeSample();
+    mermaid.init();
 	});
     
   </script>

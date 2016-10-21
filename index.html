@@ -18,7 +18,7 @@
   <!-- Flatdoc theme -->
   <link  href='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/theme-white/style.css' rel='stylesheet'>
   <!--script src='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/theme-white/script.js'></script´-->
-  
+
   <script src="assets/script.js"></script>
   <script type="text/javascript" src="mermaid/mermaid.js"></script>
 
@@ -31,16 +31,28 @@
   <script>
 
    var hostname = $('meta[name=hostname]').attr("content");
-
+   
+   var config = {
+            startOnLoad:false,
+            flowchart:{
+                    useMaxWidth:false,
+            }
+    };
+    mermaid.initialize(config);
    $(document).on('flatdoc:ready', function() {
     replaceCodeSample();
     console.log('fuu');
   });
 
-   Flatdoc.run({
+  Flatdoc.run({
       //fetcher: Flatdoc.github('MoedaDigital/MoedaDigital')      
       fetcher: Flatdoc.file([hostname+'README.md',hostname+'INTEGRACOES.md',hostname+'PARAMETROS.md',hostname+'MODULOS.md'])
-    });
+  });
+
+  $(document).on('flatdoc:ready', function() {
+    replaceCodeSample();
+    mermaid.init();
+  });
 
 
    function changeCode(codeSampleNumber , input){
