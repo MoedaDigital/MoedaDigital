@@ -67,8 +67,8 @@ Check-out Transparente
     Loja->>MD: 6 - Iniciar Pagamento
     MD-->>Loja: 7 - Retorno do Pedido
     Loja->>Cliente: 8 - Compra Finalizada</div> 
- </pre>
-    
+</pre>
+
 ####Como utilizar:
 
 1. **(Opcional) Consultar Meios de Pagamento**:
