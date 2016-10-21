@@ -16,6 +16,7 @@ Introdução
     participant MD
     Cliente->>+Loja: 1 - Comprar
     Loja->>MD: 2 - Consultar Meios de Pagamento
+    MD-->>Loja: 3 - Retorno Meios de Pagamento
 </div>
 
 Moeda Digital
