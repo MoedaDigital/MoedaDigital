@@ -28,8 +28,8 @@
 
   
   <!-- Flatdoc theme -->
-  <link  href='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/theme-white/style.css' rel='stylesheet'>
-  <!--script src='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/theme-white/script.js'></script!-->
+  <link  href='flatdoc/v0.9.0/theme-white/style.css' rel='stylesheet'>
+  <!--script src='flatdoc/v0.9.0/theme-white/script.js'></script´-->
 
   <script src="assets/script.js"></script>
   <script type="text/javascript" src="mermaid/mermaid.js"></script>
@@ -52,6 +52,11 @@
       //fetcher: Flatdoc.file(['README.md','INTEGRACOES.md','PARAMETROS.md','MODULOS.md'])
     });
 
+  $(document).on('flatdoc:ready', function() {
+    replaceCodeSample();
+    mermaid.init();
+  });
+
     function changeCode(codeSampleNumber , input){
 
       var selectedInput = $(input).val();
@@ -60,7 +65,9 @@
       $(selectedCodeBlock).children('pre').each(function(i){$(selectedCodeBlock).children('pre').hide()})
       $($(selectedCodeBlock).children('pre')[selectedInput]).show()
     }
-    
+
+
+
     // Buscar todos os links dentro de um div com a classe '.code-sample-options' e substituir por um selecionador de codigo
     function replaceCodeSample(){
 		  
@@ -96,10 +103,7 @@
 		});
 	}
 	
-	$(document).on('flatdoc:ready', function() {
-		replaceCodeSample();
-    mermaid.init();
-	});
+    
     
   </script>
 </head>

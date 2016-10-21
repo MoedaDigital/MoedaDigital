@@ -5,8 +5,11 @@
 Introdução
 =========
 
-<div class="mermaid">
-  sequenceDiagram
+<div class='mermaid'>sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?</div>
+<div class="mermaid">sequenceDiagram
   participant Cliente
   participant Loja
   participant MD
@@ -18,10 +21,6 @@ Introdução
   Loja->>MD: 6 - Iniciar Pagamento
   MD-->>Loja: 7 - Retorno do Pedido
   Loja->>Cliente: 8 - Compra Finalizada</div>
-    <div class="mermaid">
-    sequenceDiagram
-    Alice->>John: Hello, how are you?
-    John-->>Alice: aGreat!</div>
 
 Moeda Digital
 -------------

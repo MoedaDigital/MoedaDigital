@@ -38,11 +38,12 @@
               useMaxWidth:false,
             }
     };
+
     mermaid.initialize(config);
 
-   $(document).on('flatdoc:ready', function() {
+  $(document).on('flatdoc:ready', function() {
     replaceCodeSample();
-     mermaid.init();
+    mermaid.init();
   });
 
   Flatdoc.run({
