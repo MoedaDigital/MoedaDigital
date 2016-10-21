@@ -52,6 +52,7 @@ Check-out Transparente
  - Maior controle sobre as vendas.
  - Maior capacidade de costumização do processo.
 
+
 ####Fluxo:
 
 <div class="mermaid">sequenceDiagram
