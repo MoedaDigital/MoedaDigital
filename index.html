@@ -1,235 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--
+
+  Instructions:
+
+  - Save this file.
+  - Replace "USER" with your GitHub username.
+  - Replace "REPO" with your GitHub repo name.
+  - Replace "Your Project" with your project name.
+  - Upload this file (or commit to GitHub Pages).
+
+  Customize as you see fit!
+
+-->
 <html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Moedadigital : manual">
+  <title>Moeda Digital</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-    <title>Moedadigital</title>
-  </head>
+  <!-- Flatdoc -->
+  <script src="flatdoc/v0.9.0/legacy.js"></script>
+  <script src="flatdoc/v0.9.0/flatdoc.js"></script>
 
-  <body>
+  
+  <!-- Flatdoc theme -->
+  <link  href='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/theme-white/style.css' rel='stylesheet'>
+  <!--script src='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/theme-white/script.js'></script>
+<!--link href="assets/style.css" rel="stylesheet"!-->
+<script src="assets/script.js"></script>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/MoedaDigital/MoedaDigital">View on GitHub</a>
+  <!-- Meta -->
+  <meta content="Moeda Digital" property="og:title">
+  <meta content="Manual de integração" name="description">
 
-          <h1 id="project_title">Moedadigital</h1>
-          <h2 id="project_tagline">manual</h2>
+  <!-- Initializer -->
+  <script>
+    Flatdoc.run({
+      fetcher: Flatdoc.file(['README.md','INTEGRACOES.md','MODULOS.md'])
+    });
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/MoedaDigital/MoedaDigital/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/MoedaDigital/MoedaDigital/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+    function changeCode(codeSampleNumber , input){
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a id="manual-de-integrÇÃo" class="anchor" href="#manual-de-integr%C3%87%C3%83o" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>MANUAL DE INTEGRÇÃO</strong>
-</h1>
-
-<h1>
-<a id="introdução" class="anchor" href="#introdu%C3%A7%C3%A3o" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introdução</h1>
-
-<h2>
-<a id="moeda-digital" class="anchor" href="#moeda-digital" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Moeda Digital</h2>
-
-<p>Somos uma empresa que oferece soluções para facilitar o processo de recebimentos online; sempre prezando segurança, simplicidade e aumento das vendas. </p>
-
-<p>Oferecemos diversas maneiras de uma  pessoa ou empresa começar a receber pagamentos de forma segura e conforme as necessidades de cada um; essas maneiras são chamadas de formas de integração, e cada uma possui aplicações distintas além de esforços diferentes para coloca-las em prática.</p>
-
-<h2>
-<a id="integrações" class="anchor" href="#integra%C3%A7%C3%B5es" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Integrações</h2>
-
-<h3>
-<a id="botão-de-compras-e-link-de-pagamento" class="anchor" href="#bot%C3%A3o-de-compras-e-link-de-pagamento" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Botão de Compras e Link de Pagamento</h3>
-
-<h4>
-<a id="descrição" class="anchor" href="#descri%C3%A7%C3%A3o" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Descrição</h4>
-
-<p>O Botão de Compras e o Link de Pagamento são as formas mais simples e rápidas para começar a receber pagamentos, sua principal finalidade é fazer cobranças de itens individuais ou receber doações de qualquer valor. Em ambos os casos o cliente será redirecionado para um ambiente seguro de pagamento fornecido pela moeda digital. Em poucos minutos você estará apto a mandar e-mails com cobranças ou gerar um botão em HTML para ser colocado em sua página de vendas.  </p>
-
-<h4>
-<a id="indicação" class="anchor" href="#indica%C3%A7%C3%A3o" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Indicação</h4>
-
-<p>Algumas aplicações podem ser:</p>
-
-<ul>
-<li>Lojistas que querem vender seus produtos através de páginas como facebook.</li>
-<li> Fazer cobranças por e-mail.</li>
-<li>Profissionais que queiram receber por seus serviços de forma on-line. </li>
-<li>Lojistas com pouca variedade de produtos e com pouco conhecimento em desenvolvimento e queiram incluir um botão de compra em sua página.</li>
-<li>Eventos.</li>
-</ul>
-
-<h3>
-<a id="check-out-transparente" class="anchor" href="#check-out-transparente" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Check-out Transparente</h3>
-
-<h4>
-<a id="descrição-1" class="anchor" href="#descri%C3%A7%C3%A3o-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Descrição</h4>
-
-<p>No check-out transparente todo o processo de compra ocorre na página do E-commerce, o usuário não percebe a existência da Moeda Digital e o lojista tem a possibilidade de customizar todas as etapas em sua página.</p>
-
-<h4>
-<a id="indicação-1" class="anchor" href="#indica%C3%A7%C3%A3o-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Indicação</h4>
-
-<p>É a solução indicada para quem quer maior personalização de sua página e tenha condições técnicas mais avançadas para implementação. 
-O check-out transparente possuí também um menor índice de desistência pelos compradores.</p>
-
-<h2>
-<a id="conta-md" class="anchor" href="#conta-md" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Conta MD</h2>
-
-<p>A conta MD é o cadastro na Moeda Digital que permite a empresa ou o profissional acessar a plataforma online e começar a receber. 
-Dentro da área do usuário na plataforma Moeda Digital é  possível:</p>
-
-<ul>
-<li>Fazer testes de integração.</li>
-<li>Acompanhar os pedidos gerados pelo seu negócio.</li>
-<li>Analisar seus pedidos e recebimentos.</li>
-<li>Criar novas aplicações.</li>
-</ul>
-
-<h1>
-<a id="primeiros-passos" class="anchor" href="#primeiros-passos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PRIMEIROS PASSOS</h1>
-
-<h2>
-<a id="resumo" class="anchor" href="#resumo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Resumo</h2>
-
-<p>A lista a seguir é uma breve descrição de todos os passos necessários do início ao fim do processo de integração.</p>
-
-<ol>
-<li><p>Criação da conta na Moeda Digital , através dela você terá acesso à plataforma e às ferramentas de  pagamento oferecidas.</p></li>
-<li>
-<p>Criar e Configurar uma Aplicação: 
-<br>Cada conta MD pode criar diversas aplicações com distintas configurações;
-Deve-se escolher o tipo de integração da aplicação
-Deve-se escolher as opções de recebimento ( cartão, juros, boleto, número de parcelas aceitas, e etc)</p>
-
-<blockquote>
-<p><strong>Nota:</strong> Inicialmente recomenda-se criar uma aplicação para teste que permite iniciar a integração. (Utilizar aplicações reais apenas é possível após entrar em contato com nossa equipe)</p>
-</blockquote>
-</li>
-<li><p>Caso o tipo de integração escolhido seja o Link de Compras ou o Botão de Compras você pode pular esta etapa, caso contrário deve-se desenvolver a integração com o seu sistema, utilizando-se de nossa documentação e módulos existentes.</p></li>
-<li><p>Começar os testes, você poderá gerar transações para a aplicação de teste e verificar se os pedidos estão sendo gerados e processados corretamente, além de se acostumar com o painel da plataforma onde poderá ver relatórios sobre suas transações.</p></li>
-<li><p>Habilitar sua aplicação real, aqui basta entrar em contato com a nossa equipe para a contratação e após isso todas suas aplicações estarão prontas para receber.</p></li>
-<li><p>Receber!</p></li>
-</ol>
-
-<h2>
-<a id="criando-conta" class="anchor" href="#criando-conta" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Criando Conta</h2>
-
-<p>Criar uma conta na Moeda Digital é muito simples, basta:</p>
-
-<ol>
-<li>Acessar o site da Moeda Digital e clicar em "CRIAR CONTA".</li>
-<li>Preencher o formulário com as informações requisitadas.</li>
-</ol>
-
-<p>Feito isso, você conseguirá entrar na plataforma da Moeda Digital através do site da Moeda digital clicando em "Acessar"; de lá você pode verificar relatórios, criar aplicações, fazer testes de integração entre outras funcionalidades. </p>
-
-<h2>
-<a id="criando-aplicação" class="anchor" href="#criando-aplica%C3%A7%C3%A3o" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Criando Aplicação</h2>
-
-<h4>
-<a id="pré-requisitos" class="anchor" href="#pr%C3%A9-requisitos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pré-requisitos:</h4>
-
-<p>--- Ter uma Conta MD.</p>
-
-<h4>
-<a id="passos" class="anchor" href="#passos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Passos:</h4>
-
-<ol>
-<li><p>Entre com seu usuário na plataforma.</p></li>
-<li><p>No menu superior vá na área  Administração → Aplicações 
-Aqui você encontrará um campo de seleção com a opção "Criar uma Nova Aplicação"</p></li>
-<li>
-<p>Preencha os campos com as configurações escolhidas e clique em Salvar.</p>
-
-<blockquote>
-<p><strong>Nota:</strong> Você encontrará uma descrição dos campos mais abaixo. </p>
-</blockquote>
-</li>
-<li><p>Pronto, você possui uma nova aplicação.</p></li>
-</ol>
-
-<h4>
-<a id="campos" class="anchor" href="#campos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Campos:</h4>
-
-<table>
-<thead>
-<tr>
-<th align="left">Campo</th>
-<th align="left">O que é</th>
-<th align="left">O que faz</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">Código da Aplicação</td>
-<td align="left">Identificador único de cada aplicação dentro de sua conta MD</td>
-<td align="left">Identificar a aplicação referente a cada pedido.</td>
-</tr>
-<tr>
-<td align="left">Token</td>
-<td align="left">Identificador único de cada conta MD</td>
-<td align="left">Identificar a qual conta MD o pedido se refere.</td>
-</tr>
-<tr>
-<td align="left">Tipo de Aplicação</td>
-<td align="left">Campo que define que tipo de integração foi escolhida para a aplicação</td>
-<td align="left">Mostra como o pedido deve proceder.</td>
-</tr>
-<tr>
-<td align="left">URL de Retorno</td>
-<td align="left">Um link para a Moeda Digital avisar as mudanças de status de cada pedido.</td>
-<td align="left">Quando um pedido muda de status a Moeda Digtal faz uma requisição ao link avisando sobre a mudança.</td>
-</tr>
-<tr>
-<td align="left">Meios de Pagamento</td>
-<td align="left">Os meios de pagamento que serão aceitos por você</td>
-<td align="left">Permite que o cliente pague apenas com os meios selecionados.</td>
-</tr>
-<tr>
-<td align="left">Quantidade Máxima de Parcelas</td>
-<td align="left">Campo com as opções de parcelamento</td>
-<td align="left">Determina até quantas vezes o cliente poderá parcelar a compra no cartão</td>
-</tr>
-<tr>
-<td align="left">Não cobrar juros para as parcelas</td>
-<td align="left">Campo com opções de parcelamento</td>
-<td align="left">Determina a quantidade de parcelas que não serão cobrados juros do cliente</td>
-</tr>
-<tr>
-<td align="left">Valor mínimo da parcela</td>
-<td align="left">Valores mínimos para aceitar parcelemaneto</td>
-<td align="left">Define o valor mínimo que será aceito para cada parcela de uma compra</td>
-</tr>
-<tr>
-<td align="left">Conceder desconto a vista para Boleto e TEF</td>
-<td align="left">% de desconto para compras a vista</td>
-<td align="left">Define valor a ser utilizado no cálculo de desconto para compras a vista em boleto ou TEF</td>
-</tr>
-</tbody>
-</table>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Moedadigital maintained by <a href="https://github.com/MoedaDigital">MoedaDigital</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+      var selectedInput = $(input).val();
+      var selectedCodeBlock = $('.code-sample-codes')[codeSampleNumber];
+      
+      $(selectedCodeBlock).children('pre').each(function(i){$(selectedCodeBlock).children('pre').hide()})
+      $($(selectedCodeBlock).children('pre')[selectedInput]).show()
+    }
     
+    // Buscar todos os links dentro de um div com a classe '.code-sample-options' e substituir por um selecionador de codigo
+    function replaceCodeSample(){
+		  
+		   $('.code-sample-options').each(function(codeSampleNumber){
+			
+      var $div = $(this);
+			var href = $div.find('a').attr('href');
+      var radioName = 'codeSampleRadioName' + codeSampleNumber;
 
-  </body>
-</html>
+      $div.html('<div class="btn-group" data-toggle="buttons"><input type="radio" name="'+ radioName + '" onclick=changeCode('+ codeSampleNumber +') value="-1" checked="checked">Esconder</input></div><div class="code-sample-codes" ></div>');
+
+      $optionsDiv = $div.children('div.btn-group');
+      $codesDiv = $div.children('div.code-sample-codes');
+      
+      $.get(href).success(function(markdown){
+          
+          var data = Flatdoc.parser.parse(markdown, Flatdoc.runner.prototype.highlight);
+          var $content = data.content;
+          var titles = $content.find('h2');
+          var codes = $content.find('pre');
+
+          titles.each(function(i){
+
+              var title = $(titles[i]).text();
+              $optionsDiv.append('<input type="radio" name="'+ radioName + '" onclick="changeCode('+ codeSampleNumber +', this )" value="'+ i +'">'+ title +'</input>');
+
+              $codesDiv.append(codes);
+              codes.hide();
+
+          })
+      });
+
+		});
+	}
+	
+	$(document).on('flatdoc:ready', function() {
+		replaceCodeSample();
+	});
+    
+  </script>
+</head>
+<body class='no-literate' role='flatdoc'>
+  <div class='header'>
+    <div class='left'>
+      <h1>Moeda Digital</h1>
+      <ul>
+        <li><a href='https://github.com/USER/REPO'>View on GitHub</a></li>
+        <li><a href='https://github.com/USER/REPO/issues'>Issues</a></li>
+      </ul>
+    </div>
+    <div class='right'>
+      <!-- GitHub buttons: see http://ghbtns.com -->
+      <iframe src="http://ghbtns.com/github-btn.html?user=USER&amp;repo=REPO&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+    </div>
+  </div>
+
+  <div class='content-root'>
