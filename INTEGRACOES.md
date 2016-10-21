@@ -54,8 +54,7 @@ Check-out Transparente
 
 ####Fluxo:
 
-<div class="mermaid">
-sequenceDiagram
+<div class="mermaid">sequenceDiagram
     participant Cliente
     participant Loja
     participant MD

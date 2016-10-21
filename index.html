@@ -31,7 +31,7 @@
   <script>
 
    var hostname = $('meta[name=hostname]').attr("content");
-   
+
    var config = {
             startOnLoad:false,
             flowchart:{
@@ -39,9 +39,10 @@
             }
     };
     mermaid.initialize(config);
+
    $(document).on('flatdoc:ready', function() {
     replaceCodeSample();
-    console.log('fuu');
+     mermaid.init();
   });
 
   Flatdoc.run({
@@ -49,10 +50,6 @@
       fetcher: Flatdoc.file([hostname+'README.md',hostname+'INTEGRACOES.md',hostname+'PARAMETROS.md',hostname+'MODULOS.md'])
   });
 
-  $(document).on('flatdoc:ready', function() {
-    replaceCodeSample();
-    mermaid.init();
-  });
 
 
    function changeCode(codeSampleNumber , input){
