@@ -4,11 +4,6 @@
 
 Introdução
 =========
-
-<div class='mermaid'>sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->>John: Hello John, how are you?</div>
 <div class="mermaid">sequenceDiagram
     participant Cliente
     participant Loja
@@ -21,6 +16,11 @@ Introdução
     Loja->>MD: 6 - Iniciar Pagamento
     MD-->>Loja: 7 - Retorno do Pedido
     Loja->>Cliente: 8 - Compra Finalizada</div>
+<div class='mermaid'>sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?</div>
+
 <div class="mermaid">sequenceDiagram
     participant Cliente
     participant Loja
