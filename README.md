@@ -20,7 +20,7 @@ Introdução
     Cliente->>Loja: 5 - Dados de Pagamento
     Loja->>MD: 6 - Iniciar Pagamento
     MD-->>Loja: 7 - Retorno do Pedido
-    Loja->>Cliente: 8 - Compra Finalizada.</div> 
+    Loja->>Cliente: 8 - Compra Finalizada</div>
 <div class="mermaid">sequenceDiagram
     participant Cliente
     participant Loja
@@ -32,7 +32,7 @@ Introdução
     Cliente->>Loja: 5 - Dados de Pagamento
     Loja->>MD: 6 - Iniciar Pagamento
     MD-->>Loja: 7 - Retorno do Pedido
-    Loja->>Cliente: 8 - Compra Finalizada.</div> 
+    Loja->>Cliente: 8 - Compra Finalizada</div>
 
 Moeda Digital
 -------------
