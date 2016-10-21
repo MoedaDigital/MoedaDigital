@@ -39,6 +39,7 @@ Link e Botão de Compras
 |Tipo |Escolhe entre Link, URL e Botão| Fornece diferentes modos de formatação.|
 
 
+
 Check-out Transparente
 ---------------------------------
 
