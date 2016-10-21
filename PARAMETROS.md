@@ -132,22 +132,6 @@ Pedido XML
 </clsPedido>
 ```
 
------------
-Retorno do Pedido XML
----------------------
-
-| Tag                | Explicação                       | Valor       | 
-|:-------------------|:-------------------------------- |:------------| 
-| &lt;RetornoPedido&gt;    | Elemento raíz do retorno.        |             | 
-| &lt;NSU&gt;              |                                  | String      | 
-| &lt;Mensagem&gt;         |                                  | String      | 
-| &lt;Retorno&gt;          |                                  |             | 
-| &lt;PedidoStatus&gt;     | Status atual do Pedido        |String: <nobr><br>-APROVADO <br> -INVALIDO<br> -PENDENTE<br> -NEGADO<br> -CANCELADO<br> -CHARGEBACK</nobr> |
-| &lt;Conteúdo&gt;         |                                  | String      | 
-| &lt;PedidoNumeroLoja&gt; | Identificador do pedido na loja. | String      | 
-
-
------------------------
 Retorno Meios de Pagamento XML
 ------------------------------
 
@@ -166,7 +150,6 @@ Retorno Meios de Pagamento XML
 | &lt;Mensagem&gt; | |String|   
 
 
----------------
 Retorno Status Pagamento XML
 -----------------------------
 
@@ -182,7 +165,7 @@ Retorno Status Pagamento XML
 | &lt;Mensagem&gt;               |                                      | String   | 
 | &lt;NivelRisco&gt;             | Indicador do risco de ser uma fraude | String: <nobr><br>-APROVADO <br> -INVALIDO<br> -PENDENTE<br> -NEGADO<br> -CANCELADO<br> -CHARGEBACK</nobr> | 
 
-------------
+
 Retorno Parcelas XML
 --------------------
 
@@ -196,7 +179,7 @@ Retorno Parcelas XML
 | &lt;Obs&gt;                   |                           | String                                | 
 | &lt;Mensagem&gt;              |                           | String                                | 
 
------------
+
 Cliente XML
 -----------
 
