@@ -29,6 +29,8 @@
   <!-- Initializer -->
   <script>
 
+   var hostname = $('meta[name=hostname]').attr("content");
+
    $(document).on('flatdoc:ready', function() {
     replaceCodeSample();
     console.log('fuu');
@@ -44,7 +46,7 @@
 
     var selectedInput = $(input).val();
     var selectedCodeBlock = $('.code-sample-codes')[codeSampleNumber];
-    
+
     $(selectedCodeBlock).children('pre').each(function(i){$(selectedCodeBlock).children('pre').hide()})
     $($(selectedCodeBlock).children('pre')[selectedInput]).show()
   }
