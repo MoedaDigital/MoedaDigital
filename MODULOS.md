@@ -17,3 +17,8 @@ SDK Android
 
 SDK iOS
 -------
+
+<div id='mermaid'>sequenceDiagram
+	participant Alice
+	participant Bob
+	Alice->>John: Hello John, how are you?</div>
