@@ -58,12 +58,12 @@ function changeCode(codeSampleNumber , input){
       var selectedInput = $(input).val();
       var selectedCodeBlock = $('.code-sample-codes')[codeSampleNumber];
       
-      $(selectedCodeBlock).children('pre').each(function(i){$(selectedCodeBlock).children('pre').hide()})
+      $(selectedCodeBlock).children('pre').each(function(i){$(selectedCodeBlock).children('pre').hide()});
       $($(selectedCodeBlock).children('pre')[selectedInput]).show()
     }
     
     // Buscar todos os links dentro de um div com a classe '.code-sample-options' e substituir por um selecionador de codigo
-    function replaceCodeSample(){
+      function replaceCodeSample(){
 		  
 		   $('.code-sample-options').each(function(codeSampleNumber){
 			
