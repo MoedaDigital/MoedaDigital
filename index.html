@@ -36,12 +36,15 @@
   <!-- Meta -->
   <meta content="Moeda Digital" property="og:title">
   <meta content="Manual de integração" name="description">
+  <meta content="https://moedadigital.github.io/" name="hostname">
 
   <!-- Initializer -->
   <script>
-    Flatdoc.run({
+	   var hostname = $('meta[name=author]').attr("content");
+
+	Flatdoc.run({
 	//fetcher: Flatdoc.github('MoedaDigital/MoedaDigital')      
-	fetcher: Flatdoc.file(['README.md','INTEGRACOES.md','PARAMETROS.md','MODULOS.md'])
+	fetcher: Flatdoc.file([hostname+'README.md',hostname+'INTEGRACOES.md',hostname+'PARAMETROS.md',hostname+'MODULOS.md'])
     });
 
     function changeCode(codeSampleNumber , input){
