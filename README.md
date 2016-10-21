@@ -5,6 +5,11 @@
 Introdução
 =========
 
+<div class='mermaid'>sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?</div>
+
 Moeda Digital
 -------------
 
@@ -121,5 +126,7 @@ Aqui você encontrará um campo de seleção com a opção "Criar uma Nova Aplic
 |Não cobrar juros para as parcelas|Campo com opções de parcelamento  | Determina a quantidade de parcelas que não serão cobrados juros do cliente |
 |Valor mínimo da parcela| Valores mínimos para aceitar parcelemaneto | Define o valor mínimo que será aceito para cada parcela de uma compra |
 |Conceder desconto a vista para Boleto e TEF| % de desconto para compras a vista | Define valor a ser utilizado no cálculo de desconto para compras a vista em boleto ou TEF |
+
+
 
 
