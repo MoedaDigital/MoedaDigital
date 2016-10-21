@@ -54,6 +54,7 @@ Check-out Transparente
 
 ####Fluxo:
 
+<pre>
 <div class="mermaid">sequenceDiagram
     participant Cliente
     participant Loja
@@ -66,7 +67,7 @@ Check-out Transparente
     Loja->>MD: 6 - Iniciar Pagamento
     MD-->>Loja: 7 - Retorno do Pedido
     Loja->>Cliente: 8 - Compra Finalizada</div> 
-    
+ </pre>   
 ####Como utilizar:
 
 1. **(Opcional) Consultar Meios de Pagamento**:
