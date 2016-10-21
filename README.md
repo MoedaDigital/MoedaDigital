@@ -16,12 +16,7 @@ Introdução
     participant MD
     Cliente->>+Loja: 1 - Comprar
     Loja->>MD: 2 - Consultar Meios de Pagamento
-    MD-->>Loja: 3 - Retorno Meios de Pagamento
-    Loja-->>-Cliente: 4 - Html com meios de pagamento
-    Cliente->>Loja: 5 - Dados de Pagamento
-    Loja->>MD: 6 - Iniciar Pagamento
-    MD-->>Loja: 7 - Retorno do Pedido
-    Loja->>Cliente: 8 - Compra Finalizada</div>
+</div>
 
 Moeda Digital
 -------------
