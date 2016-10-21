@@ -29,7 +29,7 @@
   
   <!-- Flatdoc theme -->
   <link  href='flatdoc/v0.9.0/theme-white/style.css' rel='stylesheet'>
-  <!--script src='flatdoc/v0.9.0/theme-white/script.js'></script´-->
+  <script src='flatdoc/v0.9.0/theme-white/script.js'></script>
 
   <script src="assets/script.js"></script>
   <script type="text/javascript" src="mermaid/mermaid.js"></script>
@@ -50,7 +50,7 @@
         };
     mermaid.initialize(config);
     Flatdoc.run({
-      fetcher: Flatdoc.github('MoedaDigital/moedadigital.github.io')
+      fetcher: Flatdoc.github('MoedaDigital/moedadigital.github.io',"PARAMETROS.md")
       //fetcher: Flatdoc.file(['README.md','INTEGRACOES.md','PARAMETROS.md','MODULOS.md'])
     });
 
