@@ -18,8 +18,8 @@ Pedido XML
 | email3              | Terceiro email do cliente   | &lt;email&gt;String&lt;/email&gt; | Não |  
 | LojaChaveAcesso     | Identificador da loja | String -Token da loja | Sim  | 
 | LojaApp             | Nome da Aplicação   | String - Nome da aplicação | Sim | 
-| LojaCanal          | Tipo de Aplicação  | String: <br>-"WEB"<br>-"Mobile" | Sim | 
-| MeiosdePagamento   | O código do meio de pagamento configurado na aplicação  | <nobr>String: <br>-"Visa"<br>-"Mastercard"<br>-"Diners"<br>-"Elo"<br>-"Amex"<br>-"Boleto" </nobr> | Sim |
+| LojaCanal          | Tipo de Aplicação  | String <br>-"WEB"<br>-"Mobile" | Sim | 
+| MeiosdePagamento   | O código do meio de pagamento configurado na aplicação  | <nobr>String <br>-"Visa"<br>-"Mastercard"<br>-"Diners"<br>-"Elo"<br>-"Amex"<br>-"Boleto" </nobr> | Sim |
 | PedidoCodigo        | Identificador do pedido na Loja e Aplicação ( serve para o acompanhamento do pedido) | String | Sim |
 | PedidoNumeroLoja    | Identificador do pedido na própria loja.| Pode ser igual ao &lt;PedidoCodigo&gt; | Sim | 
 | PedidoVencimento    | Data de vencimento do pedido para ser informada ao cliente. | Formato: "dd/mm/aaaa" | Sim | 
