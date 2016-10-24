@@ -76,8 +76,8 @@
 
       $optionsDiv = $div.children('div.btn-group');
       $codesDiv = $div.children('div.code-sample-codes');
-      
-      $.get(href).success(this.function(markdown){
+
+      var readMarkdown = function (markdown){
 
         var data = Flatdoc.parser.parse(markdown, Flatdoc.runner.prototype.highlight);
         console.log(data);
@@ -85,17 +85,19 @@
         var titles = $content.find('h2');
         var codes = $content.find('pre');
 
+
         titles.each(function(i){
 
           var title = $(titles[i]).text();
           console.log(title);
-          $optionsDiv.append('<input type="radio" name="'+ radioName + '" onclick="changeCode('+ codeSampleNumber +', this )" value="'+ i +'">'+ title +'</input>');
-          console.log($codesDiv)
-          $codesDiv.append(codes);
+          this.$optionsDiv.append('<input type="radio" name="'+ radioName + '" onclick="changeCode('+ codeSampleNumber +', this )" value="'+ i +'">'+ title +'</input>');
+          console.log(this.$codesDiv)
+          this.$codesDiv.append(codes);
           codes.hide();
-
-        })
-      });
+          }
+        );
+      }
+      $.get(href).success(this.readMarkdown);
 
     });
    }
