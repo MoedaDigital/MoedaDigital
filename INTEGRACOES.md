@@ -17,7 +17,7 @@ Link e Botão de Compras
 
 1. Entre em sua Conta MD na plataforma.
 
-2. No menu principal acesse Administração → Gerar Carrinho
+2. No menu principal acesse ***Administração → Gerar Carrinho***
 
 3. Preencha os campos e escolha entre URL, Botão ou Link.
 >**Nota:** A diferença entre as opções é apenas a formatação na qual a URL é fornecida, o Botão fornece configurações de estilização em HTML.
