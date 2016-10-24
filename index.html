@@ -48,7 +48,7 @@
 
   Flatdoc.run({
       //fetcher: Flatdoc.github('MoedaDigital/MoedaDigital')      
-      fetcher: Flatdoc.file([hostname+'README.md',hostname+'INTEGRACOES.md',hostname+'PARAMETROS.md',hostname+'MODULOS.md'])
+      fetcher: Flatdoc.file([hostname+'README.md',hostname+'PARAMETROS.md',hostname+'INTEGRACOES.md',hostname+'MODULOS.md'])
   });
 
 
@@ -88,7 +88,7 @@
         var titles = $content.find('h2');
         var codes = $content.find('pre');
         var parentContext = this;
-        
+
         titles.each(function(i){
 
           var title = $(titles[i]).text();
