@@ -92,9 +92,9 @@
         titles.each(function(i){
 
           var title = $(titles[i]).text();
-          $optionsDiv.append('<input type="radio" name="'+ radioName + '" onclick="changeCode('+ codeSampleNumber +', this )" value="'+ i +'">'+ title +'</input>');
-          console.log($optionsDiv);
-          $codesDiv.append(codes);
+          this.$optionsDiv.append('<input type="radio" name="'+ radioName + '" onclick="changeCode('+ codeSampleNumber +', this )" value="'+ i +'">'+ title +'</input>');
+          console.log(this.$optionsDiv);
+          this.$codesDiv.append(codes);
           codes.hide();
 
         })
