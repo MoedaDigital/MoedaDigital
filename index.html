@@ -97,7 +97,10 @@
           }
         );
       }
-      $.get(href).success(this.readMarkdown(data));
+      $.get({
+        url: href,
+        success: this.readMarkdown
+      });
 
     });
    }
