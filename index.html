@@ -80,25 +80,25 @@
         context: {
           $optionsDiv: this.$optionsDiv,
           $codesDiv: this.$codesDiv
-        }
-      }).success(function(markdown){
+        },
+      success: function(markdown){
 
         var data = Flatdoc.parser.parse(markdown, Flatdoc.runner.prototype.highlight);
         var $content = data.content;
         var titles = $content.find('h2');
         var codes = $content.find('pre');
-
+ console.log(this);
         titles.each(function(i){
-
+          console.log(this);
           var title = $(titles[i]).text();
           this.$optionsDiv.append('<input type="radio" name="'+ radioName + '" onclick="changeCode('+ codeSampleNumber +', this )" value="'+ i +'">'+ title +'</input>');
           this.$codesDiv.append(codes);
           codes.hide();
 
-        })
+          });
+        }
       });
-
-    });
+   });
    }
 
 
