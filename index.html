@@ -68,7 +68,6 @@
      $('.code-sample-options').each(function(codeSampleNumber){
 
       var $div = $(this);
-      console.log(this);
       var href = $div.find('a').attr('href');
       var radioName = 'codeSampleRadioName' + codeSampleNumber;
 
@@ -76,29 +75,30 @@
 
       $optionsDiv = $div.children('div.btn-group');
       $codesDiv = $div.children('div.code-sample-codes');
-
-      var readMarkdown = function (markdown){
+      console.log(href);
+      $.get({
+        url: href, 
+        context: {
+          $optionsDiv: $optionsDiv,
+          $codesDiv: $codesDiv
+        }
+      }).success(function(markdown){
 
         var data = Flatdoc.parser.parse(markdown, Flatdoc.runner.prototype.highlight);
-        console.log(data);
         var $content = data.content;
         var titles = $content.find('h2');
         var codes = $content.find('pre');
 
-
         titles.each(function(i){
 
           var title = $(titles[i]).text();
-          console.log(title);
           $optionsDiv.append('<input type="radio" name="'+ radioName + '" onclick="changeCode('+ codeSampleNumber +', this )" value="'+ i +'">'+ title +'</input>');
-          console.log($codesDiv)
+          console.log($optionsDiv);
           $codesDiv.append(codes);
           codes.hide();
-          }
-        );
-      }
-      console.log
-      $.get(href).success(readMarkdown);
+
+        })
+      });
 
     });
    }
