@@ -6,7 +6,7 @@ Link e Botão de Compras
 
 ####Pré-requisitos:
 
--- Possuir Aplicação configurada como "Link Carrinho de Compras - Cobrança Instantânea" 
+-- Possuir Aplicação configurada como "**Link Carrinho de Compras - Cobrança Instantânea**" 
 
 ####Aplicabilidade:
 
