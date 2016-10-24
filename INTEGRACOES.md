@@ -86,7 +86,7 @@ Check-out Transparente
 
 	Você receberá como resposta o XML Array de Retorno Meios Pagamento XML descrito mais a baixo.
 
-	Exemplos:
+	**Exemplos**:
 	<div class="code-sample-options">[Code](code-example/ConsultarMeiosDePagamento.md)<div>
 
 1. **(Opcional) Consultar Parcelas:**
@@ -149,17 +149,23 @@ WebHook - URL de retorno
 
 ####Como utilizar:
 
-Para cada aplicação é possível fornecer uma **URL** de retorno que será chamada pela Moeda Digital sempre que um pedido tiver seu Status alterado. A requisição pode ser feita através dos métodos **GET** ou **POST**.
+Para cada aplicação é possível fornecer uma **URL** de retorno que será chamada pela Moeda Digital sempre que um pedido tiver seu Status alterado. A requisição pode ser recebida através dos métodos **GET** ou **POST**.
 
 1. Acesse sua Conta MD na plataforma da Moeda Digital.
  
 2. Acesse no menu superior ***Administração*** → ***Aplicações*** e selecione a aplicação que deseja acompanhar.
 
-3. Preencha o campo "URL de Retorno" com a URL da sua aplicação que receberá a notificação.
+3. Preencha o campo "**URL de Retorno**" com a URL da sua aplicação que receberá a notificação.
 
 4. Programe seu site para receber o seguinte paramêtro contendo o número identificador do pedido que teve seu status alterado.
 
-	- Identificador do Pedido na Loja: Pedido
+	####Parâmetros:
+
+	- Identificador do Pedido na Loja: **Pedido**
+
+	####Exemplos de chamadas: 
+
+	<div class="code-sample-options">[Code](code-example/WebHook.md)<div>
  
 5. Por motivos de segurança após receber o chamado de alteração do status do pedido, a loja deve consultar o status do pedido através do procedimento descrito em Consultar Status do Pedido utilizando-se do identificador recebido.
 
