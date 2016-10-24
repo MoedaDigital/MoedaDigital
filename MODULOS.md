@@ -12,8 +12,12 @@ OpenCart
 WooCommerce
 -----------
 
+####[Download](https://github.com/MoedaDigital/WooCommerce/archive/master.zip)
+
 Magento
 -------
+
+####[Download](https://github.com/MoedaDigital/Magento/archive/master.zip)
 
 SDK Android
 -----------

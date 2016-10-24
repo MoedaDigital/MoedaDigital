@@ -73,7 +73,7 @@ Deve-se escolher as opções de recebimento ( cartão, juros, boleto, número de
  
 4. Começar os testes, você poderá gerar transações para a aplicação de teste e verificar se os pedidos estão sendo gerados e processados corretamente, além de se acostumar com o painel da plataforma onde poderá ver relatórios sobre suas transações.
  
-5. Habilitar sua aplicação real, aqui basta entrar em contato com a nossa equipe para a contratação e após isso todas suas aplicações estarão prontas para receber.
+5. Habilitar sua aplicação real, basta entrar em contato com a nossa equipe para a contratação e após isso suas aplicações estarão prontas para receber.
  
 6. Receber!
 
@@ -100,7 +100,7 @@ Criando Aplicação
 
 1. Entre com seu usuário na plataforma.
 
-2. No menu superior vá na área  Administração → Aplicações 
+2. No menu superior vá na área  ***Administração → Aplicações*** 
 Aqui você encontrará um campo de seleção com a opção "Criar uma Nova Aplicação"
  
 3. Preencha os campos com as configurações escolhidas e clique em Salvar.
