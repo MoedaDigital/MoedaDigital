@@ -174,3 +174,4 @@ Para cada aplicação é possível fornecer uma **URL** de retorno que será cha
 	Você receberá como resposta o XML Array de Retorno Meios Pagamento XML descrito mais a baixo.
 
 	**Exemplos de Requisição**:
+	<div class="code-sample-options">[Code](code-example/WebHook.md)<div>
