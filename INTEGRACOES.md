@@ -6,7 +6,7 @@ Link e Botão de Compras
 
 ####Pré-requisitos:
 
---- Possuir Aplicação configurada como "Link Carrinho de Compras - Cobrança Instantânea" 
+-- Possuir Aplicação configurada como "Link Carrinho de Compras - Cobrança Instantânea" 
 
 ####Aplicabilidade:
 
@@ -123,7 +123,6 @@ Check-out Transparente
 
 	Após o pedido ser registrado, ele pode ser acompanhado através de métodos disponibilizados para consulta pela Moeda Digital e por meio de WebHook, descritos neste manual nas áreas : Consultar Status do Pedido e WebHook - URL de retorno
 
-####Parâmetros XML:
 
 -----------
 ACOMPANHAMENTO DOS PEDIDOS
