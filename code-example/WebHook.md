@@ -12,6 +12,7 @@ pedido=CódigoPedido
 
 GET
 ---
+
 ```
 https://UrlFornecida?pedido=CódigoPedido
 ```
