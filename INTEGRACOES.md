@@ -163,7 +163,7 @@ Para cada aplicação é possível fornecer uma **URL** de retorno que será cha
 
 	- Identificador do Pedido na Loja: **Pedido**
 
-**Exemplos de Chamadas**:
+	**Exemplos de Chamadas**:
 	<div class="code-sample-options">[Code](code-example/ConsultarMeiosDePagamento.md)<div>
  
 5. Por motivos de segurança após receber o chamado de alteração do status do pedido, a loja deve consultar o status do pedido através do procedimento descrito em Consultar Status do Pedido utilizando-se do identificador recebido.
