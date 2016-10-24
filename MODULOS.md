@@ -1,10 +1,13 @@
 MODULOS e PLUGINS
 ==================
 
-Outra opção para integração é a utilização de nossos Plugins e Módulos disponíveis no nosso repositório e descritos neste documento.
+Utilize os Plugins e Módulos disponíveis para integrar com as principais plataformas de e-commerce. 
 
 OpenCart
 --------
+
+####[Download](https://github.com/MoedaDigital/OpenCart/archive/master.zip)
+
 
 WooCommerce
 -----------
