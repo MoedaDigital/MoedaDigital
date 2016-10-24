@@ -77,13 +77,12 @@
       $optionsDiv = $div.children('div.btn-group');
       $codesDiv = $div.children('div.code-sample-codes');
       
-      $.get(href).success(function(markdown){
+      $.get(href).success(this.function(markdown){
 
         var data = Flatdoc.parser.parse(markdown, Flatdoc.runner.prototype.highlight);
         console.log(data);
         var $content = data.content;
         var titles = $content.find('h2');
-        console.log($content)
         var codes = $content.find('pre');
 
         titles.each(function(i){
@@ -91,7 +90,7 @@
           var title = $(titles[i]).text();
           console.log(title);
           $optionsDiv.append('<input type="radio" name="'+ radioName + '" onclick="changeCode('+ codeSampleNumber +', this )" value="'+ i +'">'+ title +'</input>');
-
+          console.log($codesDiv)
           $codesDiv.append(codes);
           codes.hide();
 
