@@ -76,7 +76,7 @@
       $optionsDiv = $div.children('div.btn-group');
       $codesDiv = $div.children('div.code-sample-codes');
       console.log(href);
-      $.get({
+      $.ajax({
         url: href, 
         context: {
           $optionsDiv: $optionsDiv,
