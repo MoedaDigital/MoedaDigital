@@ -319,14 +319,18 @@ a:hover {
 .content h3 {
   font-size: 1.2em;
 }
+.content h2{
+  color:#286090;
+}
 .content h1,
 .content h2,
 .content .big-heading,
 body.big-h3 .content h3 {
   padding-top: 80px;
 }
-.content h1:before,
+/*.content h1:before,
 .content h2:before,
+*/
 .content .big-heading:before,
 body.big-h3 .content h3:before {
   display: block;
