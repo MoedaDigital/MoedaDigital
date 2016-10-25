@@ -207,18 +207,20 @@ a:hover {
   font-style: italic;
   color: #9090aa;
 }
+/*
 .content code {
   font-family: Menlo, monospace;
   background: #f3f6fb;
   padding: 1px 3px;
   font-size: 0.95em;
 }
-.content pre > code {
+/*.content pre > code {
   display: block;
   background: transparent;
   font-size: 0.85em;
   letter-spacing: -1px;
 }
+*/
 .content blockquote :first-child {
   padding-top: 0;
 }
@@ -433,6 +435,7 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   -webkit-box-shadow: inset 2px 2px 3px rgba(0,0,0,0.2);
   box-shadow: inset 2px 2px 3px rgba(0,0,0,0.2);
 }
+/*
 @media (max-width: 1180px) {
   .content pre > code {
     background: #f3f6fb;
@@ -464,6 +467,7 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
     box-shadow: inset 2px 2px 3px rgba(0,0,0,0.2);
   }
 }
+*/
 .button {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;

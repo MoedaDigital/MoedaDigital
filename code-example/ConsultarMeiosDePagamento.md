@@ -11,7 +11,7 @@ C#
 PHP
 ---
 
-````php
+```php
 <?
 function ConsultarMeiosPagamento($lojaToken, $lojaApp, $meioPagamento) {
 
