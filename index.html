@@ -61,7 +61,7 @@
    function changeCode(codeSampleNumber , input){
 
     var selectedInput = $(input).val();
-    var selectedLabel = selectedInput.parent();
+    var selectedLabel = $(input).parent();
     var btnGroup = selectedLabel.parent();
     var selectedCodeBlock = $('.code-sample-codes')[codeSampleNumber];
 
