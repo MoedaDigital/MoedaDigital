@@ -354,7 +354,7 @@ body.big-h3 .content h3 {
   .content h2:before,
   .content .big-heading:before,
 body.big-h3 .content h3:before {
-    background: #eb9316;
+    background: #dfe2e7;
     left: -40px;
     top: -20px;
     width: 120%;
@@ -370,7 +370,7 @@ body:not(.big-h3) .content h3 {
   padding-bottom: 10px;
 }
 body:not(.big-h3) .content h3 {
- /* font-size: 0.9em;*/
+  font-size: 0.9em;
 }
 .content h1:first-child {
   padding-top: 0;
@@ -813,13 +813,6 @@ a.big.button:hover:visited {
   font-weight: normal;
   font-size: 0.9em;
   padding-left: 10px;
-}
-.menu .level-3 {
-  display: none;
-}
-.menu .active + .level-3,
-.menu .active + .level-3 .level-3 {
-  display: block;
 }
 .menu a.active {
   font-weight: bold !important;
