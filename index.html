@@ -59,10 +59,18 @@
    function changeCode(codeSampleNumber , input){
 
     var selectedInput = $(input).val();
+    var selectedLabel = selectedInput.parent();
+    var btnGroup = selectedLabel.parent();
     var selectedCodeBlock = $('.code-sample-codes')[codeSampleNumber];
 
-    $(selectedCodeBlock).children('pre').each(function(i){$(selectedCodeBlock).children('pre').hide()})
-    $($(selectedCodeBlock).children('pre')[selectedInput]).show()
+    btnGroup.children('label').toggleClass('active');
+
+    $(selectedCodeBlock).children('pre').each(function(i){
+      $(selectedCodeBlock).children('pre').hide();
+    });
+    
+    $($(selectedCodeBlock).children('pre')[selectedInput]).show();
+
   }
 
     // Buscar todos os links dentro de um div com a classe '.code-sample-options' e substituir por um selecionador de codigo
