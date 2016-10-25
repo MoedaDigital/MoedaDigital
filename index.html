@@ -35,89 +35,18 @@
   <!-- Initializer -->
   <script>
 
-   var hostname = $('meta[name=hostname]').attr("content");
+    $(document).ready(function(){
+      var hostname = $('meta[name=hostname]').attr("content");
 
-   var config = {
-            startOnLoad:false,
-            flowchart:{
-              useMaxWidth:false,
-            }
-    };
-
-    mermaid.initialize(config);
-
-  $(document).on('flatdoc:ready', function() {
-    replaceCodeSample();
-    mermaid.init();
-  });
-
-  Flatdoc.run({
-      //fetcher: Flatdoc.github('MoedaDigital/MoedaDigital')      
-      fetcher: Flatdoc.file([hostname+'README.md',hostname+'INTEGRACOES.md',hostname+'RATEIO.md',hostname+'PARAMETROS.md',hostname+'MODULOS.md'])
-  });
-
-
-
-   function changeCode(codeSampleNumber , input){
-
-    var selectedInput = $(input).val();
-    var selectedLabel = $(input).parent();
-    var btnGroup = selectedLabel.parent();
-    var selectedCodeBlock = $('.code-sample-codes')[codeSampleNumber];
-
-    btnGroup.children('label').toggleClass('active');
-
-    $(selectedCodeBlock).children('pre').each(function(i){
-      $(selectedCodeBlock).children('pre').hide();
+      Flatdoc.run({
+        //fetcher: Flatdoc.github('MoedaDigital/MoedaDigital')      
+        fetcher: Flatdoc.file([hostname+'README.md',hostname+'INTEGRACOES.md',hostname+'RATEIO.md',hostname+'PARAMETROS.md',hostname+'MODULOS.md'])
+      });
+      
     });
 
-    $($(selectedCodeBlock).children('pre')[selectedInput]).show();
 
-  }
-
-    // Buscar todos os links dentro de um div com a classe '.code-sample-options' e substituir por um selecionador de codigo
-    function replaceCodeSample(){
-
-     $('.code-sample-options').each(function(codeSampleNumber){
-
-      var $div = $(this);
-      var href = $div.find('a').attr('href');
-      var radioName = 'codeSampleRadioName' + codeSampleNumber;
-
-      $div.html('<div class="btn-group" data-toggle="buttons"><label class="btn btn-primary active"><input type="radio" name="'+ radioName + '" onclick=changeCode('+ codeSampleNumber +') value="-1" checked="checked">Esconder</label></div><div class="code-sample-codes" ></div><br>');
-
-      this.$optionsDiv = $div.children('div.btn-group');
-      this.$codesDiv = $div.children('div.code-sample-codes');
-      $.ajax({
-        url: href, 
-        context: {
-          $optionsDiv: this.$optionsDiv,
-          $codesDiv: this.$codesDiv
-        },
-      success: function(markdown){
-
-        var data = Flatdoc.parser.parse(markdown, Flatdoc.runner.prototype.highlight);
-        var $content = data.content;
-        var titles = $content.find('h2');
-        var codes = $content.find('pre');
-        var parentContext = this;
-        
-        titles.each(function(i){
-
-          var title = $(titles[i]).text();
-          parentContext.$optionsDiv.append('<label class="btn btn-primary active"><input type="radio" name="'+ radioName + '" onclick="changeCode('+ codeSampleNumber +', this )" value="'+ i +'">'+ title +'</label>');
-          parentContext.$codesDiv.append(codes);
-          codes.hide();
-
-          });
-        }
-      });
-   });
-   }
-
-
-
- </script>
+  </script>
 </head>
 <body class='no-literate' role='flatdoc'>
   <div class='header'>

@@ -2,44 +2,53 @@
   var $window = $(window);
   var $document = $(document);
 
+  var config = {
+    startOnLoad:false,
+    flowchart:{
+      useMaxWidth:false,
+    }
+  };
+
+  mermaid.initialize(config);
  /*
   * flatdoc:ready
   */
+  $document.on('flatdoc:ready', function() {
 
- $document.on('flatdoc:ready', function() {
-	
 	//hide xml examples unless it's explicitly requested
 	if(location.search !== "?xml"){
 		$(".lang-html").hide();
 	}	
 	 //hide the spinner
-	$(".spinner-container").hide();
+  $(".spinner-container").hide();
 	 //Anchor jump links.
-	$('.menu a').anchorjump();
-	$('a[href^="http"]').not(".menu").attr('target', '_blank');
-	 
+  $('.menu a').anchorjump();
+  $('a[href^="http"]').not(".menu").attr('target', '_blank');
+
 	//Scrollspy.
-    $("h2").scrollagent(function(cid, pid, currentElement, previousElement) {
-      if (pid) {
-       $("[href='#"+pid+"']").removeClass('active');
-      }
-      if (cid) {
-       $("[href='#"+cid+"']").addClass('active');
-      }
-    });
+  $("h2").scrollagent(function(cid, pid, currentElement, previousElement) {
+    if (pid) {
+     $("[href='#"+pid+"']").removeClass('active');
+   }
+   if (cid) {
+     $("[href='#"+cid+"']").addClass('active');
+   }
+ });
 
-    $("h3").scrollagent(function(cid, pid, currentElement, previousElement) {
-      if (pid) {
-       $("[href='#"+pid+"']").removeClass('active');
-      }
-      if (cid) {
-       $("[href='#"+cid+"']").addClass('active');
-      }
-    });
+  $("h3").scrollagent(function(cid, pid, currentElement, previousElement) {
+    if (pid) {
+     $("[href='#"+pid+"']").removeClass('active');
+   }
+   if (cid) {
+     $("[href='#"+cid+"']").addClass('active');
+   }
+ });
 
-    setBootstrapStyle();
+  setBootstrapStyle();
+  replaceCodeSample();
+  mermaid.init();
 
-  });
+});
   
 /*
 *flatdoc:loading
@@ -47,9 +56,9 @@
 $(document).on('flatdoc:loading', function() {
     // I don't like this section to appear
     $(".spinner-container").show();
-});
-  
-  
+  });
+
+
  /*
   * Title card.
   */
@@ -62,43 +71,43 @@ $(document).on('flatdoc:loading', function() {
     var headerHeight = $header.length ? $header.outerHeight() : 0;
 
     $window
-      .on('resize.title-card', function() {
-        var windowWidth = $window.width();
+    .on('resize.title-card', function() {
+      var windowWidth = $window.width();
 
-        if (windowWidth < 480) {
-          $card.css('height', '');
-        } else {
-          var height = $window.height();
-          $card.css('height', height - headerHeight);
-        }
-      })
-      .trigger('resize.title-card');
+      if (windowWidth < 480) {
+        $card.css('height', '');
+      } else {
+        var height = $window.height();
+        $card.css('height', height - headerHeight);
+      }
+    })
+    .trigger('resize.title-card');
   });
 
   /*
    * Sidebar stick.
    */
 
-  $(function() {
+   $(function() {
     var $sidebar = $('.menubar');
     var elTop;
 
     $window
-      .on('resize.sidestick', function() {
-        $sidebar.removeClass('fixed');
-        elTop = $sidebar.offset().top;
-        $window.trigger('scroll.sidestick');
-      })
-      .on('scroll.sidestick', function() {
-        var scrollY = $window.scrollTop();
-        $sidebar.toggleClass('fixed', (scrollY >= elTop));
-      })
-      .trigger('resize.sidestick');
+    .on('resize.sidestick', function() {
+      $sidebar.removeClass('fixed');
+      elTop = $sidebar.offset().top;
+      $window.trigger('scroll.sidestick');
+    })
+    .on('scroll.sidestick', function() {
+      var scrollY = $window.scrollTop();
+      $sidebar.toggleClass('fixed', (scrollY >= elTop));
+    })
+    .trigger('resize.sidestick');
   });
 
-})(jQuery);
+ })(jQuery);
 /*! jQuery.scrollagent (c) 2012, Rico Sta. Cruz. MIT License.
- *  https://github.com/rstacruz/jquery-stuff/tree/master/scrollagent */
+*  https://github.com/rstacruz/jquery-stuff/tree/master/scrollagent */
 
 // Call $(...).scrollagent() with a callback function.
 //
@@ -131,8 +140,8 @@ $(document).on('flatdoc:loading', function() {
     var offsets = [];
     $sections.each(function(i) {
       var offset = $(this).attr('data-anchor-offset') ?
-        parseInt($(this).attr('data-anchor-offset'), 10) :
-        (options.offset || 0);
+      parseInt($(this).attr('data-anchor-offset'), 10) :
+      (options.offset || 0);
 
       offsets.push({
         id: $(this).attr('id'),
@@ -186,7 +195,7 @@ $(document).on('flatdoc:loading', function() {
 
 })(jQuery);
 /*! Anchorjump (c) 2012, Rico Sta. Cruz. MIT License.
- *   http://github.com/rstacruz/jquery-stuff/tree/master/anchorjump */
+*   http://github.com/rstacruz/jquery-stuff/tree/master/anchorjump */
 
 // Makes anchor jumps happen with smooth scrolling.
 //
@@ -250,9 +259,9 @@ $(document).on('flatdoc:loading', function() {
 
       // Determine the pixel offset; use the default if not available
       var offset =
-        $area.attr('data-anchor-offset') ?
-        parseInt($area.attr('data-anchor-offset'), 10) :
-        options.offset;
+      $area.attr('data-anchor-offset') ?
+      parseInt($area.attr('data-anchor-offset'), 10) :
+      options.offset;
 
       top = Math.max(0, $area.offset().top + offset);
     }
@@ -271,6 +280,65 @@ $(document).on('flatdoc:loading', function() {
 function setBootstrapStyle(){
 
   // Coloca divs em volta de cada área
- $('.content h1').each(function(){ $(this).nextUntil('h1').addBack().wrapAll("<div class='limit-bottom-margin'><div class='bs-callout bs-callout-info'></div></div>");});
+  $('.content h1').each(function(){ $(this).nextUntil('h1').addBack().wrapAll("<div class='limit-bottom-margin'><div class='bs-callout bs-callout-info'></div></div>");});
 
+}
+
+// troca codigo selecionado nos exemplos
+function changeCode(codeSampleNumber , input){
+
+  var selectedInput = $(input).val();
+  var selectedLabel = $(input).parent();
+  var btnGroup = selectedLabel.parent();
+  var selectedCodeBlock = $('.code-sample-codes')[codeSampleNumber];
+
+  btnGroup.children('label').removeClass('active');
+  selectedLabel.addClass('active');
+
+  $(selectedCodeBlock).children('pre').each(function(i){
+    $(selectedCodeBlock).children('pre').hide();
+  });
+
+  $($(selectedCodeBlock).children('pre')[selectedInput]).show();
+
+}
+
+// Buscar todos os links dentro de um div com a classe '.code-sample-options' e substituir por um selecionador de codigo
+function replaceCodeSample(){
+
+  $('.code-sample-options').each(function(codeSampleNumber){
+
+    var $div = $(this);
+    var href = $div.find('a').attr('href');
+    var radioName = 'codeSampleRadioName' + codeSampleNumber;
+
+    $div.html('<div class="btn-group" data-toggle="buttons"><label class="btn btn-primary active"><input type="radio" name="'+ radioName + '" onclick=changeCode('+ codeSampleNumber +') value="-1" checked="checked">Esconder</label></div><div class="code-sample-codes" ></div><br>');
+
+    this.$optionsDiv = $div.children('div.btn-group');
+    this.$codesDiv = $div.children('div.code-sample-codes');
+    $.ajax({
+      url: href, 
+      context: {
+        $optionsDiv: this.$optionsDiv,
+        $codesDiv: this.$codesDiv
+      },
+      success: function(markdown){
+
+        var data = Flatdoc.parser.parse(markdown, Flatdoc.runner.prototype.highlight);
+        var $content = data.content;
+        var titles = $content.find('h2');
+        var codes = $content.find('pre');
+        var parentContext = this;
+
+        titles.each(function(i){
+
+          var title = $(titles[i]).text();
+          parentContext.$optionsDiv.append('<label class="btn btn-primary active"><input type="radio" name="'+ radioName + '" onclick="changeCode('+ codeSampleNumber +', this )" value="'+ i +'">'+ title +'</label>');
+          parentContext.$codesDiv.append(codes);
+          codes.hide();
+
+        });
+      }
+    });
+  });
 }
