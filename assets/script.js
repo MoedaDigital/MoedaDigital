@@ -268,15 +268,9 @@ $(document).on('flatdoc:loading', function() {
 })(jQuery);
 
 
-// Coloca divs em volta de cada área
 function setBootstrapStyle(){
 
-  console.log('estilizando');
-  $('flatdocs-content h1').each(function(){
+  // Coloca divs em volta de cada área
+ $('.content h1').each(function(){ $(this).nextUntil('h1').addBack().wrapAll("<div class='bs-callout bs-callout-info'></div>");});
 
-    $h1 = $(this);
-    $h1.wrap("<div class='bs-callout'></div>");
-
-
-  });
 }
