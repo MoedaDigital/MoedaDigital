@@ -47,7 +47,7 @@
   setBootstrapStyle();
   replaceCodeSample();
   mermaid.init();
-  $('.content').find('pre').addClass('prettyprint');
+  $('.content').find('pre code').parent().addClass('prettyprint');
   prettyPrint();
 
 });
