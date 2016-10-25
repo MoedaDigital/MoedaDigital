@@ -1,3 +1,4 @@
+<div class="bs-callout bs-callout-default">
 INTEGRANDO
 ===========
 
@@ -175,3 +176,4 @@ Para cada aplicação é possível fornecer uma **URL** de retorno que será cha
 
 **Exemplos de Requisição**:
 	<div class="code-sample-options">[Code](code-example/WebHook.md)</div> 
+</div>
