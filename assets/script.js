@@ -312,7 +312,7 @@ function replaceCodeSample(){
     var href = $div.find('a').attr('href');
     var radioName = 'codeSampleRadioName' + codeSampleNumber;
 
-    $div.html('<div class="btn-group" data-toggle="buttons"><label class="btn btn-primary active"><input type="radio" name="'+ radioName + '" onclick=changeCode('+ codeSampleNumber +') value="-1" checked="checked">Esconder</label></div><div class="code-sample-codes" ></div><br>');
+    $div.html('<div class="btn-group" data-toggle="buttons"><label class="btn btn-primary active"><input type="radio" name="'+ radioName + '" onclick=changeCode('+ codeSampleNumber +',this) value="-1" checked="checked">Esconder</label></div><div class="code-sample-codes" ></div><br>');
 
     this.$optionsDiv = $div.children('div.btn-group');
     this.$codesDiv = $div.children('div.code-sample-codes');
