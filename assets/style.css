@@ -310,8 +310,7 @@ a:hover {
 .content h3 ol {
   padding-top: 10px;
 }
-.content h1,
-.content h2 {
+.content h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1.5em;
@@ -320,6 +319,8 @@ a:hover {
   font-size: 1.2em;
 }
 .content h2{
+  letter-spacing: 1px;
+  font-size: 1.5em;
   color:#286090;
 }
 .content h1,
@@ -328,9 +329,9 @@ a:hover {
 body.big-h3 .content h3 {
   padding-top: 80px;
 }
-/*.content h1:before,
+
+.content h1:before,
 .content h2:before,
-*/
 .content .big-heading:before,
 body.big-h3 .content h3:before {
   display: block;
