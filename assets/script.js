@@ -333,7 +333,7 @@ function replaceCodeSample(){
         titles.each(function(i){
 
           var title = $(titles[i]).text();
-          parentContext.$optionsDiv.append('<label class="btn btn-primary active"><input type="radio" name="'+ radioName + '" onclick="changeCode('+ codeSampleNumber +', this )" value="'+ i +'">'+ title +'</label>');
+          parentContext.$optionsDiv.append('<label class="btn btn-primary"><input type="radio" name="'+ radioName + '" onclick="changeCode('+ codeSampleNumber +', this )" value="'+ i +'">'+ title +'</label>');
           parentContext.$codesDiv.append(codes);
           codes.hide();
 
