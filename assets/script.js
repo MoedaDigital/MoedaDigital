@@ -339,7 +339,7 @@ function replaceCodeSample(){
 
         });
         parentContext.$codesDiv.children('pre').addClass('prettyprint');
-        prettyPrintOne();
+        prettyPrint();
       }
     });
   });
