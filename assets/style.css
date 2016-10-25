@@ -310,13 +310,15 @@ a:hover {
 .content h3 ol {
   padding-top: 10px;
 }
-.content h1,
-.content h2 {
+.content h1{
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1.5em;
 }
 .content h3 {
+  letter-spacing: 1px;
+  font-size: 1.5em;
   font-size: 1.2em;
 }
 .content h2{
