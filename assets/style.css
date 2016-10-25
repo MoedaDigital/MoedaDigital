@@ -354,7 +354,7 @@ body.big-h3 .content h3 {
   .content h2:before,
   .content .big-heading:before,
 body.big-h3 .content h3:before {
-    background: #eb9316;
+    background: #dfe2e7;
     left: -40px;
     top: -20px;
     width: 120%;
@@ -371,6 +371,7 @@ body:not(.big-h3) .content h3 {
 }
 body:not(.big-h3) .content h3 {
   /*font-size: 0.9em;*/
+  color: #eb9316;
 }
 .content h1:first-child {
   padding-top: 0;
