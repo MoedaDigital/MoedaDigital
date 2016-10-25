@@ -317,11 +317,11 @@ a:hover {
   font-size: 1.5em;
 }
 .content h3 {
-  letter-spacing: 1px;
-  font-size: 1.5em;
   font-size: 1.2em;
 }
 .content h2{
+  letter-spacing: 1px;
+  font-size: 1.5em;
   color:#286090;
 }
 .content h1,
