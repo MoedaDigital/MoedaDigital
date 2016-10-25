@@ -271,6 +271,7 @@ $(document).on('flatdoc:loading', function() {
 function setBootstrapStyle(){
 
   // Coloca divs em volta de cada área
+ $('.content h1').wrapAll("<div class='limit-bottom-margin'></div>");
  $('.content h1').each(function(){ $(this).nextUntil('h1').addBack().wrapAll("<div class='bs-callout bs-callout-info'></div>");});
 
 }
