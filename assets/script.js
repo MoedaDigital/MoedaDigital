@@ -338,6 +338,7 @@ function replaceCodeSample(){
           codes.hide();
 
         });
+        parentContext.$codesDiv.children('pre').addClass('prettyprint');
       }
     });
   });
