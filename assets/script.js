@@ -36,6 +36,9 @@
        $("[href='#"+cid+"']").addClass('active');
       }
     });
+
+    setBootstrapStyle();
+
   });
   
 /*
@@ -263,3 +266,17 @@ $(document).on('flatdoc:loading', function() {
     }
   };
 })(jQuery);
+
+
+// Coloca divs em volta de cada área
+function setBootstrapStyle(){
+
+  console.log('estilizando');
+  $('flatdocs-content h1').each(function(){
+
+    $h1 = $(this);
+    $h1.wrap("<div class='bs-callout'></div>");
+
+
+  });
+}
