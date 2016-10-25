@@ -273,6 +273,4 @@ function setBootstrapStyle(){
   // Coloca divs em volta de cada área
  $('.content h1').each(function(){ $(this).nextUntil('h1').addBack().wrapAll("<div class='limit-bottom-margin'><div class='bs-callout bs-callout-info'></div></div>");});
 
- $('.btn-group input:radio').addClass('btn btn-primary btn-sm');
- 
 }
