@@ -406,6 +406,7 @@ body:not(.big-h3) .content h3 {
     padding-top: 10px;
   }
 }
+/*
 body.no-literate .content pre > code {
   background: #f3f6fb;
   border: solid 1px #e7eaee;
