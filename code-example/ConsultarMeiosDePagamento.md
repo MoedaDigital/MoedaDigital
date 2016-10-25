@@ -4,14 +4,14 @@ Consultar Meios de Pagamento
 C#
 ---
 
-```xml
+```XML
 <x></x>
 ```
 
 PHP
 ---
 
-```php
+```PHP
 <?
 function ConsultarMeiosPagamento($lojaToken, $lojaApp, $meioPagamento) {
 
