@@ -4,8 +4,7 @@ Consultar Meios de Pagamento
 C#
 ---
 
-```XML
-<x></x>
+```C#
 ```
 
 PHP
