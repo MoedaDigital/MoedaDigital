@@ -106,7 +106,7 @@ Check-out Transparente HTML
 
 1. **Exibir o código ao cliente**:
 	
-	>Nota: Caso o meio de pagamento seja Crédito, não há o que ser exibido ao cliente, pular para o passo 5.
+	>Nota: Caso o meio de pagamento seja Crédito, não há o que ser exibido ao cliente.
 
 	O passo 2 retorna um XML com informações e o status do pedido, em caso de ter sido bem sucedido, ele possui um código HTML para ser exibido ao cliente para proceder o pagamento.
 
@@ -137,14 +137,16 @@ Check-out Transparente
     participant Cliente
     participant Loja
     participant MD
-    Cliente->>+Loja: 1 - Comprar
-    Loja->>MD: 2 - Consultar Meios de Pagamento
-    MD-->>Loja: 3 - Retorno Meios de Pagamento
-    Loja-->>-Cliente: 4 - Html com meios de pagamento
-    Cliente->>+Loja: 5 - Dados de Pagamento
-    Loja->>MD: 6 - Iniciar Pagamento
-    MD-->>Loja: 7 - Retorno do Pedido
-    Loja->>-Cliente: 8 - Compra Finalizada</div> 
+    Cliente->>+Loja: (opcional) - Comprar
+    Loja->>+MD: Consultar Meios de Pagamento
+    MD-->>-Loja: Retorno Meios de Pagamento
+    Loja->>+MD: (opcional) - Consultar Parcelas
+    MD-->>Loja-: Cálculo dos valores parcelados
+    Loja-->>-Cliente: Página 100% própria de pagamento
+    Cliente->>+Loja: Dados de Pagamento
+    Loja->>MD: Iniciar Pagamento
+    MD-->>Loja: Retorno do Pedido
+    Loja->>-Cliente: Resultado do pedido</div> 
 </pre>
 
 ####Como utilizar:
@@ -178,6 +180,10 @@ Check-out Transparente
 
 	Você receberá como resposta o XML Retorno Parcelas XML descrito mais a baixo.
 
+	**Exemplos**:
+	<div class="code-sample-options">[Code](code-example/ConsultaParcelasXML.md)<div>
+
+
 1. **Iniciar Pagamento**:
 
 	Nesta etapa a sua aplicação deverá enviar  um XML contendo as informações do pedido para ser registrado na Moeda Digital, esta retornará um XML contendo, entre outras informações, um código  HTML a ser exibido ao cliente nos casos dos meios diferentes de crédito.
@@ -187,6 +193,10 @@ Check-out Transparente
 	Nome do parâmetro: ***PedidoXML***
 
 	O PedidoXML está definido no item Parâmetros XML.
+
+	**Exemplos**:
+	<div class="code-sample-options">[Code](code-example/IniciarPagamento.md)<div>
+
 
 1. **Exibir o código ao cliente**:
 	

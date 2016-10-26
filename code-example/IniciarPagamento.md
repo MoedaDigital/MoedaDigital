@@ -22,12 +22,14 @@ HTTP GET
 --------
 
 ```
+
 ```
 
 HTTP POST
 ---------
 
 ```
+
 ```
 
 Retorno
