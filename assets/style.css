@@ -332,7 +332,6 @@ body.big-h3 .content h3 {
 }
 
 .content h1:before,
-.content h2:before,
 .content .big-heading:before,
 body.big-h3 .content h3:before {
   display: block;
@@ -352,6 +351,19 @@ body.big-h3 .content h3:before {
   width: 100%;
 }
 .content h2:before {
+  display: block;
+  content: '';
+  background: -webkit-gradient(linear, left top, right top, color-stop(0.8, #dfe2e7), color-stop(1, rgba(223,226,231,0)));
+  background: -webkit-linear-gradient(left, #dfe2e7 80%, rgba(223,226,231,0) 100%);
+  background: -moz-linear-gradient(left, #dfe2e7 80%, rgba(223,226,231,0) 100%);
+  background: -o-linear-gradient(left, #dfe2e7 80%, rgba(223,226,231,0) 100%);
+  background: -ms-linear-gradient(left, #dfe2e7 80%, rgba(223,226,231,0) 100%);
+  background: linear-gradient(left, #dfe2e7 80%, rgba(223,226,231,0) 100%);
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.4);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.4);
+  height: 1px;
+  position: relative;
+  top: -40px;
   left: - 20px;
   width: 110%;
 }
