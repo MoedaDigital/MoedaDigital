@@ -351,7 +351,10 @@ body.big-h3 .content h3:before {
   left: -40px;
   width: 100%;
 }
-
+.content h2:before {
+  left: - 20px;
+  width: 110%;
+}
 
 @media (max-width: 768px) {
   .content h1,
@@ -365,9 +368,9 @@ body.big-h3 .content h3 {
   .content .big-heading:before,
 body.big-h3 .content h3:before {
     background: #dfe2e7;
-    left: -40px;
+    left: -20px;
     top: -20px;
-    width: 120%;
+    width: 110%;
   }
 }
 .content h4,
