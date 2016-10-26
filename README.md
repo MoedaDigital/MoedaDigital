@@ -1,7 +1,3 @@
-
-**MANUAL DE INTEGRÇÃO**
-===================
-
 Introdução
 =========
 
