@@ -183,7 +183,6 @@ Check-out Transparente
 	**Exemplos**:
 	<div class="code-sample-options">[Code](code-example/ConsultaParcelasXML.md)<div>
 
-
 1. **Iniciar Pagamento**:
 
 	Nesta etapa a sua aplicação deverá enviar  um XML contendo as informações do pedido para ser registrado na Moeda Digital, esta retornará um XML contendo, entre outras informações, um código  HTML a ser exibido ao cliente nos casos dos meios diferentes de crédito.
