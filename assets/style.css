@@ -917,6 +917,11 @@ code .comment {
   z-index: 1;
 }
 
+img{
+    width:100%;
+    max-width:200px;
+}
+
 /* desert scheme ported from vim to google prettify */
 pre.prettyprint { display: block; background-color: #333 }
 pre .nocode { background-color: none; color: #000 }
