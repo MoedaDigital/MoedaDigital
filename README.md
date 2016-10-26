@@ -54,7 +54,13 @@ Recorrência
 
 ####Descrição
 
+    A recorrência é uma maneira de fazer cobranças automáticas mensais no cartão do seu cliente, caso a primeira transação seja aprovada, serão agendadas cobranças pelo tempo especificado de até 12 meses.
+
+
 ####Indicação
+
+ - Vendas por assinatura.
+ - Serviços por assinatura.
 
 Split / Rateio
 --------------
@@ -63,7 +69,7 @@ Split / Rateio
 
   O Rateio é a forma de dividir os valores recebidos entre uma ou mais contas, nele a aplicação segue o mesmo caminho do checkout transparente, porém informa com quais contas previamente cadastradas os valores devem ser divididos.
   
-  Após os recebimentos, o dono da aplicação pode solicitar as transferências dos valores disnponíveis para cada conta.
+  Após os recebimentos, o dono da aplicação pode solicitar as transferências dos valores disponíveis para cada conta.
 
 ####Indicação
 
@@ -87,7 +93,7 @@ A lista a seguir é uma breve descrição de todos os passos necessários do in�
 <br>Cada conta MD pode criar diversas aplicações com distintas configurações;
 Deve-se escolher o tipo de integração da aplicação
 Deve-se escolher as opções de recebimento ( cartão, juros, boleto, número de parcelas aceitas, e etc)
->**Nota:** Inicialmente recomenda-se criar uma aplicação para teste que permite iniciar a integração. (Utilizar aplicações reais apenas é possível após entrar em contato com nossa equipe)
+>**Nota:** Inicialmente deve-se criar uma aplicação para teste que permite iniciar a integração. (Utilizar aplicações reais apenas é possível após entrar em contato com nossa equipe)
 
 3. Caso o tipo de integração escolhido seja o Link de Compras ou o Botão de Compras você pode pular esta etapa, caso contrário deve-se desenvolver a integração com o seu sistema, utilizando-se de nossa documentação e módulos existentes.
  
