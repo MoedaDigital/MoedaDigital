@@ -49,12 +49,13 @@ No check-out transparente todo o processo de compra ocorre na página do E-comme
 É a solução indicada para quem quer maior personalização de sua página e tenha condições técnicas mais avançadas para implementação. 
 O check-out transparente possuí também um menor índice de desistência pelos compradores.
 
+
 Recorrência
------------
+------------
 
 ####Descrição
 
-    A recorrência é uma maneira de fazer cobranças automáticas mensais no cartão do seu cliente, caso a primeira transação seja aprovada, serão agendadas cobranças pelo tempo especificado de até 12 meses.
+A recorrência é uma maneira de fazer cobranças automáticas mensais no cartão do seu cliente, caso a primeira transação seja aprovada, serão agendadas cobranças pelo tempo especificado de até 12 meses.
 
 
 ####Indicação
