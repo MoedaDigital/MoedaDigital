@@ -1,0 +1,12 @@
+Recorrência
+===========
+
+###Funcionamento:
+
+	A recorrência é uma maneira de fazer cobranças automáticas mensais no cartão do seu cliente, caso a primeira transação seja aprovada, serão agendadas cobranças pelo tempo especificado de até 12 meses.
+
+	Apenas serão agendadas novas cobranças no caso da primeira ser Autorizada.
+
+	Se durante o periódo uma das cobranças for Negada, as outras cobranças serão Canceladas e haverá a necessidade de fazer outro pedido.
+
+	O código do pedido será acrescido do número da cobrança sobre o total de cobranças.
