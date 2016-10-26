@@ -179,7 +179,7 @@ Check-out Transparente
  - Valor da compra: **Valor** ( sem pontuação )
 
 	Você receberá como resposta o XML Retorno Parcelas XML descrito mais a baixo.
-
+	
 	**Exemplos**:
 	<div class="code-sample-options">[Code](code-example/ConsultaParcelasXML.md)<div>
 
