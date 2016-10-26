@@ -314,7 +314,7 @@ a:hover {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 .content h3 {
   font-size: 1.2em;
@@ -404,7 +404,7 @@ body:not(.big-h3) .content h3 {
 .content h1:first-child,
 .content h1:first-child a,
 .content h1:first-child a:visited {
-  color: #505050;
+  color: #c9302c;
 }
 .content h1:first-child:before {
   display: none;
@@ -819,7 +819,7 @@ a.big.button:hover:visited {
 }
 .menu a,
 .menu a:visited {
-  color: #2badad;
+  color: #286090;
 }
 .menu a:hover {
   color: #228a8a;
@@ -832,7 +832,7 @@ a.big.button:hover:visited {
 }
 .menu a.level-1,
 .menu a.level-1:visited {
-  color: #9090aa;
+  color: #c9302c;
 }
 .menu a.level-1:hover {
   color: #565666;
@@ -858,7 +858,7 @@ a.big.button:hover:visited {
 .menu a.active,
 .menu a.active:visited,
 .menu a.active:hover {
-  color: #505050 !important;
+  color: #eb9316 !important;
 }
 .menu a.active:after {
   content: '';
