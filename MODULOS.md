@@ -25,7 +25,22 @@ OpenCart
 WooCommerce
 -----------
 
-####[Download](https://github.com/MoedaDigital/WooCommerce/archive/master.zip)
+###Instalação
+
+ 1. Faça o Download do módulo:
+	[Download](https://github.com/MoedaDigital/WooCommerce/archive/master.zip)
+
+ 2. Descompacte o arquivo .zip na pasta:
+	
+	***wordpress\wp-content\plugins\woocommerce-moeda-digital***
+
+ 3. Vá até o painel de administração do WooCommerce e configure o meio de pagamento.
+
+ 	Exemplo:
+ 	![Configuração](https://github.com/MoedaDigital/WooCommerce/images/configuracao.jpg)
+
+
+###Comece a Testar
 
 Magento
 -------
