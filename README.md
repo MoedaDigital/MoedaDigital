@@ -12,6 +12,17 @@ Somos uma empresa que oferece soluções para facilitar o processo de recebiment
 
 Oferecemos diversas maneiras de uma  pessoa ou empresa começar a receber pagamentos de forma segura e conforme as necessidades de cada um; essas maneiras são chamadas de formas de integração, e cada uma possui aplicações distintas além de esforços diferentes para coloca-las em prática.
 
+Conta MD
+-------------
+
+A conta MD é o cadastro na Moeda Digital que permite a empresa ou o profissional acessar a plataforma online e começar a receber. 
+Dentro da área do usuário na plataforma Moeda Digital é  possível:
+
+- Fazer testes de integração.
+- Acompanhar os pedidos gerados pelo seu negócio.
+- Analisar seus pedidos e recebimentos.
+- Criar novas aplicações.
+
 Integrações
 ----------------
 
@@ -42,16 +53,11 @@ No check-out transparente todo o processo de compra ocorre na página do E-comme
 É a solução indicada para quem quer maior personalização de sua página e tenha condições técnicas mais avançadas para implementação. 
 O check-out transparente possuí também um menor índice de desistência pelos compradores.
 
-Conta MD
--------------
+Recorrência
+-----------
 
-A conta MD é o cadastro na Moeda Digital que permite a empresa ou o profissional acessar a plataforma online e começar a receber. 
-Dentro da área do usuário na plataforma Moeda Digital é  possível:
-
-- Fazer testes de integração.
-- Acompanhar os pedidos gerados pelo seu negócio.
-- Analisar seus pedidos e recebimentos.
-- Criar novas aplicações.
+Split / Rateio
+--------------
 
 PRIMEIROS PASSOS
 ================
