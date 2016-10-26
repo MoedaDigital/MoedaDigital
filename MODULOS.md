@@ -37,7 +37,7 @@ WooCommerce
  3. Vá até o painel de administração do WooCommerce e configure o meio de pagamento.
 
  	Exemplo:
- 	![Configuração](https://github.com/MoedaDigital/WooCommerce/images/configuracao.jpg)
+ 	![Configuração](images/modulos/woocommerce/configuracao.jpg)
 
 
 ###Comece a Testar
