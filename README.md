@@ -37,6 +37,19 @@ Algumas aplicações podem ser:
  - Lojistas com pouca variedade de produtos e com pouco conhecimento em desenvolvimento e queiram incluir um botão de compra em sua página.
  - Eventos.
 
+###Check-out Transparente HTML
+
+####Descrição
+
+O check-out transparente HTML é o Check-out Transparente porém permite que a loja utilize de um HTML pronto com os meios de pagamento, possibilitando a adesão de novos meios de pagamento disponíveis sem a necessidade de mexer no site. 
+
+Assim como no Check-out Transparente, o cliente não precisa deixar sua página para encerrar o pagamento, 
+
+####Indicação
+
+É a solução indicada para quem quer maior personalização e tenha condições técnicas para implementação, além de querer a possibilidade de mudar os meios de pagamento aceitos sem a necessidade mudanças no código.
+
+O check-out transparente possuí também um menor índice de desistência pelos compradores.
 
 ###Check-out Transparente
 
@@ -47,6 +60,7 @@ No check-out transparente todo o processo de compra ocorre na página do E-comme
 ####Indicação
 
 É a solução indicada para quem quer maior personalização de sua página e tenha condições técnicas mais avançadas para implementação. 
+
 O check-out transparente possuí também um menor índice de desistência pelos compradores.
 
 
