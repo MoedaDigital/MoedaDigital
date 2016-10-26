@@ -38,10 +38,11 @@ Link e Botão de Compras
 |Texto do Botão| Texto que será mostrado no botão --- Apenas serve para o caso do botão | Muda o texto mostrado no botão.|
 |Tipo |Escolhe entre Link, URL e Botão| Fornece diferentes modos de formatação.|
 
-
+Check-out Transparente HTML
+---------------------------
 
 Check-out Transparente
----------------------------------
+-----------------------
 
 ####Pré-requisitos:
 
@@ -124,7 +125,15 @@ Check-out Transparente
 	Após o pedido ser registrado, ele pode ser acompanhado através de métodos disponibilizados para consulta pela Moeda Digital e por meio de WebHook, descritos neste manual nas áreas : Consultar Status do Pedido e WebHook - URL de retorno
 
 
+Recorrência
 -----------
+
+Split / Rateio 
+--------------
+
+Análise de Risco
+----------------
+
 ACOMPANHAMENTO DOS PEDIDOS
 ==========================
 
