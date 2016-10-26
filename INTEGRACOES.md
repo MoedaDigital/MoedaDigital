@@ -141,7 +141,7 @@ Check-out Transparente
     Loja->>+MD: Consultar Meios de Pagamento
     MD-->>-Loja: Retorno Meios de Pagamento
     Loja->>+MD: (opcional) - Consultar Parcelas
-    MD-->>Loja-: Cálculo dos valores parcelados
+    MD-->>-Loja: Cálculo dos valores parcelados
     Loja-->>-Cliente: Página 100% própria de pagamento
     Cliente->>+Loja: Dados de Pagamento
     Loja->>MD: Iniciar Pagamento
