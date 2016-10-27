@@ -768,14 +768,14 @@ a.big.button:hover:visited {
 }
 @media (min-width: 768px) {
   .content-root {
-    padding-left: 260px;
+    padding-left: 230px;
   }
   .menubar {
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
-    width: 240px;
+    width: 230px;
     border-right: solid 1px #dfe2e7;
   }
   .menubar.fixed {
@@ -827,7 +827,7 @@ a.big.button:hover:visited {
 .menu a.level-1 {
   font-family: montserrat, sans-serif;
   text-transform: uppercase;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 .menu a.level-1,
