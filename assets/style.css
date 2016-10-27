@@ -866,7 +866,7 @@ a.big.button:hover:visited {
 .menu a.active:hover {
   color: #eb9316 !important;
 }
-.menu a.active:after {
+.menu a.active:before {
   content: '';
   display: block;
   -webkit-box-sizing: border-box;
@@ -875,8 +875,8 @@ a.big.button:hover:visited {
   position: absolute;
   top: 10px;
   right: 30px;
-  width: 9px;
-  height: 3px;
+  width: 2px;
+  height: 4px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   background: #2badad;
