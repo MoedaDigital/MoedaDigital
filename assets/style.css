@@ -671,7 +671,7 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   color: #505050;
 }
 .header li a {
-  font-size: 0.88em;
+  font-size: 1.0em;
   color: #9090aa;
   display: block;
 }
@@ -802,7 +802,7 @@ a.big.button:hover:visited {
   }
 }
 .menubar {
-  font-size: 0.9em;
+  font-size: 1.1em;
 }
 .menu ul.level-1 > li + li {
   margin-top: 20px;
@@ -827,7 +827,7 @@ a.big.button:hover:visited {
 .menu a.level-1 {
   font-family: montserrat, sans-serif;
   text-transform: uppercase;
-  font-size: 0.9em;
+  font-size: 1.3em;
   font-weight: bold;
 }
 .menu a.level-1,
@@ -839,10 +839,11 @@ a.big.button:hover:visited {
 }
 .menu a.level-2 {
   font-weight: normal;
+  padding-left: 15px;
 }
 .menu a.level-3 {
   font-weight: normal;
-  font-size: 0.9em;
+  font-size: 1.0em;
   padding-left: 10px;
 }
 .menu .level-2,
