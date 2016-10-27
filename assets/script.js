@@ -25,6 +25,16 @@
   $('.menu a').anchorjump();
   $('a[href^="http"]').not(".menu").attr('target', '_blank');
 
+  //Scrollspy.
+  $("h1").scrollagent(function(cid, pid, currentElement, previousElement) {
+    if (pid) {
+     $("[href='#"+pid+"']").removeClass('active');
+   }
+   if (cid) {
+     $("[href='#"+cid+"']").addClass('active');
+   }
+ });
+
 	//Scrollspy.
   $("h2").scrollagent(function(cid, pid, currentElement, previousElement) {
     if (pid) {
