@@ -775,7 +775,7 @@ a.big.button:hover:visited {
     left: 0;
     top: 0;
     bottom: 0;
-    width: 230px;
+    width: 260px;
     border-right: solid 1px #dfe2e7;
   }
   .menubar.fixed {
@@ -802,7 +802,7 @@ a.big.button:hover:visited {
   }
 }
 .menubar {
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 .menu ul.level-1 > li + li {
   margin-top: 20px;
@@ -827,7 +827,7 @@ a.big.button:hover:visited {
 .menu a.level-1 {
   font-family: montserrat, sans-serif;
   text-transform: uppercase;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: bold;
 }
 .menu a.level-1,
@@ -838,13 +838,14 @@ a.big.button:hover:visited {
   color: #565666;
 }
 .menu a.level-2 {
+  font-size: 1.0em;
   font-weight: normal;
   padding-left: 15px;
 }
 .menu a.level-3 {
   font-weight: normal;
-  font-size: 1.0em;
-  padding-left: 10px;
+  font-size: 0.9em;
+  padding-left: 25px;
 }
 .menu .level-2,
 .menu .level-3 {
