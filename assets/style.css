@@ -270,6 +270,7 @@ a:hover {
 .content-root {
   min-height: 90%;
   position: relative;
+  top:90px;
 }
 .content {
   padding-top: 30px;
@@ -632,7 +633,8 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   padding: 15px 15px 15px 30px;
   zoom: 1;
   line-height: 60px;
-  position: relative;
+  position: fixed;
+  z-index: 2000;
 }
 .header:before,
 .header:after {
