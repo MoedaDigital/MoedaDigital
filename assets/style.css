@@ -632,8 +632,9 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   border-bottom: solid 1px #dfe2e7;
   padding: 15px 15px 15px 30px;
   zoom: 1;
+  width: 100%;
   line-height: 60px;
-  position: fixed;
+  position: relative;
   z-index: 2000;
 }
 .header:before,
