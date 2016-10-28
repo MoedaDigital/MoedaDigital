@@ -19,7 +19,17 @@ Pedido XML
 | Pagamento     | objeto | Sim         | -       | &lt;Pagamento&gt;&lt;/Pagamento&gt; | Elemento contendo as informações do pagamento                        |
 | Rateios       | objeto | Não         | -       | &lt;Rateios&gt;&lt;/Rateios&gt;     | Elemento contendo as divisões do valor recebido                      |
 
-\* Apenas para compras no cartão.
+| Nome           | Tipo   | Obrigatório | Tamanho       | Formato                                                                | Descrição                                                                         |
+|----------------|--------|-------------|---------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| Pagamento      | -      | -           | -             | -                                                                      | Elemento raíz do bloco                                                            |
+| ValorTotal     | int    | Sim         | -             | Valor total com 2 casas decimais sem pontuação ex: 10000 para R$100.00 | Valor total que será pago pelo cliente                                            |
+| Meio           | string | Sim         | -             | VISA<br>MASTER<br>BOLETO                                               | Nome do meio de pagamento igual aos nomes habilitados na aplicação                |
+| Recorrencia    | objeto | Não         | 1 Carácter    |                                                                        | Elemento contendo informações sobre recorrência                                   |
+| &gt;Recorrente | char   | Não&gt;Sim  | 1 Carácter    | <nobr>S: para sim<br>N: para não</nobr>                                | Define se haverá recorrência                                                      |
+| &gt;Tempo      | int    | Não&gt;Sim  | máx 2 dígitos | ex: 12                                                                 | Número de meses que serão feitas cobranças iguais ao cliente                      |
+| Instrucoes     | string | Não         | -             | -                                                                      | Instruções sobre como o cliente deve efetuar o pagamento ( aparecerá no   boleto) |
+| Moeda          | string | Sim         | -             | ex: BRL                                                                | Moeda em que o cliente será cobrado                                               |
+| Vencimento     | date   | Sim         | -             | "dd/mm/aaaa"                                                           | Data em que o pagamento não será mais aceito                                      |
 
 ###Exemplo
 
