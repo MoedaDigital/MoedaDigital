@@ -83,67 +83,6 @@ Pedido
 </Pedido>
 ```
 
-Retorno do Pedido XML
----------------------
-
-| Tag                | Explicação                       | Valor       | 
-|:-------------------|:-------------------------------- |:------------| 
-| &lt;RetornoPedido&gt;    | Elemento raíz do retorno.        |             | 
-| &lt;NSU&gt;              |                                  | String      | 
-| &lt;Mensagem&gt;         |                                  | String      | 
-| &lt;Retorno&gt;          |                                  |             | 
-| &lt;PedidoStatus&gt;     | Status atual do Pedido        |String: <nobr><br>-APROVADO <br> -INVALIDO<br> -PENDENTE<br> -NEGADO<br> -CANCELADO<br> -CHARGEBACK</nobr> |
-| &lt;Conteúdo&gt;         |                                  | String      | 
-| &lt;PedidoNumeroLoja&gt; | Identificador do pedido na loja. | String      | 
-
-
-Retorno Meios de Pagamento XML
-------------------------------
-
-| Tag                | Explicação                       | Valor       | 
-|:-------------------|:-------------------------------- |:------------|
-| &lt;ArrayOfRetornoMeiosPagamento&gt; | Raíz do XML de retorno      | 1 ou mais Elementos do tipo RetornoMeiosPagamento | 
-| &lt;RetornoMeiosPagamento&gt; | Bloco RetornoMeiosPagamento |     |                                              | 
-
-| Tag                | Explicação                       | Valor       | 
-|:-------------------|:-------------------------------- |:------------|
-| &lt;RetornoMeiosPagamento&gt; | Raíz do Bloco ||
-|&lt;Nome&gt; | Nome do meio de pagamento utilizado para fazer o pedido  |<nobr>String <br>-"Visa"<br>-"Mastercard"<br>-"Diners"<br>-"Elo"<br>-"Amex"<br>-"Boleto" </nobr>  |  
-| &lt;Tipo&gt; |  | String - <br>CREDITO <br>BOLETO <br>DEBITO | 
-| &lt;Parcelado&gt;    | Se o meio aceita parcelas | "S" ou "N"  | 
-| &lt;Imagem&gt; | URL com uma imagem que representa o meio de pagamento | String - URL | 
-| &lt;Mensagem&gt; | |String|   
-
-
-Retorno Status Pagamento XML
------------------------------
-
-| Tag                      | Explicação                           | Valor    | 
-|:-------------------------|:-------------------------------------|:---------| 
-| &lt;RetornoStatusPagamento&gt; | Elemento raíz do retorno.            |          | 
-| &lt;PedidoNumeroLoja&gt;       | Identificador do pedido na loja      | String   | 
-| &lt;Status&gt;                 | Status to pedido                     | String <br>-BAIXO <br>-MEDIO <br>-ALTO <br>-" " | 
-| &lt;Modulo&gt;                 | Tipo de pagamento usado              | String   | 
-| &lt;MeioPagamento&gt;          | Forma de pagamento usada             | String   | 
-| &lt;DataPagamento&gt;          | Data do pagamento                    | String   | 
-| &lt;ValorPago&gt;              | Valor total pago                     | Decimal  | 
-| &lt;Mensagem&gt;               |                                      | String   | 
-| &lt;NivelRisco&gt;             | Indicador do risco de ser uma fraude | String <nobr><br>-APROVADO <br> -INVALIDO<br> -PENDENTE<br> -NEGADO<br> -CANCELADO<br> -CHARGEBACK</nobr> | 
-
-
-Retorno Parcelas XML
---------------------
-
-| Tag                     | Explicação                | Valor                                 | 
-|-------------------------|---------------------------|---------------------------------------| 
-| &lt;ConsultaParcelasArray&gt; | Raiz do Bloco             | 1 ou mais elementos &lt;RetornoParcelas&gt; | 
-| &lt;RetornoParcelas&gt;       | Elemento Retorno Parcelas |                                       | 
-| &lt;Parcela&gt;               | Número de parcelas        | Int                                   | 
-| &lt;ValorTotal&gt;            | Valor total da compra     | Decimal                               | 
-| &lt;ValorParcela&gt;          | Valor de cada parcela     | Decimal                               | 
-| &lt;Obs&gt;                   |                           | String                                | 
-| &lt;Mensagem&gt;              |                           | String                                | 
-
 
 
 Endereço
@@ -214,3 +153,65 @@ Parcelamento
 | ValorSemJuros | int  | Sim         | -       | Valor total com 2 casas decimais sem pontuação ex: 10000 para R$100.00 | Valor que o cliente pagará descontado do valor dos juros que serão pagos   pelas parcelas |
 | Parcelas      | int  | Sim         | -       | -                                                                      | Número de parcelas que será dívidida a compra                                             |
 | ValorParcela  | int  | Sim         | -       | Valor total com 2 casas decimais sem pontuação ex: 10000 para R$100.00 | Valor de cada parcela                                                                     |
+
+
+Retorno do Pedido XML
+---------------------
+
+| Tag                | Explicação                       | Valor       | 
+|:-------------------|:-------------------------------- |:------------| 
+| &lt;RetornoPedido&gt;    | Elemento raíz do retorno.        |             | 
+| &lt;NSU&gt;              |                                  | String      | 
+| &lt;Mensagem&gt;         |                                  | String      | 
+| &lt;Retorno&gt;          |                                  |             | 
+| &lt;PedidoStatus&gt;     | Status atual do Pedido        |String: <nobr><br>-APROVADO <br> -INVALIDO<br> -PENDENTE<br> -NEGADO<br> -CANCELADO<br> -CHARGEBACK</nobr> |
+| &lt;Conteúdo&gt;         |                                  | String      | 
+| &lt;PedidoNumeroLoja&gt; | Identificador do pedido na loja. | String      | 
+
+
+Retorno Meios de Pagamento XML
+------------------------------
+
+| Tag                | Explicação                       | Valor       | 
+|:-------------------|:-------------------------------- |:------------|
+| &lt;ArrayOfRetornoMeiosPagamento&gt; | Raíz do XML de retorno      | 1 ou mais Elementos do tipo RetornoMeiosPagamento | 
+| &lt;RetornoMeiosPagamento&gt; | Bloco RetornoMeiosPagamento |     |                                              | 
+
+| Tag                | Explicação                       | Valor       | 
+|:-------------------|:-------------------------------- |:------------|
+| &lt;RetornoMeiosPagamento&gt; | Raíz do Bloco ||
+|&lt;Nome&gt; | Nome do meio de pagamento utilizado para fazer o pedido  |<nobr>String <br>-"Visa"<br>-"Mastercard"<br>-"Diners"<br>-"Elo"<br>-"Amex"<br>-"Boleto" </nobr>  |  
+| &lt;Tipo&gt; |  | String - <br>CREDITO <br>BOLETO <br>DEBITO | 
+| &lt;Parcelado&gt;    | Se o meio aceita parcelas | "S" ou "N"  | 
+| &lt;Imagem&gt; | URL com uma imagem que representa o meio de pagamento | String - URL | 
+| &lt;Mensagem&gt; | |String|   
+
+
+Retorno Status Pagamento XML
+-----------------------------
+
+| Tag                      | Explicação                           | Valor    | 
+|:-------------------------|:-------------------------------------|:---------| 
+| &lt;RetornoStatusPagamento&gt; | Elemento raíz do retorno.            |          | 
+| &lt;PedidoNumeroLoja&gt;       | Identificador do pedido na loja      | String   | 
+| &lt;Status&gt;                 | Status to pedido                     | String <br>-BAIXO <br>-MEDIO <br>-ALTO <br>-" " | 
+| &lt;Modulo&gt;                 | Tipo de pagamento usado              | String   | 
+| &lt;MeioPagamento&gt;          | Forma de pagamento usada             | String   | 
+| &lt;DataPagamento&gt;          | Data do pagamento                    | String   | 
+| &lt;ValorPago&gt;              | Valor total pago                     | Decimal  | 
+| &lt;Mensagem&gt;               |                                      | String   | 
+| &lt;NivelRisco&gt;             | Indicador do risco de ser uma fraude | String <nobr><br>-APROVADO <br> -INVALIDO<br> -PENDENTE<br> -NEGADO<br> -CANCELADO<br> -CHARGEBACK</nobr> | 
+
+
+Retorno Parcelas XML
+--------------------
+
+| Tag                     | Explicação                | Valor                                 | 
+|-------------------------|---------------------------|---------------------------------------| 
+| &lt;ConsultaParcelasArray&gt; | Raiz do Bloco             | 1 ou mais elementos &lt;RetornoParcelas&gt; | 
+| &lt;RetornoParcelas&gt;       | Elemento Retorno Parcelas |                                       | 
+| &lt;Parcela&gt;               | Número de parcelas        | Int                                   | 
+| &lt;ValorTotal&gt;            | Valor total da compra     | Decimal                               | 
+| &lt;ValorParcela&gt;          | Valor de cada parcela     | Decimal                               | 
+| &lt;Obs&gt;                   |                           | String                                | 
+| &lt;Mensagem&gt;              |                           | String                                | 
