@@ -293,13 +293,13 @@ $(document).on('flatdoc:loading', function() {
 function setLightBoxOnImages(){
 
   $('img').each(function(){
-
-    var href = $('img').attr('src'); 
-    var src = $('img').attr('src').split('/');
+    var $img = $(this);
+    var href = $img.attr('src'); 
+    var src = $img.attr('src').split('/');
     var name = src[src.length - 1];
     var name = name.split('.')[0];
 
-    $(this).wrap("<a href='"+href+"' data-lightbox='"+name+"'></a>");
+    $img.wrap("<a href='"+href+"' data-lightbox='"+name+"'></a>");
 
   });
 
