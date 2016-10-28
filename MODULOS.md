@@ -33,8 +33,12 @@ WooCommerce
  2. No painel de admin do wordpress vá em ***Plugins -> Adicionar Novo***
 
  3. Clique em **Fazer upload do plugin**, escolha o arquivo .zip baixado anteriormente e selecione **Instalar**.
+ 	
+	![Configuração](images/modulos/woocommerce/2.PNG)
 
  4. Após a instalação, clique em **Ativar Plugin**.
+
+	![Configuração](images/modulos/woocommerce/3.PNG)
 
 ###Configurando
 
