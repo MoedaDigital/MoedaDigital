@@ -9,7 +9,7 @@ Pedido
 
 | Nome          | Tipo   | Obrigatório | Tamanho | Formato                             | Descrição                                                            |
 |:--------------|:-------|:------------|:--------|:------------------------------------|:---------------------------------------------------------------------|
-| Token         | objeto | Sim         | -       | -                                   | Token da loja disponível no painel do administrador da Moeda Digital |
+| Token         | string | Sim         | -       | -                                   | Token da loja disponível no painel do administrador da Moeda Digital |
 | Aplicacao     | string | Sim         | -       | -                                   | Nome da aplicação criada no painel do administrador da Moeda Digital |
 | CodigoPedido  | objeto | Sim         | -       | -                                   | Código identificador do pedido na loja                               |
 | PedidoEmissao | date | Não         | -       | “dd/mm/aaaa hh:mm:ss”               | Data de emissão do pedido                                            |
