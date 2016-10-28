@@ -36,17 +36,24 @@ WooCommerce
 
  4. Após a instalação, clique em **Ativar Plugin**.
 
- 	**Exemplo:**
- 	![Configuração](images/modulos/woocommerce/configuracao.jpg)
-
 ###Configurando
 
- 1. Dentro do painel de admin vá em ***WooCommerce -> Settings (Configurações)***. e selecione a aba **Checkout** ()
+ 1. Dentro do painel de admin vá em ***WooCommerce -> Settings (Configurações)***. e selecione a aba **Checkout (Finalizar Compra)** (Finalizar Compra)
 
- 2. 
+ 2. Em ***Checkout Options (Opções de pagamento)*** Clique em ***Moedadigital*** e preencha os campos:
+	
+	- Ativar/Desativar: Selecione este campo para que o WooCommerce apresente a Moeda Digital como meio de pagamento.
+	- Titulo: Nome que será exibido ao cliente na seleção de meio de pagamentos ao finalizar a compra.
+	- Description: Texto que será exibido ao cliente dentro da opção de pagar pela Moeda Digital.
+	- Token: O Token da sua loja na Moeda Digital. (Pode ser consultado no painel do Administrador no site da Moeda Digital).
+	- Aplicação: O nome da aplicação configurada dentro da Moeda Digital.
 
+	![Configuração](images/modulos/woocommerce/7.jpg)
+ 
+ 3. Clique em salvar. Pronto! o seu site está configurado para utilizar a Moeda Digital.
+ 
+ 4. Faça alguns testes e Boas vendas!
 
-###Comece a Testar
 
 Magento
 -------
