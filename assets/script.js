@@ -60,6 +60,16 @@
   $('.content').find('pre code').parent().addClass('prettyprint');
   prettyPrint();
 
+  $('img').each(function(){
+
+    var src = $('img').attr('src').split('/');
+    var name = src[src.length - 1];
+    var name = name.split('.')[0];
+    console.log('name');
+    $(this).attr('data-lightbox', name );
+
+  });
+
 });
   
 /*
