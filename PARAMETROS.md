@@ -1,6 +1,6 @@
 
-PARÂMETROS XML
-==============
+PARÂMETROS
+==========
 
 Pedido XML
 -----------------
@@ -19,17 +19,6 @@ Pedido XML
 | Pagamento     | objeto | Sim         | -       | &lt;Pagamento&gt;&lt;/Pagamento&gt; | Elemento contendo as informações do pagamento                        |
 | Rateios       | objeto | Não         | -       | &lt;Rateios&gt;&lt;/Rateios&gt;     | Elemento contendo as divisões do valor recebido                      |
 
-| Nome           | Tipo   | Obrigatório | Tamanho       | Formato                                                                | Descrição                                                                         |
-|----------------|--------|-------------|---------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| Pagamento      | -      | -           | -             | -                                                                      | Elemento raíz do bloco                                                            |
-| ValorTotal     | int    | Sim         | -             | Valor total com 2 casas decimais sem pontuação ex: 10000 para R$100.00 | Valor total que será pago pelo cliente                                            |
-| Meio           | string | Sim         | -             | VISA<br>MASTER<br>BOLETO                                               | Nome do meio de pagamento igual aos nomes habilitados na aplicação                |
-| Recorrencia    | objeto | Não         | 1 Carácter    |                                                                        | Elemento contendo informações sobre recorrência                                   |
-| &gt;Recorrente | char   | Não&gt;Sim  | 1 Carácter    | <nobr>S: para sim<br>N: para não</nobr>                                | Define se haverá recorrência                                                      |
-| &gt;Tempo      | int    | Não&gt;Sim  | máx 2 dígitos | ex: 12                                                                 | Número de meses que serão feitas cobranças iguais ao cliente                      |
-| Instrucoes     | string | Não         | -             | -                                                                      | Instruções sobre como o cliente deve efetuar o pagamento ( aparecerá no   boleto) |
-| Moeda          | string | Sim         | -             | ex: BRL                                                                | Moeda em que o cliente será cobrado                                               |
-| Vencimento     | date   | Sim         | -             | "dd/mm/aaaa"                                                           | Data em que o pagamento não será mais aceito                                      |
 
 ###Exemplo
 
@@ -156,37 +145,72 @@ Retorno Parcelas XML
 | &lt;Mensagem&gt;              |                           | String                                | 
 
 
-Cliente XML
------------
 
-| Tag            | Explicação                                         | Valor                                  | Obrigatório    | 
-|----------------|----------------------------------------------------|----------------------------------------|----------------| 
-| &lt;DataCadastro&gt; | Data de cadastro do cliente                        | String - Formato: <nobr>"dd/mm/aaaa"</nobr>         | Não            | 
-| &lt;Nome&gt;         | Sigla do estado                                    | String  | Sim            | 
-| &lt;Sobrenome&gt;    | Código postal                                      | String - Formato "ddddd-ddd"           | Apenas para PF | 
-| &lt;RazaoSocial&gt;  | Razão social da empresa no caso de pessoa júridica | String | Apenas para PJ | 
-| &lt;Genero&gt;       | Gênero do cliente | Opções:  <nobr>"J" - pessoa juridica <br>"M" - pessoa física do sexo Masculino <br>"F" - pessoa física do sexo Feminino</nobr>                               | Sim            | 
-| &lt;CpfCnpj&gt;      | CPF ou CNPJ                                        | String                                 | Sim            | 
-| &lt;NascAbertura&gt; | Data de nascimento ou de abertura da empresa       | String                                 | Apenas para PF | 
-| &lt;Login&gt;        | Bairro                                             | String                                 | Não            | 
-| &lt;Moeda&gt;        | DDD                                                | String - Sempre utilizar o valor "BRL" | Sim            | 
-| &lt;Idioma&gt;       | Telefone                                           | String - Idioma do cliente: <nobr><br>PT-BR<br>EN_US<br>ES_ES</nobr>  | Sim |
-| &lt;IpCadastro&gt;   | Ip do cliente| String Formato: <nobr>"ddd.ddd.ddd.ddd"</nobr>     | Não    | 
-| &lt;Notas&gt;        | Notas adicionais sobre o cliente                   | String | Não            | 
+Endereço
+---------
+
+| Nome        | Tipo   | Obrigatório | Tamanho      | Formato         | Descrição               |
+|:------------|:-------|:------------|:-------------|:----------------|:------------------------|
+| Endereco    | -      | -           | -            | -               | Elemento raíz do bloco  |
+| Logradouro  | string | Sim         | -            | -               | Nome da rua             |
+| Numero      | int    | Sim         | -            | -               | Número do endereço      |
+| Complemento | string | Não         | -            | -               | Complemento do endereço |
+| Bairro      | string | Sim         | -            | -               | Nome do bairro          |
+| Cidade      | string | Sim         | -            | -               | Cidade                  |
+| UF          | string | Sim         | 2 Carácteres | ex: BH          | Código do estado        |
+| CEP         | string | Sim         | -            | -               | Código Postal           |
+| Pais        | string | Sim         | 2 Carácteres | ex: BR          | Código do país          |
+| Tipo        | string | Sim         | -            | ex: Residencial | Tipo de endereço        |
+
+Cliente
+-------
+
+| Nome         | Tipo   | Obrigatório   | Tamanho   | Formato                                                                                       | Descrição                                                                                                                               |
+|:-------------|:-------|:--------------|:----------|:----------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------|
+| Cliente      | -      | -             | -         | -                                                                                             | Elemento raíz do bloco                                                                                                                  |
+| NomeCompleto | string | Ver descrição | -         | -                                                                                             | Nome completo do cliente, obrigatório em caso de pessoa física                                                                          |
+| RazaoSocial  | string | Ver descrição | -         | -                                                                                             | Razão social, obrigatório em caso de pessoa jurídica                                                                                    |
+| Genero       | char   | Sim           | -         | <nobr>J para Jurídico<BR>I para Internacional<br>M para   Masculino<br>F para Feminino</nobr> | Genero que descreve o comprador, em caso de cliente internacional é   obrigatório ter ao menos um dos campos: NomeComple ou RazaoSocial |
+| CpfCnpj      | string | Ver descrição | -         | -                                                                                             | Número de cadastro de pessoa Física ou Jurídica, obrigatório para todos   menos clientes internacionais                                 |
+| Idioma       | string | Sim           | -         | ES_ES<br>PT-BR<br>EN_US                                                                       | Idioma do cliente                                                                                                                       |
+| Email        | string | Sim           | -         | -                                                                                             | E-mail do cliente                                                                                                                       |
+| DDD          | string | Sim           | 3 Digitos | ex: 41                                                                                        | DDD do telefone                                                                                                                         |
+| Telefone     | string | Sim           | -         | -                                                                                             | Telefone do cliente                                                                                                                     |
+
+Pagamento
+---------
+
+| Nome           | Tipo   | Obrigatório | Tamanho       | Formato                                                                | Descrição                                                                         |
+|:---------------|:-------|:------------|:--------------|:-----------------------------------------------------------------------|:----------------------------------------------------------------------------------|
+| Pagamento      | -      | -           | -             | -                                                                      | Elemento raíz do bloco                                                            |
+| ValorTotal     | int    | Sim         | -             | Valor total com 2 casas decimais sem pontuação ex: 10000 para R$100.00 | Valor total que será pago pelo cliente                                            |
+| Meio           | string | Sim         | -             | VISA<br>MASTER<br>BOLETO                                               | Nome do meio de pagamento igual aos nomes habilitados na aplicação                |
+| Recorrencia    | objeto | Não         | 1 Carácter    |                                                                        | Elemento contendo informações sobre recorrência                                   |
+| &gt;Recorrente | char   | Não&gt;Sim  | 1 Carácter    | <nobr>S: para sim<br>N: para não</nobr>                                | Define se haverá recorrência                                                      |
+| &gt;Tempo      | int    | Não&gt;Sim  | máx 2 dígitos | ex: 12                                                                 | Número de meses que serão feitas cobranças iguais ao cliente                      |
+| Instrucoes     | string | Não         | -             | -                                                                      | Instruções sobre como o cliente deve efetuar o pagamento ( aparecerá no   boleto) |
+| Moeda          | string | Sim         | -             | ex: BRL                                                                | Moeda em que o cliente será cobrado                                               |
+| Vencimento     | date   | Sim         | -             | "dd/mm/aaaa"                                                           | Data em que o pagamento não será mais aceito                                      |
 
 
-Endereço XML
+Cartão
+------
+
+| Nome         | Tipo   | Obrigatório | Tamanho | Formato | Descrição                    |
+|:-------------|:-------|:------------|:--------|:--------|:-----------------------------|
+| Cartao       | -      | -           | -       | -       | Elemento raíz do bloco       |
+| Numero       | int    | Sim         | -       | -       | Número do cartão             |
+| Validade     | date   | Sim         | -       | "mm/aa" | Data de expiração do cartão  |
+| CVV          | int    | Sim         | -       | -       | Código de seguranã do cartão |
+| PortadorNome | string | Sim         | -       | -       | Nome do portador do cartão   |
+
+
+Parcelamento
 ------------
 
-| Tag           | Explicação       | Valor                                    | Obrigatório | 
-|---------------|------------------|------------------------------------------|-------------| 
-| &lt;Cidade&gt;      | Cidade           | String                                   | Sim         | 
-| &lt;UF &gt;         | Sigla do estado  | String - Sigla 2 digitos em maiúsculo.   | Sim         | 
-| &lt;CEP&gt;         | Código postal    | String - Formato "ddddd-ddd"             | Sim         | 
-| &lt;Pais&gt;        | Sigla do país    | String - Sigla 2 digitos em maiúsculo.   | Sim         | 
-| &lt;Tipo&gt;        | Tipo do endereço | String - ex : "Residêncial", "Comercial" | Sim         | 
-| &lt;Numero&gt;      | Número do local  | String                                   | Não         | 
-| &lt;Complemento&gt; | Complemento      | String                                   | Não         | 
-| &lt;Bairro&gt;      | Bairro           | String                                   | Não         | 
-| &lt;DDD&gt;         | DDD              | String                                   | Não         | 
-| &lt;Telefone&gt;    | Telefone         | String                                   | Não         | 
+| Nome          | Tipo | Obrigatório | Tamanho | Formato                                                                | Descrição                                                                                 |
+|:--------------|:-----|:------------|:--------|:-----------------------------------------------------------------------|:------------------------------------------------------------------------------------------|
+| Parcelamento  | -    | -           | -       | -                                                                      | Elemento raíz do bloco                                                                    |
+| ValorSemJuros | int  | Sim         | -       | Valor total com 2 casas decimais sem pontuação ex: 10000 para R$100.00 | Valor que o cliente pagará descontado do valor dos juros que serão pagos   pelas parcelas |
+| Parcelas      | int  | Sim         | -       | -                                                                      | Número de parcelas que será dívidida a compra                                             |
+| ValorParcela  | int  | Sim         | -       | Valor total com 2 casas decimais sem pontuação ex: 10000 para R$100.00 | Valor de cada parcela                                                                     |
