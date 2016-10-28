@@ -270,7 +270,6 @@ a:hover {
 .content-root {
   min-height: 90%;
   position: relative;
-  top:90px;
 }
 .content {
   padding-top: 30px;
