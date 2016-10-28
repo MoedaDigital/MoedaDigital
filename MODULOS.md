@@ -30,7 +30,7 @@ WooCommerce
  1. Faça o Download do módulo:
 	[Download](https://github.com/MoedaDigital/WooCommerce/archive/master.zip)
 
- 2. No painel de admin do wordpress vá em ***Plugins -> Adicionar Novo***
+ 2. No painel de admin do wordpress vá em ***Plugins → Adicionar Novo***
 
  3. Clique em **Fazer upload do plugin**, escolha o arquivo .zip baixado anteriormente e selecione **Instalar**.
  	
@@ -42,11 +42,11 @@ WooCommerce
 
 ###Configurando
 
- 1. Dentro do painel de admin vá em ***WooCommerce -> Settings (Configurações)***. e selecione a aba **Checkout (Finalizar Compra)** (Finalizar Compra)
+ 1. Dentro do painel de admin vá em ***WooCommerce → Settings (Configurações)***, e selecione a aba **Checkout (Finalizar Compra)** (Finalizar Compra)
 	
 	![Configuração](images/modulos/woocommerce/4.PNG)
 
- 2. Em ***Checkout Options (Opções de pagamento)*** Clique em ***Moedadigital*** e preencha os campos:
+ 2. Em ***Checkout Options (Opções de pagamento)*** , clique em ***Moedadigital*** e preencha os campos:
 	
 	- Ativar/Desativar: Selecione este campo para que o WooCommerce apresente a Moeda Digital como meio de pagamento.
 	- Titulo: Nome que será exibido ao cliente na seleção de meio de pagamentos ao finalizar a compra.
