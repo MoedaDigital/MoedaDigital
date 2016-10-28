@@ -12,12 +12,12 @@ Pedido
 | Token         | objeto | Sim         | -       | -                                   | Token da loja disponível no painel do administrador da Moeda Digital |
 | Aplicacao     | string | Sim         | -       | -                                   | Nome da aplicação criada no painel do administrador da Moeda Digital |
 | CodigoPedido  | objeto | Sim         | -       | -                                   | Código identificador do pedido na loja                               |
-| PedidoEmissao | objeto | Não         | -       | “dd/mm/aaaa hh:mm:ss”               | Data de emissão do pedido                                            |
+| PedidoEmissao | date | Não         | -       | “dd/mm/aaaa hh:mm:ss”               | Data de emissão do pedido                                            |
 | Produto       | string | Sim         | -       | -                                   | Nome do produto sendo vendido (Será mostrado em caso de boleto)      |
-| Cliente       | objeto | Sim         | -       | &lt;Cliente&gt;&lt;/Cliente&gt;     | Elemento contendo as informações do cliente                          |
-| Endereco      | objeto | Sim         | -       | &lt;Endereco&gt;&lt;/Endereco&gt;   | Elemento contendo as informações do endereço de cobrança             |
-| Pagamento     | objeto | Sim         | -       | &lt;Pagamento&gt;&lt;/Pagamento&gt; | Elemento contendo as informações do pagamento                        |
-| Rateios       | objeto | Não         | -       | &lt;Rateios&gt;&lt;/Rateios&gt;     | Elemento contendo as divisões do valor recebido                      |
+| [Cliente](#parametros-cliente)       | objeto | Sim         | -       | &lt;Cliente&gt;&lt;/Cliente&gt;     | Elemento contendo as informações do cliente                          |
+| [Endereco](#parametros-endereco)      | objeto | Sim         | -       | &lt;Endereco&gt;&lt;/Endereco&gt;   | Elemento contendo as informações do endereço de cobrança             |
+| [Pagamento](#parametros-pagamento)     | objeto | Sim         | -       | &lt;Pagamento&gt;&lt;/Pagamento&gt; | Elemento contendo as informações do pagamento                        |
+| [Rateios](#parametros-rateios)       | objeto | Não         | -       | &lt;Rateios&gt;&lt;/Rateios&gt;     | Elemento contendo as divisões do valor recebido                      |
 
 
 ###Exemplo
