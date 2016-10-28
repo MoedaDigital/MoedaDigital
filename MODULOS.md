@@ -39,6 +39,8 @@ WooCommerce
 ###Configurando
 
  1. Dentro do painel de admin vá em ***WooCommerce -> Settings (Configurações)***. e selecione a aba **Checkout (Finalizar Compra)** (Finalizar Compra)
+	
+	![Configuração](images/modulos/woocommerce/4.PNG)
 
  2. Em ***Checkout Options (Opções de pagamento)*** Clique em ***Moedadigital*** e preencha os campos:
 	
