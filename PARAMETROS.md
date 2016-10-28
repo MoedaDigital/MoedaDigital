@@ -154,6 +154,9 @@ Parcelamento
 | Parcelas      | int  | Sim         | -       | -                                                                      | Número de parcelas que será dívidida a compra                                             |
 | ValorParcela  | int  | Sim         | -       | Valor total com 2 casas decimais sem pontuação ex: 10000 para R$100.00 | Valor de cada parcela                                                                     |
 
+Rateios
+-------
+
 
 Retorno do Pedido XML
 ---------------------

@@ -3,16 +3,18 @@ RATEIO ou SPLIT
 
 ####Pré-Requisitos
 
--- Possuir Aplicação configurada como “**Integração com desenvolvimento próprio**“
+-- Possuir Aplicação configurada como “**Integração com desenvolvimento próprio**“ 
 
-####Aplicação
+-- Estar habilitado para cadastrar as contas dos outros recebedores (Para isso, entre em contato com nossa equipe)
+
+####Indicação
 
  - Market Places
  - Aplicações com multiplos recebedores
 
 
-####Funcionamento
+####Como Fazer:
 
-  O Rateio é a forma de dividir os valores recebidos entre uma ou mais contas, nele a aplicação segue o mesmo caminho do checkout transparente, porém informa com quais contas previamente cadastradas os valores devem ser divididos.
-  
-  Após os recebimentos, o dono da aplicação pode solicitar as transferências dos valores disnponíveis para cada conta.
+ - O rateio funciona da mesma maneira que o [Check-out Transparente](##integrando-check-out-transparente) ou [Check-out Transparente Html](##integrando-check-out-transparente-html) , porém você deve definir o parâmetro [**Rateios**](#parametros-rateios) dentro do Pedido.
+
+ - Os valores serão dívididos entre as contas cadastradas, assim o dono da aplicação poderá ver quanto cada conta possuí para resgate e solicitar a transferência para cada uma delas.
