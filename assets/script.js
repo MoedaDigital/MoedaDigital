@@ -297,8 +297,8 @@ function setLightBoxOnImages(){
     var src = $('img').attr('src');
     var name = src.split('/')[src.length - 1];
     var name = name.split('.')[0];
-    
-    $(this).wrap("<a href='"+src+"' data-lightbox='"+name+"'></a>");});
+
+    $(this).wrap("<a href='"+src+"' data-lightbox='"+name+"'></a>");
 
   });
 
