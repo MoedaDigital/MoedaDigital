@@ -48,7 +48,7 @@ WooCommerce
 	- Token: O Token da sua loja na Moeda Digital. (Pode ser consultado no painel do Administrador no site da Moeda Digital).
 	- Aplicação: O nome da aplicação configurada dentro da Moeda Digital.
 
-	![Configuração](images/modulos/woocommerce/7.jpg)
+	![Configuração](images/modulos/woocommerce/7.PNG)
  
  3. Clique em salvar. Pronto! o seu site está configurado para utilizar a Moeda Digital.
  
