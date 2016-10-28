@@ -9,7 +9,7 @@ OpenCart
 ###Instalação
 
  1. Faça o Download do módulo:
-	[Nosso repositório](https://github.com/MoedaDigital/OpenCart/archive/master.zip)
+	[Nosso repositório](https://github.com/MoedaDigital/OpenCartPlugin/archive/master-download.zip)
 	[Loja OpenCart](https://github.com/MoedaDigital/OpenCart/archive/master.zip)
 
  2. Entre no painel de controle do OpenCart e clique na área de ***Instalações e módulos → Instalador***
@@ -27,7 +27,7 @@ WooCommerce
 ###Instalação
 
  1. Faça o Download do módulo:
-	[Download](https://github.com/MoedaDigital/WooCommerce/archive/master.zip)
+	[Download](https://github.com/MoedaDigital/WooCommercePlugin/archive/master-download.zip)
 
  2. No painel de admin do wordpress vá em ***Plugins → Adicionar Novo***
 
@@ -63,4 +63,4 @@ WooCommerce
 Magento
 -------
 
-####[Download](https://github.com/MoedaDigital/Magento/archive/master.zip)
+####[Download](https://github.com/MoedaDigital/MagentoPlugin/archive/master-download.zip)
