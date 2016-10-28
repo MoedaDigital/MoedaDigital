@@ -1,7 +1,11 @@
 MODULOS e PLUGINS
 ==================
 
-Utilize os Plugins e Módulos disponíveis para integrar com as principais plataformas de e-commerce. 
+###Sobre
+
+Utilize os Plugins e Módulos disponíveis para integrar com as principais plataformas de e-commerce.
+
+>**Nota**: Não se esqueça de se cadastrar na Moeda Digital para poder configurar os plugins corretamente. 
 
 OpenCart
 --------

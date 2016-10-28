@@ -99,7 +99,7 @@ Check-out Transparente HTML
 
 	Nome do parâmetro: ***PedidoXML***
 
-	O valor PedidoXML está definido no item [Parâmetros como **Pedido**](#parametros-pedido).
+	O valor PedidoXML está definido no item [Parâmetros / **Pedido**](#parametros-pedido).
 
 	**Exemplos**:
 	<div class="code-sample-options">[Code](code-example/IniciarPagamento.md)<div>
@@ -191,7 +191,7 @@ Check-out Transparente
 
 	Nome do parâmetro: ***PedidoXML***
 
-	O valor PedidoXML está definido no item [Parâmetros como **Pedido**](#parametros-pedido).
+	O valor PedidoXML está definido no item [Parâmetros / **Pedido**](#parametros-pedido).
 
 	**Exemplos**:
 	<div class="code-sample-options">[Code](code-example/IniciarPagamento.md)<div>
