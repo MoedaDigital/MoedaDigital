@@ -7,129 +7,81 @@ Pedido XML
 
 ###Campos
 
-| Tag | Explicação | Valor  | Obrigatório  | 
-|:----- |:----------  | :------- | :------| 
-| clsPedido           | Elemento raíz do pedido.  |                  | Sim  |              
-| cliente             | Raíz de bloco Cliente XML  | Bloco cliente   | Sim  |
-| endereco1           | Raíz de bloco Endereço XML | Bloco Endereço  | Sim  | 
-| endereco2           | Raíz de bloco Endereço XML | Bloco Endereço  | Não  | 
-| email1              | Email do cliente     | &lt;email&gt;String&lt;/email&gt;   | Sim  |
-| email2              | Segundo email do cliente | &lt;email&gt;String&lt;/email&gt;  | Não | 
-| email3              | Terceiro email do cliente   | &lt;email&gt;String&lt;/email&gt; | Não |  
-| LojaChaveAcesso     | Identificador da loja | String -Token da loja | Sim  | 
-| LojaApp             | Nome da Aplicação   | String - Nome da aplicação | Sim | 
-| LojaCanal          | Tipo de Aplicação  | String <br>-"WEB"<br>-"Mobile" | Sim | 
-| MeiosdePagamento   | O código do meio de pagamento configurado na aplicação  | <nobr>String <br>-"Visa"<br>-"Mastercard"<br>-"Diners"<br>-"Elo"<br>-"Amex"<br>-"Boleto" </nobr> | Sim |
-| PedidoCodigo        | Identificador do pedido na Loja e Aplicação ( serve para o acompanhamento do pedido) | String | Sim |
-| PedidoNumeroLoja    | Identificador do pedido na própria loja.| Pode ser igual ao &lt;PedidoCodigo&gt; | Sim | 
-| PedidoVencimento    | Data de vencimento do pedido para ser informada ao cliente. | Formato: "dd/mm/aaaa" | Sim | 
-| PedidoExpiracao     | Data e hora que o pedido será cancelado caso não estiver pago | <nobr>Formato: "dd/mm/aaaa hh:mm:ss"</nobr>  | Sim | 
-| PedidoRecorrente    | Identificar se o pedido é recorrente | S ou N | Sim | 
-| PedidoValor         | Valor total do pedido | Int - Valor sem pontuação ex: para R$1000,00 colocar 100000  | Sim | 
-| PedidoValorSemJuros | Valor total do pedido desconsiderando os juros| Int - Valor sem pontuação ex: para R$1000,00 colocar 100000  | Sim | 
-| PedidoItens         | Quantidade de itens que compõe o pedido| Int | Sim | 
-| PedidoParcelas      | Número de parcelas do pagamento| Int: (deve ser compatível com as configurações da aplicação) | Sim |
-| PedidoValorParcelas | O valor individual de cada parcela.|Int: Valor sem pontuação ex: para R$1000,00 colocar 100000  | Sim | 
-| PedidoFinanciador   | Define se o financiamento dos juros é por conta da loja ou da administradora de cartões | "Int:  <nobr><br>Administradora: "1"<br>Loja: "2"</nobr> | Sim |
-| PedidoEmissao     | Data e hora da emissão do pedido| Formato: <nobr>"dd/mm/aaaa hh:mm:ss"</nobr>| Não | 
-| PedidoMulta         | Multa para o caso de pagamento após o vencimento. | Int - Valor sem pontuação  (Válido para boleto) Caso não haja colocar 0. | Sim |
-| PedidoJuros         | Valor total do juros cobrado para parcelamento.| Int - Valor sem pontuação Caso não haja colocar 0. | Sim|       
-| PedidoInstrucoes   | Campo para escrever informações extras| String| Não | 
-| PortadorCartao      | Número do Cartão| String| Depende\* |  
-| PortadorValidade    | Data de expiração do cartão| Formato: "mm/aa" | Depende\*   | 
-| PortadorCVV         | Código de validação do cartão | Int | Depende\*  |
-| PortadorNome        | Nome que está no cartão | String | Depende\* | 
+| Nome          | Tipo   | Obrigatório | Tamanho | Formato                             | Descrição                                                            |
+|:--------------|:-------|:------------|:--------|:------------------------------------|:---------------------------------------------------------------------|
+| Token         | objeto | Sim         | -       | -                                   | Token da loja disponível no painel do administrador da Moeda Digital |
+| Aplicacao     | string | Sim         | -       | -                                   | Nome da aplicação criada no painel do administrador da Moeda Digital |
+| CodigoPedido  | objeto | Sim         | -       | -                                   | Código identificador do pedido na loja                               |
+| PedidoEmissao | objeto | Não         | -       | “dd/mm/aaaa hh:mm:ss”               | Data de emissão do pedido                                            |
+| Produto       | string | Sim         | -       | -                                   | Nome do produto sendo vendido (Será mostrado em caso de boleto)      |
+| Cliente       | objeto | Sim         | -       | &lt;Cliente&gt;&lt;/Cliente&gt;     | Elemento contendo as informações do cliente                          |
+| Endereco      | objeto | Sim         | -       | &lt;Endereco&gt;&lt;/Endereco&gt;   | Elemento contendo as informações do endereço de cobrança             |
+| Pagamento     | objeto | Sim         | -       | &lt;Pagamento&gt;&lt;/Pagamento&gt; | Elemento contendo as informações do pagamento                        |
+| Rateios       | objeto | Não         | -       | &lt;Rateios&gt;&lt;/Rateios&gt;     | Elemento contendo as divisões do valor recebido                      |
 
 \* Apenas para compras no cartão.
 
 ###Exemplo
 
 ```xml
-<?xml version="1.0" encoding="utf-16"?>
-<clsPedido>
-    <Cliente>
-        <DataCadastro></DataCadastro>
-        <Nome></Nome>
-        <Sobrenome></Sobrenome>
-        <RazaoSocial></RazaoSocial>
-        <Genero></Genero>
-        <CpfCnpj></CpfCnpj>
-        <NascAbertura></NascAbertura>
-        <Login></Login>
-        <Moeda></Moeda>
-        <Idioma> </Idioma>
-        <IpCadastro></IpCadastro>
-        <Notas></Notas>
-    </Cliente>
-    <Endereco1>
-        <Endereco></Endereco>
-        <Numero></Numero>
-        <Complemento></Complemento>
-        <Bairro></Bairro>
-        <Cidade> </Cidade>
-        <UF></UF>
-        <CEP></CEP>
-        <Pais> </Pais>
-        <DDD></DDD>
-        <Telefone></Telefone>
-        <Tipo></Tipo>
-    </Endereco1>
-    <Endereco2>
-        <Endereco></Endereco>
-        <Numero></Numero>
-        <Complemento></Complemento>
-        <Bairro></Bairro>
-        <Cidade> </Cidade>
-        <UF></UF>
-        <CEP></CEP>
-        <Pais> </Pais>
-        <DDD></DDD>
-        <Telefone></Telefone>
-        <Tipo></Tipo>
-    </Endereco2>
-    <Email1>
-        <Email></Email>
-    </Email1>
-    <Email2>
-        <Email></Email>
-    </Email2>
-    <Email3>
-        <Email></Email>
-    </Email3>
-    <LojaChaveAcesso></LojaChaveAcesso>
-    <LojaApp></LojaApp>
-    <LojaCanal></LojaCanal>
-    <MeiosdePagamento></MeiosdePagamento>
-    <PedidoCodigo></PedidoCodigo>
-    <PedidoNumeroLoja></PedidoNumeroLoja>
-    <PedidoEmissao></PedidoEmissao>
-    <PedidoVencimento></PedidoVencimento>
-    <PedidoExpiracao></PedidoExpiracao>
-    <PedidoRecorrente></PedidoRecorrente>
-    <PedidoValor></PedidoValor>
-    <PedidoValorSemJuros></PedidoValorSemJuros>
-    <PedidoMulta></PedidoMulta>
-    <PedidoJuros></PedidoJuros>
-    <PedidoItens></PedidoItens>
-    <PedidoParcelas></PedidoParcelas>
-    <PedidoValorParcelas></PedidoValorParcelas>
-    <PedidoFinanciador></PedidoFinanciador>
-    <PedidoInstrucoes></PedidoInstrucoes>
-    <Rateios>
-        <Rateio> 
-            <SubConta></SubConta>
-            <Valor></Valor>
-        </Rateio>
-        <Rateio>
-            <SubConta></SubConta>
-            <Valor></Valor>
-        </Rateio>
-    </Rateios>
-    <PortadorCartao></PortadorCartao>
-    <PortadorValidade></PortadorValidade>
-    <PortadorCVV></PortadorCVV>
-    <PortadorNome></PortadorNome>
-</clsPedido>
+<?xml version='1.0' encoding='utf-16'?>
+<Pedido xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
+   <Token></Token>
+   <Aplicacao></Aplicacao>
+   <CodigoPedido></CodigoPedido>
+   <PedidoEmissao></PedidoEmissao>
+   <Produto></Produto>
+   <Cliente>
+      <NomeCompleto></NomeCompleto>
+      <RazaoSocial></RazaoSocial>
+      <Genero></Genero>
+      <CpfCnpj></CpfCnpj>
+      <Idioma></Idioma>
+      <Email></Email>
+   </Cliente>
+   <Endereco>
+      <Logradouro></Logradouro>
+      <Numero></Numero>
+      <Complemento></Complemento>
+      <Bairro></Bairro>
+      <Cidade></Cidade>
+      <UF></UF>
+      <CEP></CEP>
+      <Pais></Pais>
+      <DDD></DDD>
+      <Telefone></Telefone>
+      <Tipo></Tipo>
+   </Endereco>
+   <Rateios>
+       <Rateio>
+          <SubConta></SubConta>
+          <Valor></Valor>
+       </Rateio>
+       <Rateio>
+          <SubConta></SubConta>
+          <Valor></Valor>
+       </Rateio>
+   </Rateios>
+   <Pagamento>
+       <ValorTotal></ValorTotal>
+       <Meio></Meio>
+       <Recorrente></Recorrente>
+       <Instrucoes></Instrucoes>
+       <Moeda></Moeda>
+       <Vencimento></Vencimento>
+       <Parcelamento>
+           <ValorSemJuros></ValorSemJuros>
+           <Parcelas></Parcelas>
+           <ValorParcela></ValorParcela>
+       </Parcelamento>
+       <Cartao>
+           <Numero></Numero>
+           <Validade></Validade>
+           <CVV></CVV>
+           <PortadorNome></PortadorNome>
+       </Cartao>
+   </Pagamento>
+</Pedido>
 ```
 
 Retorno do Pedido XML
