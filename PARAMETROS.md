@@ -203,13 +203,13 @@ Retorno Status Pagamento XML
 |:-------------------------|:-------------------------------------|:---------| 
 | &lt;RetornoStatusPagamento&gt; | Elemento raíz do retorno.            |          | 
 | &lt;PedidoNumeroLoja&gt;       | Identificador do pedido na loja      | String   | 
-| &lt;Status&gt;                 | Status to pedido                     | String <br>-BAIXO <br>-MEDIO <br>-ALTO <br>-" " | 
+| &lt;Status&gt;                 | Status to pedido                     |String <nobr><br>-APROVADO <br> -INVALIDO<br> -PENDENTE<br> -NEGADO<br> -CANCELADO<br> -CHARGEBACK</nobr> | 
 | &lt;Modulo&gt;                 | Tipo de pagamento usado              | String   | 
 | &lt;MeioPagamento&gt;          | Forma de pagamento usada             | String   | 
 | &lt;DataPagamento&gt;          | Data do pagamento                    | String   | 
 | &lt;ValorPago&gt;              | Valor total pago                     | Decimal  | 
 | &lt;Mensagem&gt;               |                                      | String   | 
-| &lt;NivelRisco&gt;             | Indicador do risco de ser uma fraude | String <nobr><br>-APROVADO <br> -INVALIDO<br> -PENDENTE<br> -NEGADO<br> -CANCELADO<br> -CHARGEBACK</nobr> | 
+| &lt;NivelRisco&gt;             | Indicador do risco de ser uma fraude |  String <br>-BAIXO <br>-MEDIO <br>-ALTO <br>-" " | 
 
 
 Retorno Parcelas XML
