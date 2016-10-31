@@ -64,7 +64,8 @@ WooCommerce
  4. Faça alguns testes e Boas vendas!
 
 
-Magento
+<!--Magento
 -------
 
 ####[Download](https://github.com/MoedaDigital/MagentoPlugin/archive/master-download.zip)
+-->
