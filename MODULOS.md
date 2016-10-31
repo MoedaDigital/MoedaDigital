@@ -62,10 +62,3 @@ WooCommerce
  3. Clique em salvar. Pronto! o seu site está configurado para utilizar a Moeda Digital.
  
  4. Faça alguns testes e Boas vendas!
-
-
-<!--Magento
--------
-
-####[Download](https://github.com/MoedaDigital/MagentoPlugin/archive/master-download.zip)
--->
