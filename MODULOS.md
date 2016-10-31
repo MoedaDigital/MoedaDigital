@@ -13,7 +13,7 @@ OpenCart
 ###Instalação
 
  1. Faça o Download do módulo:
-	[Nosso repositório](https://github.com/MoedaDigital/OpenCartPlugin/archive/master-download.zip)
+	[Download](https://github.com/MoedaDigital/OpenCartPlugin/archive/master-download.zip)
 
  2. Descompacte o arquivo e copie o conteúdo de cada pasta (**Admin** e **Catalog**) para dentro das respectivas pastas no diretório da sua aplicação OpenCart.
 
