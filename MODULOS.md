@@ -21,18 +21,18 @@ OpenCart
 
  3. Acesse o site de sua loja e navegue até ***Extensões → Pagamentos ***
 
-	![Configuração](images/modulos/opencart/1.PNG)
+	![Configuração](images/modulos/opencart/1.png)
 
  4. Encontre **MoedaDigital** na lista de pagamentos e clique em **instalar**.
 
-	![Configuração](images/modulos/opencart/2.PNG)
+	![Configuração](images/modulos/opencart/2.png)
 
 
 ###Configuração
 
  1. Acesse o site de sua loja e navegue até ***Extensões → Pagamentos ***
 
-	![Configuração](images/modulos/opencart/1.PNG)
+	![Configuração](images/modulos/opencart/1.png)
 
  2. Encontre MoedaDigital e clique em **Editar** (botão azul com ícone de um lápis).
 
@@ -46,7 +46,7 @@ OpenCart
 	- Ordem: a posição em que a Moeda Digital aparecerá entre os meios de pagamento.
 	- Situação: escolha **habilitado** para a Moeda Digital aparecer na tela de pagamento.
 
-	![Configuração](images/modulos/opencart/3.PNG)
+	![Configuração](images/modulos/opencart/3.png)
 
  4. Na aba **Status** preencha os campos da seguinte maneira:
 
@@ -60,7 +60,7 @@ OpenCart
  	- Agendado: Processando
  	- Chargeback: Revogado
 
-	![Configuração](images/modulos/opencart/4.PNG)
+	![Configuração](images/modulos/opencart/4.png)
 
  5. Clique no botão salvar, pronto, a Moeda Digital está configurada na sua aplciação!
 
