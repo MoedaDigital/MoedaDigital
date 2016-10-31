@@ -210,15 +210,6 @@ Check-out Transparente
 	Após o pedido ser registrado, ele pode ser acompanhado através de métodos disponibilizados para consulta pela Moeda Digital e por meio de WebHook, descritos neste manual nas áreas : Consultar Status do Pedido e WebHook - URL de retorno
 
 
-Recorrência
------------
-
-Split / Rateio 
---------------
-
-Análise de Risco
-----------------
-
 ACOMPANHAMENTO DOS PEDIDOS
 ==========================
 

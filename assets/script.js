@@ -104,9 +104,7 @@ $(document).on('flatdoc:loading', function() {
    $(function() {
     var $sidebar = $('.menubar');
     var elTop;
-    elTop = $sidebar.offset().top;
-    $sidebar.toggleClass('fixed', (scrollY >= elTop));
-/*
+
     $window
     .on('resize.sidestick', function() {
       $sidebar.removeClass('fixed');
@@ -118,7 +116,6 @@ $(document).on('flatdoc:loading', function() {
       $sidebar.toggleClass('fixed', (scrollY >= elTop));
     })
     .trigger('resize.sidestick');
-    */
   });
 
  })(jQuery);
