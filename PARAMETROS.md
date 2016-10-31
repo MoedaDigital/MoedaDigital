@@ -157,6 +157,12 @@ Parcelamento
 Rateios
 -------
 
+| Nome                              | Tipo   | Obrigatório | Tamanho | Formato                                                                | Descrição                                                 |
+|-----------------------------------|--------|-------------|---------|------------------------------------------------------------------------|-----------------------------------------------------------|
+| Rateios                           | -      | -           | -       | -                                                                      | Elemento raíz do bloco                                    |
+| <nobr>&emsp;Rateio</nobr>         | objeto | Sim         | -       | &lt;Rateio&gt;&lt/Rateio&gt;                                           | Raíz de cada bloco rateio, um para cada divisão do pedido |
+| <nobr>&emsp;&emsp;Subconta</nobr> | string | Sim         | -       | -                                                                      | Identificador da Subconta cadastrada                      |
+| <nobr>&emsp;&emsp;Valor</nobr>    | int    | Sim         | -       | Valor total com 2 casas decimais sem pontuação ex: 10000 para R$100.00 | Valor a ser passado para a conta especificada             |
 
 Retorno do Pedido XML
 ---------------------
