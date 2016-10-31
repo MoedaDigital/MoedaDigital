@@ -25,7 +25,8 @@ Rateio
 Recorrência
 ===========
 
-###Recorrência
+Recorrência
+-----------
 
 ####Pré-Requisitos
 
@@ -38,7 +39,7 @@ Recorrência
 
 ####Como Fazer:
 
- - A recorrência funciona da mesma maneira que o [Check-out Transparente](##integrando-check-out-transparente) ou [Check-out Transparente Html](##integrando-check-out-transparente-html) , porém você deve definir o parâmetro [**Recorrencia**](#parametros-recorrencia) dentro do Pedido.
+ - A recorrência funciona da mesma maneira que o [Check-out Transparente](##integrando-check-out-transparente) ou [Check-out Transparente Html](##integrando-check-out-transparente-html) , porém você deve definir o parâmetro [**Recorrencia**](#parametros-pagamento) dentro do Pedido.
 
  - O código do pedido no retorno será acrescido do número da recorrência sobre o total de vezes que se repetirá. ex: "código(1/12)".
 
