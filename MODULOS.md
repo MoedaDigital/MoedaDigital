@@ -14,15 +14,55 @@ OpenCart
 
  1. Faça o Download do módulo:
 	[Nosso repositório](https://github.com/MoedaDigital/OpenCartPlugin/archive/master-download.zip)
-	[Loja OpenCart](https://github.com/MoedaDigital/OpenCart/archive/master.zip)
 
- 2. Entre no painel de controle do OpenCart e clique na área de ***Instalações e módulos → Instalador***
+ 2. Descompacte o arquivo e copie o conteúdo de cada pasta (**Admin** e **Catalog**) para dentro das respectivas pastas no diretório da sua aplicação OpenCart.
 
- 3. Faça o Upload do módulo e clique em continuar.
+ 	>**Nota**: Geralmente encontra-se na raíz da instalação.
 
- 4. Após o upload vá até a área de pagamentos e clique em **instalar**.
+ 3. Acesse o site de sua loja e navegue até ***Extensões → Pagamentos ***
+
+	![Configuração](images/modulos/opencart/1.PNG)
+
+ 4. Encontre **MoedaDigital** na lista de pagamentos e clique em **instalar**.
+
+	![Configuração](images/modulos/opencart/2.PNG)
+
 
 ###Configuração
+
+ 1. Acesse o site de sua loja e navegue até ***Extensões → Pagamentos ***
+
+	![Configuração](images/modulos/opencart/1.PNG)
+
+ 2. Encontre MoedaDigital e clique em **Editar** (botão azul com ícone de um lápis).
+
+ 3. Na aba ***Geral*** preencha os campos com os dados necessários:
+	
+	- Email: Preencha com seu E-mail de login na Moeda Digital.
+	- Token: O Token da sua loja na Moeda Digital. (Pode ser consultado no painel do Administrador no site da Moeda Digital).
+	- Loja app: O nome da aplicação configurada dentro da Moeda Digital.
+	- Texto do Checkout: serve para modificar o texto da opção a ser selecionada para pagar com o Moeda Digital durante a finalização do pedido.
+	- Número da aplicação: é opcional, use caso queira enumerar suas aplicações na Moeda Digital.
+	- Ordem: a posição em que a Moeda Digital aparecerá entre os meios de pagamento.
+	- Situação: escolha **habilitado** para a Moeda Digital aparecer na tela de pagamento.
+
+	![Configuração](images/modulos/opencart/3.PNG)
+
+ 4. Na aba **Status** preencha os campos da seguinte maneira:
+
+ 	- Cancelado: Cancelado
+ 	- Aprovado: Completo
+ 	- Negado: Negado
+ 	- Pendente: Pendente
+ 	- Invalido: Falhou
+ 	- Analise: Anulado
+ 	- Estorno: Revogado
+ 	- Agendado: Processando
+ 	- Chargeback: Revogado
+
+	![Configuração](images/modulos/opencart/4.PNG)
+
+ 5. Clique no botão salvar, pronto, a Moeda Digital está configurada na sua aplciação!
 
 
 WooCommerce
