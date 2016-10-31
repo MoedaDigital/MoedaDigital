@@ -43,7 +43,7 @@ Check-out Transparente HTML
 
 ####Pré-requisitos:
 
---- Possuir Aplicação configurada como "**Integração com desenvolvimento próprio**"
+-- Possuir Aplicação configurada como "**Integração com desenvolvimento próprio**"
 
 ####Aplicabilidade:
 
@@ -122,7 +122,7 @@ Check-out Transparente
 
 ####Pré-requisitos:
 
---- Possuir Aplicação configurada como "**Integração com desenvolvimento próprio**"
+-- Possuir Aplicação configurada como "**Integração com desenvolvimento próprio**"
 
 ####Aplicabilidade:
 

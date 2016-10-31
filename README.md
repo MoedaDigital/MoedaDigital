@@ -135,7 +135,7 @@ Criando Aplicação
 
 ####Pré-requisitos:
 
---- Ter uma Conta MD.
+-- Ter uma Conta MD.
 
 ####Passos:
 
