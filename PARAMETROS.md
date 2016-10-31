@@ -125,8 +125,8 @@ Pagamento
 | ValorTotal     | int    | Sim         | -             | Valor total com 2 casas decimais sem pontuação ex: 10000 para R$100.00 | Valor total que será pago pelo cliente                                            |
 | Meio           | string | Sim         | -             | VISA<br>MASTER<br>BOLETO                                               | Nome do meio de pagamento igual aos nomes habilitados na aplicação                |
 | Recorrencia    | objeto | Não         | 1 Carácter    |                                                                        | Elemento contendo informações sobre recorrência                                   |
-| Recorrencia<br><nobr>&emsp;Recorrente</nobr>  | char   | Não&gt;Sim  | 1 Carácter    | <nobr>S: para sim<br>N: para não</nobr>                                | Define se haverá recorrência                                                      |
-| Recorrencia<br><nobr>&emsp;Tempo</nobr> | int    | Não&gt;Sim  | máx 2 dígitos | ex: 12                                                                 | Número de meses que serão feitas cobranças iguais ao cliente                      |
+| *Recorrencia*<br><nobr>&emsp;Recorrente</nobr>  | char   | Não&gt;Sim  | 1 Carácter    | <nobr>S: para sim<br>N: para não</nobr>                                | Define se haverá recorrência                                                      |
+| *Recorrencia*<br><nobr>&emsp;Tempo</nobr> | int    | Não&gt;Sim  | máx 2 dígitos | ex: 12                                                                 | Número de meses que serão feitas cobranças iguais ao cliente                      |
 | Instrucoes     | string | Não         | -             | -                                                                      | Instruções sobre como o cliente deve efetuar o pagamento ( aparecerá no   boleto) |
 | Moeda          | string | Sim         | -             | ex: BRL                                                                | Moeda em que o cliente será cobrado                                               |
 | Vencimento     | date   | Sim         | -             | "dd/mm/aaaa"                                                           | Data em que o pagamento não será mais aceito                                      |
@@ -160,9 +160,9 @@ Rateios
 | Nome                              | Tipo   | Obrigatório | Tamanho | Formato                                                                | Descrição                                                 |
 |-----------------------------------|--------|-------------|---------|------------------------------------------------------------------------|-----------------------------------------------------------|
 | Rateios                           | -      | -           | -       | -                                                                      | Elemento raíz do bloco                                    |
-| Rateios<br><nobr>&emsp;Rateio</nobr>         | objeto | Sim         | -       | &lt;Rateio&gt;&lt;/Rateio&gt;                                           | Raíz de cada bloco rateio, um para cada divisão do pedido |
-| <nobr>&emsp;Rateio<br>&emsp;&emsp;Subconta</nobr> | string | Sim         | -       | -                                                                      | Identificador da Subconta cadastrada                      |
-| <nobr>&emsp;Rateio<br>&emsp;&emsp;Valor</nobr>    | int    | Sim         | -       | Valor total com 2 casas decimais sem pontuação ex: 10000 para R$100.00 | Valor a ser passado para a conta especificada             |
+| *Rateios*<br><nobr>&emsp;Rateio</nobr>         | objeto | Sim         | -       | &lt;Rateio&gt;&lt;/Rateio&gt;                                           | Raíz de cada bloco rateio, um para cada divisão do pedido |
+| <nobr>&emsp;*Rateio*<br>&emsp;&emsp;Subconta</nobr> | string | Sim         | -       | -                                                                      | Identificador da Subconta cadastrada                      |
+| <nobr>&emsp;*Rateio*<br>&emsp;&emsp;Valor</nobr>    | int    | Sim         | -       | Valor total com 2 casas decimais sem pontuação ex: 10000 para R$100.00 | Valor a ser passado para a conta especificada             |
 
 Retorno do Pedido XML
 ---------------------
