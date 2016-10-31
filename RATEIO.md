@@ -1,6 +1,9 @@
 RATEIO ou SPLIT
 ===============
 
+Rateio
+------
+
 ####Pré-Requisitos
 
 -- Possuir Aplicação configurada como “**Integração com desenvolvimento próprio**“ 
@@ -21,6 +24,8 @@ RATEIO ou SPLIT
 
 Recorrência
 ===========
+
+###Recorrência
 
 ####Pré-Requisitos
 
