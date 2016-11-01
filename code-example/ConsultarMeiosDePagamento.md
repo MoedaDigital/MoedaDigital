@@ -1,12 +1,6 @@
 Consultar Meios de Pagamento
 ============================
 
-C#
----
-
-```C#
-
-```
 
 PHP
 ---
