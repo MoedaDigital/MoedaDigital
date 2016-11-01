@@ -199,6 +199,30 @@ Retorno Meios de Pagamento XML
 | &lt;Imagem&gt; | URL com uma imagem que representa o meio de pagamento | String - URL | 
 | &lt;Mensagem&gt; | |String|   
 
+###Exemplo
+
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfRetornoMeiosPagamento xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.org/">
+  <RetornoMeiosPagamento>
+    <Nome>CIELO-VISA</Nome>
+    <Descricao>Visa</Descricao>
+    <Tipo>CREDITO</Tipo>
+    <Parcelado>S</Parcelado>
+    <Imagem>https://moeda.digital/Imagens/Bandeiras/visa.png</Imagem>
+    <Mensagem />
+  </RetornoMeiosPagamento>
+  <RetornoMeiosPagamento>
+    <Nome>ITAU-BOLETO</Nome>
+    <Descricao>Visa</Descricao>
+    <Tipo>BOLETO</Tipo>
+    <Parcelado>S</Parcelado>
+    <Imagem>https://moeda.digital/Imagens/Bandeiras/boleto.png</Imagem>
+    <Mensagem />
+  </RetornoMeiosPagamento>
+</ArrayOfRetornoMeiosPagamento>
+
+´´´
 
 Retorno Status Pagamento XML
 -----------------------------
@@ -214,6 +238,7 @@ Retorno Status Pagamento XML
 | &lt;ValorPago&gt;              | Valor total pago                     | Decimal  | 
 | &lt;Mensagem&gt;               |                                      | String   | 
 | &lt;NivelRisco&gt;             | Indicador do risco de ser uma fraude |  String <br>-BAIXO <br>-MEDIO <br>-ALTO <br>-" " | 
+
 
 
 Retorno Parcelas XML
