@@ -170,7 +170,7 @@ Checkout Transparente
 
 1. **(Opcional) Consultar Parcelas:**
 
-	Nesta etapa pode-se consultar o valores das parcelas  habilitados na aplicação para um devido valor.  Para fazer essa consulta deve-se enviar uma requisição HTTP através dos métodos GET ou POST para a URL: https://moeda.digital/gateway.asmx/ConsultaParcelasXML
+	Nesta etapa pode-se consultar o valores das parcelas  habilitados na aplicação para um devido valor.  Para fazer essa consulta deve-se enviar uma requisição HTTP através dos métodos GET ou POST para a URL: https://moeda.digital/gateway.asmx/ConsultaParcelasArray
 
 	Na consulta devem ser enviados como parâmetros:
 
@@ -178,10 +178,10 @@ Checkout Transparente
  - Nome da aplicação: **Aplicação**
  - Valor da compra: **Valor** ( sem pontuação )
 
-	Você receberá como resposta o XML Retorno Parcelas XML descrito mais a baixo.
+	Você receberá como resposta o XML Retorno Parcelas Array descrito mais a baixo.
 	
 	**Exemplos**:
-	<div class="code-sample-options">[Code](code-example/ConsultaParcelasXML.md)<div>
+	<div class="code-sample-options">[Code](code-example/ConsultaParcelasArray.md)<div>
 
 1. **Iniciar Pagamento**:
 

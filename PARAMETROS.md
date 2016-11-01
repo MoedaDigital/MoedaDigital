@@ -241,15 +241,15 @@ Retorno Status Pagamento XML
 
 
 
-Retorno Parcelas XML
+Retorno Parcelas Array
 --------------------
 
-| Tag                     | Explicação                | Valor                                 | 
-|-------------------------|---------------------------|---------------------------------------| 
-| &lt;ConsultaParcelasArray&gt; | Raiz do Bloco             | 1 ou mais elementos &lt;RetornoParcelas&gt; | 
-| &lt;RetornoParcelas&gt;       | Elemento Retorno Parcelas |                                       | 
-| &lt;Parcela&gt;               | Número de parcelas        | Int                                   | 
-| &lt;ValorTotal&gt;            | Valor total da compra     | Decimal                               | 
-| &lt;ValorParcela&gt;          | Valor de cada parcela     | Decimal                               | 
-| &lt;Obs&gt;                   |                           | String                                | 
-| &lt;Mensagem&gt;              |                           | String                                | 
+| Tag                                                 | Explicação                | Valor                                 | 
+|-----------------------------------------------------|---------------------------|---------------------------------------| 
+| &lt;ArrayOfRetornoParcelas&gt;                      | Raiz do Bloco             | 1 ou mais elementos &lt;RetornoParcelas&gt; | 
+| &lt;RetornoParcelas&gt;                             | Elemento Retorno Parcelas |                                     | 
+| *&lt;RetornoParcelas&gt;*<br><nobr>&emsp;&lt;Parcela&gt;</nobr>      | Número de parcelas        | Int                                   | 
+| *&lt;RetornoParcelas&gt;*<br><nobr>&emsp;&lt;ValorTotal&gt;</nobr>   | Valor total da compra     | Decimal                               | 
+| *&lt;RetornoParcelas&gt;*<br><nobr>&emsp;&lt;ValorParcela&gt;</nobr> | Valor de cada parcela     | Decimal                               | 
+| *&lt;RetornoParcelas&gt;*<br><nobr>&emsp;&lt;Obs&gt;</nobr>          |                           | String                                | 
+| *&lt;RetornoParcelas&gt;*<br><nobr>&emsp;&lt;Mensagem&gt;</nobr>     |                           | String                                | 
