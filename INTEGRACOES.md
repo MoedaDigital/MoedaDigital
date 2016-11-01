@@ -175,7 +175,7 @@ Checkout Transparente
 	Na consulta devem ser enviados como parâmetros:
 
  - Número da Loja: **Loja**
- - Nome da aplicação: **Aplicação**
+ - Nome da aplicação: **Aplicacao**
  - Valor da compra: **Valor** ( sem pontuação )
 
 	Você receberá como resposta o XML Retorno Parcelas Array descrito mais a baixo.
