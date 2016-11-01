@@ -77,7 +77,7 @@ Checkout Transparente HTML
 	Na consulta devem ser enviados como parâmetros:
 
  - Número da Loja: **Loja**
- - Nome da aplicação: **Aplicação**
+ - Nome da aplicação: **Aplicacao**
  - Meios de pagamento: **Meios** \*
  - Valor total da compra: **Valor**
  - Idioma do cliente: **Idioma** \*
@@ -158,7 +158,7 @@ Checkout Transparente
 	Na consulta devem ser enviados como parâmetros:
 
  - Número da Loja: **Loja**
- - Nome da aplicação: **Aplicação**
+ - Nome da aplicação: **Aplicacao**
  - Meios de pagamento: **Meios** \*
 
 	\* Com esse parâmetro você pode verificar a disponibilidade de um meio específico ou verificar todos os disponíveis, os valores aceitos são ( "Todos" , "Credito", "Debito", "Boleto" , etc..) 
