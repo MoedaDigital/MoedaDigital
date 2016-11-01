@@ -46,20 +46,41 @@ Retorno
 ```
 //Body
 <?xml version="1.0" encoding="utf-8"?>
-<string xmlns="http://tempuri.org/">s:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;RetornoParcelas&gt;
-    &lt;Parcela&gt;0&lt;/Parcela&gt;
-    &lt;ValorTotal&gt;100,00&lt;/ValorTotal&gt;
-    &lt;ValorParcela&gt;100,00&lt;/ValorParcela&gt;
-    &lt;Obs&gt;À vista&lt;/Obs&gt;
-    &lt;Mensagem /&gt;
-  &lt;/RetornoParcelas&gt;
-  &lt;RetornoParcelas&gt;
-    &lt;Parcela&gt;1&lt;/Parcela&gt;
-    &lt;ValorTotal&gt;100,00&lt;/ValorTotal&gt;
-    &lt;ValorParcela&gt;100,00&lt;/ValorParcela&gt;
-    &lt;Obs /&gt;
-    &lt;Mensagem /&gt;
-  &lt;/RetornoParcelas&gt;
-</string>
+<ArrayOfRetornoParcelas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.org/">
+    <RetornoParcelas>
+        <Parcela>0</Parcela>
+        <ValorTotal>100,00</ValorTotal>
+        <ValorParcela>100,00</ValorParcela>
+        <Obs>À vista</Obs>
+        <Mensagem />
+    </RetornoParcelas>
+    <RetornoParcelas>
+        <Parcela>1</Parcela>
+        <ValorTotal>100,00</ValorTotal>
+        <ValorParcela>100,00</ValorParcela>
+        <Obs />
+        <Mensagem />
+    </RetornoParcelas>
+    <RetornoParcelas>
+        <Parcela>2</Parcela>
+        <ValorTotal>104,51</ValorTotal>
+        <ValorParcela>52,25</ValorParcela>
+        <Obs />
+        <Mensagem />
+    </RetornoParcelas>
+    <RetornoParcelas>
+        <Parcela>3</Parcela>
+        <ValorTotal>106,04</ValorTotal>
+        <ValorParcela>35,35</ValorParcela>
+        <Obs />
+        <Mensagem />
+    </RetornoParcelas>
+    <RetornoParcelas>
+        <Parcela>4</Parcela>
+        <ValorTotal>107,58</ValorTotal>
+        <ValorParcela>26,90</ValorParcela>
+        <Obs />
+        <Mensagem />
+    </RetornoParcelas>
+</ArrayOfRetornoParcelas>
 ```
