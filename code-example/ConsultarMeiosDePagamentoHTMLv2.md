@@ -42,12 +42,13 @@ Retorno
 -------
 
 ```
+//Body
 <?xml version="1.0" encoding="utf-8"?>
 <string xmlns="http://tempuri.org/"> 
 
-<script type="text/javascript">
- //<![CDATA[ 
- function set_MD_MeioPagto(_MD_MeioPagto) {
+	<script type="text/javascript">
+ 	//<![CDATA[ 
+ 	function set_MD_MeioPagto(_MD_MeioPagto) {
      if ((_MD_MeioPagto.indexOf("CIELO") == -1) && (_MD_MeioPagto.indexOf("REDECARD") == -1)) {
          document.getElementById('div_MD_debitoboleto').style.display = 'block'; 
          document.getElementById('div_MD_cartao').style.display = 'none'; 
@@ -68,15 +69,15 @@ Retorno
              document.getElementById('div_MD_parcelado').style.display = 'block'; 
          }
      }
- }
+ 	}
 
- function set_MD_FormaPagto(_MD_FormaPagto, _MD_ValorParcela) {
+ 	function set_MD_FormaPagto(_MD_FormaPagto, _MD_ValorParcela) {
      var  _ValorParcela = document.getElementById('MD_ValorParcela');
      _ValorParcela.value = _MD_ValorParcela;
- }
+ 	}
  
-//]]> 
-</script>
+	//]]> 
+	</script>
 	<div id='MoedaDigital' style='float:left; width: 99%; margin: 10px auto; text-align: center;' >
 		<div id='mdBandeiras' style= 'display:block; width: 80%; margin: 10px auto; text-align: center;' >
 			<div style="display:block;"><br />
