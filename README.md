@@ -31,37 +31,37 @@ O Botão de Compras e o Link de Pagamento são as formas mais simples e rápidas
 ####Indicação
 Algumas aplicações podem ser:
 
- - Lojistas que querem vender seus produtos através de páginas como facebook.
- -  Fazer cobranças por e-mail.
- - Profissionais que queiram receber por seus serviços de forma on-line. 
- - Lojistas com pouca variedade de produtos e com pouco conhecimento em desenvolvimento e queiram incluir um botão de compra em sua página.
- - Eventos.
+- Lojistas que querem vender seus produtos através de páginas como facebook.
+-  Fazer cobranças por e-mail.
+- Profissionais que queiram receber por seus serviços de forma on-line. 
+- Lojistas com pouca variedade de produtos e com pouco conhecimento em desenvolvimento e queiram incluir um botão de compra em sua página.
+- Eventos.
 
-###Check-out Transparente HTML
+###Checkout Transparente HTML
 
 ####Descrição
 
-O check-out transparente HTML é o Check-out Transparente porém permite que a loja utilize de um HTML pronto com os meios de pagamento, possibilitando a adesão de novos meios de pagamento disponíveis sem a necessidade de mexer no site. 
+O checkout transparente HTML é o Checkout Transparente porém permite que a loja utilize de um HTML pronto com os meios de pagamento, possibilitando a adesão de novos meios de pagamento disponíveis sem a necessidade de mexer no site. 
 
-Assim como no Check-out Transparente, o cliente não precisa deixar sua página para encerrar o pagamento, 
+Assim como no Checkout Transparente, o cliente não precisa deixar sua página para encerrar o pagamento, 
 
 ####Indicação
 
 É a solução indicada para quem quer maior personalização e tenha condições técnicas para implementação, além de querer a possibilidade de mudar os meios de pagamento aceitos sem a necessidade mudanças no código.
 
-O check-out transparente possuí também um menor índice de desistência pelos compradores.
+O Checkout transparente possuí também um menor índice de desistência pelos compradores.
 
-###Check-out Transparente
+###Checkout Transparente
 
 ####Descrição
 
-No check-out transparente todo o processo de compra ocorre na página do E-commerce, o usuário não percebe a existência da Moeda Digital e o lojista tem a possibilidade de customizar todas as etapas em sua página.
+No Checkout transparente todo o processo de compra ocorre na página do E-commerce, o usuário não percebe a existência da Moeda Digital e o lojista tem a possibilidade de customizar todas as etapas em sua página.
 
 ####Indicação
 
 É a solução indicada para quem quer maior personalização de sua página e tenha condições técnicas mais avançadas para implementação. 
 
-O check-out transparente possuí também um menor índice de desistência pelos compradores.
+O Checkout transparente possuí também um menor índice de desistência pelos compradores.
 
 
 Recorrência
@@ -74,22 +74,22 @@ A recorrência é uma maneira de fazer cobranças automáticas mensais no cartã
 
 ####Indicação
 
- - Vendas por assinatura.
- - Serviços por assinatura.
+- Vendas por assinatura.
+- Serviços por assinatura.
 
 Split / Rateio
 --------------
 
 ####Descrição
 
-  O Rateio é a forma de dividir os valores recebidos entre uma ou mais contas, nele a aplicação segue o mesmo caminho do checkout transparente, porém informa com quais contas previamente cadastradas os valores devem ser divididos.
-  
-  Após os recebimentos, o dono da aplicação pode solicitar as transferências dos valores disponíveis para cada conta.
+O Rateio é a forma de dividir os valores recebidos entre uma ou mais contas, nele a aplicação segue o mesmo caminho do checkout transparente, porém informa com quais contas previamente cadastradas os valores devem ser divididos.
+
+Após os recebimentos, o dono da aplicação pode solicitar as transferências dos valores disponíveis para cada conta.
 
 ####Indicação
 
- - Market Places
- - Aplicações com multiplos recebedores
+- Market Places
+- Aplicações com multiplos recebedores
 
 
 
@@ -111,11 +111,11 @@ Deve-se escolher as opções de recebimento ( cartão, juros, boleto, número de
 >**Nota:** Inicialmente deve-se criar uma aplicação para teste que permite iniciar a integração. (Utilizar aplicações reais apenas é possível após entrar em contato com nossa equipe)
 
 3. Caso o tipo de integração escolhido seja o Link de Compras ou o Botão de Compras você pode pular esta etapa, caso contrário deve-se desenvolver a integração com o seu sistema, utilizando-se de nossa documentação e módulos existentes.
- 
+
 4. Começar os testes, você poderá gerar transações para a aplicação de teste e verificar se os pedidos estão sendo gerados e processados corretamente, além de se acostumar com o painel da plataforma onde poderá ver relatórios sobre suas transações.
- 
+
 5. Habilitar sua aplicação real, basta entrar em contato com a nossa equipe para a contratação e após isso suas aplicações estarão prontas para receber.
- 
+
 6. Receber!
 
 
@@ -124,8 +124,8 @@ Criando Conta
 
 Criar uma conta na Moeda Digital é muito simples, basta:
 
- 1. Acessar o site da Moeda Digital e clicar em "CRIAR CONTA".
- 2. Preencher o formulário com as informações requisitadas.
+1. Acessar o site da Moeda Digital e clicar em "CRIAR CONTA".
+2. Preencher o formulário com as informações requisitadas.
 
 Feito isso, você conseguirá entrar na plataforma da Moeda Digital através do site da Moeda digital clicando em "Acessar"; de lá você pode verificar relatórios, criar aplicações, fazer testes de integração entre outras funcionalidades. 
 
@@ -143,10 +143,10 @@ Criando Aplicação
 
 2. No menu superior vá na área  ***Administração → Aplicações*** 
 Aqui você encontrará um campo de seleção com a opção "Criar uma Nova Aplicação"
- 
+
 3. Preencha os campos com as configurações escolhidas e clique em Salvar.
 >**Nota:** Você encontrará uma descrição dos campos mais abaixo. 
- 
+
 4. Pronto, você possui uma nova aplicação.
 
 ####Campos: 
