@@ -170,7 +170,7 @@ Checkout Transparente
 
 1. **(Opcional) Consultar Parcelas:**
 
-	Nesta etapa pode-se consultar o valores das parcelas  habilitados na aplicação para um devido valor.  Para fazer essa consulta deve-se enviar uma requisição HTTP através dos métodos GET ou POST para a URL: https://moeda.digital/gateway.asmx/ConsultaParcelasArray
+	Nesta etapa pode-se consultar o valores das parcelas já acrescidas de juros que estão habilitados na aplicação para um devido valor.  Para fazer essa consulta deve-se enviar uma requisição HTTP através dos métodos GET ou POST para a URL: https://moeda.digital/gateway.asmx/ConsultaParcelasArray
 
 	Na consulta devem ser enviados como parâmetros:
 
