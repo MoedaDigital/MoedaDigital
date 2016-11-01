@@ -1,40 +1,53 @@
 Consultar Meios de Pagamento
 ============================
 
+C#
+---
+
+```C#
+
+var client = new RestClient("http://localhost:23296/Gateway.asmx/ConsultaMeiosDePagamento?Loja=xxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxx&Aplicacao=app-teste&Meios=TODOS");
+var request = new RestRequest(Method.GET);
+
+IRestResponse response = client.Execute(request);
+
+```
 
 PHP
 ---
 
 ```PHP
-<?
-function ConsultarMeiosPagamento($lojaToken, $lojaApp, $meioPagamento) {
+<?php
 
-     $moedadigital_url = 'https://moeda.digital/gateway.asmx/ConsultaMeiosDePagamento';
-     $soap = new SoapClient($moedadigital_url); 
+$request = new HttpRequest();
+$request->setUrl('http://moeda.digital/gateway.asmx/ConsultaMeiosDePagamento');
+$request->setMethod(HTTP_METH_GET);
 
-     $array_meios_pagamento = array(
-     	"Loja" => $lojaToken,       
-     	"Aplicacao" => $lojaApp,       
-     	"Meios" => $meioPagamento
-     	); 
- 
-     $Result = $soap->ConsultaMeiosDePagamento($array_meios_pagamento);
-     var_dump ($Result); 
-	//echo $Result->ConsultaMeiosDePagamento->Nome;
-	//echo $Result->ConsultaMeiosDePagamento->Tipo;
-	//echo $Result->ConsultaMeiosDePagamento->Imagem; }
+$request->setQueryData(array(
+  'Loja' => 'xxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxx',
+  'Aplicacao' => 'app-teste',
+  'Meios' => 'TODOS'
+));
+
+try {
+  $response = $request->send();
+
+  echo $response->getBody();
+
+} catch (HttpException $ex) {
+  echo $ex;
+}
+
 ?>
 
 ```
 
-GET
+Resposta
 ---
 
 ```
-//Pedido
-http://localhost:23296/Gateway.asmx/ConsultaMeiosDePagamento?Loja=xxxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxx&Aplicacao=app-teste&Meios=TODOS
 
-//Resposta
+//Body
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfRetornoMeiosPagamento xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://tempuri.org/">
   <RetornoMeiosPagamento>
