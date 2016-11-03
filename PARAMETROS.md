@@ -182,22 +182,18 @@ Retorno do Pedido XML
 | &lt;PedidoNumeroLoja&gt; | Identificador do pedido na loja. | String      | 
 
 
-Retorno Meios de Pagamento XML
+Array Retorno Meios de Pagamento XML
 ------------------------------
 
 | Tag                | Explicação                       | Valor       | 
 |:-------------------|:-------------------------------- |:------------|
-| &lt;ArrayOfRetornoMeiosPagamento&gt; | Raíz do XML de retorno      | 1 ou mais Elementos do tipo RetornoMeiosPagamento | 
-| &lt;RetornoMeiosPagamento&gt; | Bloco RetornoMeiosPagamento |     |                                              | 
-
-| Tag                | Explicação                       | Valor       | 
-|:-------------------|:-------------------------------- |:------------|
-| &lt;RetornoMeiosPagamento&gt; | Raíz do Bloco ||
-|&lt;Nome&gt; | Nome do meio de pagamento utilizado para fazer o pedido  |<nobr>String <br>-"Visa"<br>-"Mastercard"<br>-"Diners"<br>-"Elo"<br>-"Amex"<br>-"Boleto" </nobr>  |  
-| &lt;Tipo&gt; |  | String - <br>CREDITO <br>BOLETO <br>DEBITO | 
-| &lt;Parcelado&gt;    | Se o meio aceita parcelas | "S" ou "N"  | 
-| &lt;Imagem&gt; | URL com uma imagem que representa o meio de pagamento | String - URL | 
-| &lt;Mensagem&gt; | |String|   
+| &lt;ArrayOfRetornoMeiosPagamento&gt; | Raíz do XML de retorno      | 1 ou mais Elementos do tipo RetornoMeiosPagamento         | 
+| &lt;RetornoMeiosPagamento&gt;        | Bloco RetornoMeiosPagamento | &lt;RetornoMeiosPagamento&gt;&lt;/RetornoMeiosPagamento&gt;     |          
+| *RetornoMeiosPagamento*<br><nobr>&emsp;&lt;Nome&gt;</nobr>  | Nome do meio de pagamento utilizado para fazer o pedido  |<nobr>String <br>-"Visa"<br>-"Mastercard"<br>-"Diners"<br>-"Elo"<br>-"Amex"<br>-"Boleto" </nobr>  |  
+| *RetornoMeiosPagamento*<br><nobr>&emsp;&lt;Tipo&gt;</nobr>  | Forma de pagamento | String - <br>CREDITO <br>BOLETO <br>DEBITO | 
+| *RetornoMeiosPagamento*<br><nobr>&emsp;&lt;Parcelado&gt;</nobr> | Se o meio aceita parcelas | "S" ou "N"  | 
+| *RetornoMeiosPagamento*<br><nobr>&emsp;&lt;Imagem&gt;</nobr>  | URL com uma imagem que representa o meio de pagamento | String - URL | 
+| *RetornoMeiosPagamento*<br><nobr>&emsp;&lt;Mensagem&gt;</nobr>  | |String|   
 
 ###Exemplo
 
