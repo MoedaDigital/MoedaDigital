@@ -93,7 +93,11 @@
       url += '?ref='+ref;
     }
     return function(callback) {
-      $.get(url)
+      $.ajax({
+        url: url,
+        crossDomain: true,
+        dataType: 'jsonp',
+        })
         .fail(function(e) { callback(e, null); })
         .done(function(data) {
           var markdown = exports.Base64.decode(data.content);

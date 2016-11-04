@@ -117,7 +117,7 @@ Cliente
 | CpfCnpj      | string | Ver descrição | -         | -                                                                                             | Número de cadastro de pessoa Física ou Jurídica, obrigatório para todos   menos clientes internacionais                                 |
 | Idioma       | string | Sim           | -         | ES_ES<br>PT-BR<br>EN_US                                                                       | Idioma do cliente                                                                                                                       |
 | Email        | string | Sim           | -         | -                                                                                             | E-mail do cliente                                                                                                                       |
-| DDD          | string | Sim           | 3 Digitos | ex: 41                                                                                        | DDD do telefone                                                                                                                         |
+| DDD          | string | Sim           | 2 Digitos | ex: 41                                                                                        | DDD do telefone                                                                                                                         |
 | Telefone     | string | Sim           | -         | -                                                                                             | Telefone do cliente                                                                                                                     |
 
 Pagamento
@@ -227,13 +227,13 @@ Retorno Status Pagamento XML
 |:-------------------------|:-------------------------------------|:---------| 
 | &lt;RetornoStatusPagamento&gt; | Elemento raíz do retorno.            |          | 
 | &lt;PedidoNumeroLoja&gt;       | Identificador do pedido na loja      | String   | 
-| &lt;Status&gt;                 | Status to pedido                     |String <nobr><br>-APROVADO <br> -INVALIDO<br> -PENDENTE<br> -NEGADO<br> -CANCELADO<br> -CHARGEBACK</nobr> | 
+| &lt;Status&gt;                 | Status to pedido                     | String <nobr><br>APROVADO<br>INVALIDO<br>PENDENTE<br>NEGADO<br>CANCELADO<br>CHARGEBACK</nobr> | 
 | &lt;Modulo&gt;                 | Tipo de pagamento usado              | String   | 
 | &lt;MeioPagamento&gt;          | Forma de pagamento usada             | String   | 
 | &lt;DataPagamento&gt;          | Data do pagamento                    | String   | 
 | &lt;ValorPago&gt;              | Valor total pago                     | Decimal  | 
 | &lt;Mensagem&gt;               |                                      | String   | 
-| &lt;NivelRisco&gt;             | Indicador do risco de ser uma fraude |  String <br>-BAIXO <br>-MEDIO <br>-ALTO <br>-" " | 
+| &lt;NivelRisco&gt;             | Indicador do risco de ser uma fraude | String <br>-BAIXO <br>-MEDIO <br>-ALTO <br>-" " | 
 
 
 
