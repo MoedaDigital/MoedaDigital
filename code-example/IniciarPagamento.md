@@ -5,7 +5,7 @@ C#
 ---
 
 ```C#
-var client = new RestClient("https://moeda.digital/gateway.asmx/IniciarPagamento");
+var client = new RestClient("https://moeda.digital/gateway.asmx/IniciarPagamentoXML");
 var request = new RestRequest(Method.POST);
 request.AddHeader("content-type", "application/x-www-form-urlencoded");
 request.AddParameter("application/x-www-form-urlencoded", pedidoXML , ParameterType.RequestBody);
@@ -19,7 +19,7 @@ PHP
 <?php
 
 $request = new HttpRequest();
-$request->setUrl('https://moeda.digital/gateway.asmx/IniciarPagamento');
+$request->setUrl('https://moeda.digital/gateway.asmx/IniciarPagamentoXML');
 $request->setMethod(HTTP_METH_POST);
 
 $request->setHeaders(array(
