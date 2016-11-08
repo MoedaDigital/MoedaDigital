@@ -76,7 +76,7 @@ Checkout Transparente HTML
 
 	Na consulta devem ser enviados como parâmetros:
 
- - Número da Loja: **Loja**
+ - Token da Loja: **Loja**
  - Nome da aplicação: **Aplicacao**
  - Meios de pagamento: **Meios** \*
  - Valor total da compra: **Valor**
@@ -157,7 +157,7 @@ Checkout Transparente
 
 	Na consulta devem ser enviados como parâmetros:
 
- - Número da Loja: **Loja**
+ - Token da Loja: **Loja**
  - Nome da aplicação: **Aplicacao**
  - Meios de pagamento: **Meios** \*
 
@@ -174,7 +174,7 @@ Checkout Transparente
 
 	Na consulta devem ser enviados como parâmetros:
 
- - Número da Loja: **Loja**
+ - Token da Loja: **Loja**
  - Nome da aplicação: **Aplicacao**
  - Valor da compra: **Valor** ( sem pontuação )
 
@@ -222,7 +222,7 @@ Consultar Status
  
  Na consulta devem ser enviados como parâmetros:
 
- - Número da Loja: Loja
+ - Token da Loja: Loja
  - Nome da aplicação: Aplicação
  - Identificador do pedido: Pedido 
 
