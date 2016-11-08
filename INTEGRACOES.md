@@ -187,14 +187,14 @@ Checkout Transparente
 
 	Nesta etapa a sua aplicação deverá enviar  um XML contendo as informações do pedido para ser registrado na Moeda Digital, esta retornará um XML contendo, entre outras informações, um código  HTML a ser exibido ao cliente nos casos dos meios diferentes de crédito.
 
-	O XML contendo o pedido deve ser enviado como parâmetro através dos métodos **GET** ou **POST** para a URL: https://moeda.digital/gateway.asmx/IniciarPagamento
+	O XML contendo o pedido deve ser enviado como parâmetro através dos métodos **GET** ou **POST** para a URL: https://moeda.digital/gateway.asmx/IniciarPagamentoXML
 
 	Nome do parâmetro: ***PedidoXML***
 
 	O valor PedidoXML está definido no item [Parâmetros / **Pedido**](#parametros-pedido).
 
 	**Exemplos**:
-	<div class="code-sample-options">[Code](code-example/IniciarPagamento.md)<div>
+	<div class="code-sample-options">[Code](code-example/IniciarPagamentoXML.md)<div>
 
 
 1. **Exibir o código ao cliente**:
