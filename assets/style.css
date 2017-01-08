@@ -404,7 +404,7 @@ body:not(.big-h3) .content h3 {
 .content h1:first-child,
 .content h1:first-child a,
 .content h1:first-child a:visited {
-  color: #c9302c;
+  color: #162030;
 }
 .content h1:first-child:before {
   display: none;
