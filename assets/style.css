@@ -834,7 +834,7 @@ a.big.button:hover:visited {
 }
 .menu a.level-1,
 .menu a.level-1:visited {
-  color: #c9302c;
+  color: #162030;
 }
 .menu a.level-1:hover {
   color: #565666;
@@ -866,7 +866,7 @@ a.big.button:hover:visited {
 .menu a.active,
 .menu a.active:visited,
 .menu a.active:hover {
-  color: #eb9316 !important;
+  color: #d4b57b !important;
 }
 .menu a.active:after {
   content: '';
