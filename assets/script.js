@@ -292,7 +292,7 @@ $(document).on('flatdoc:loading', function() {
 
 function setLightBoxOnImages(){
 
-  $('img').each(function(){
+  $('img').not('.no-lightbox').each(function(){
     var $img = $(this);
     var href = $img.attr('src'); 
     var src = $img.attr('src').split('/');
