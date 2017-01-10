@@ -135,6 +135,10 @@ Pagamento
 | Instrucoes     | string | Não         | -             | -                                                                      | Instruções sobre como o cliente deve efetuar o pagamento ( aparecerá no   boleto) |
 | Moeda          | string | Sim         | -             | ex: BRL                                                                | Moeda em que o cliente será cobrado                                               |
 | Vencimento     | date   | Sim         | -             | "dd/mm/aaaa"                                                           | Data em que o pagamento não será mais aceito                                      |
+| Parcelamento    | objeto | Sim         | 1 Carácter    |                                                                        | Elemento contendo informações sobre parcelamento                                   |
+| *Parcelamento*<br><nobr>&emsp;ValorSemJuros</nobr>  | int   | *Sim*<br><nobr>&emsp;Sim</nobr> | -      |Valor com 2 casas decimais sem pontuação ex: 10000 para R$100.00 | Valor total a ser pago sem os juros |                                                 
+| *Parcelamento*<br><nobr>&emsp;Parcelas</nobr> | int    | *Sim*<br><nobr>&emsp;Sim</nobr>  | máx 2 dígitos | valor entre 1 e 12| Número de parcelas da compra ( 1 para meios difrente de crédito )                   |
+| *Parcelamento*<br><nobr>&emsp;ValorParcela</nobr> | int   | *Sim*<br><nobr>&emsp;Sim</nobr> | -      |Valor com 2 casas decimais sem pontuação ex: 10000 para R$100.00 | Valor de cada parcela |    
 
 
 Cartão
