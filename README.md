@@ -114,7 +114,7 @@ Deve-se escolher as opções de recebimento ( cartão, juros, boleto, número de
 
 4. Começar os testes, você poderá gerar transações para a aplicação de teste e verificar se os pedidos estão sendo gerados e processados corretamente, além de se acostumar com o painel da plataforma onde poderá ver relatórios sobre suas transações.
 
-5. Habilitar sua aplicação real, basta entrar em contato com a nossa equipe para a contratação e após isso suas aplicações estarão prontas para receber.
+5. Habilitar sua aplicação real, basta pedir a habilitação da sua loja através da plataforma. No menu ***Administração → Conta*** termine o preenchimento dos seus dados cadastrais, verifique as tarifas combinadas e aceite o termo de uso para que sua loja entre em análise e seja habilitada para poder operar em produção.
 
 6. Receber!
 
