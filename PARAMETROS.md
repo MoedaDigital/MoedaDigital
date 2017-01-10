@@ -128,7 +128,7 @@ Pagamento
 |:---------------|:-------|:------------|:--------------|:-----------------------------------------------------------------------|:----------------------------------------------------------------------------------|
 | Pagamento      | -      | -           | -             | -                                                                      | Elemento raíz do bloco                                                            |
 | ValorTotal     | int    | Sim         | -             | Valor total com 2 casas decimais sem pontuação ex: 10000 para R$100.00 | Valor total que será pago pelo cliente                                            |
-| Meio           | string | Sim         | -             | VISA<br>MASTERCARD<br>BOLETO<br>AMEX                                               | Nome do meio de pagamento igual aos nomes habilitados na aplicação                |
+| Meio           | string | Sim         | -             | CREDITO<br>DEBITO<br>BOLETO<br>TRANSFERENCIA                                               | Nome do meio de pagamento               |
 | Recorrencia    | objeto | Não         | 1 Carácter    |                                                                        | Elemento contendo informações sobre recorrência                                   |
 | *Recorrencia*<br><nobr>&emsp;Recorrente</nobr>  | char   | *Não*<br><nobr>&emsp;Sim</nobr> | 1 Carácter    | <nobr>S: para sim<br>N: para não</nobr>                                | Define se haverá recorrência                                                      |
 | *Recorrencia*<br><nobr>&emsp;Tempo</nobr> | int    | *Não*<br><nobr>&emsp;Sim</nobr> | máx 2 dígitos | ex: 12                                                                 | Número de meses que serão feitas cobranças iguais ao cliente                      |
@@ -148,6 +148,7 @@ Cartão
 |:-------------|:-------|:------------|:--------|:--------|:-----------------------------|
 | Cartao       | -      | -           | -       | -       | Elemento raíz do bloco       |
 | Numero       | int    | Sim         | -       | -       | Número do cartão             |
+| Bandeira     | string | Sim         | -       | AMEX<br>MASTERCARD<br>VISA<br>ELO<br>           | Bandeira do cartão de crédito ou debito como habilitada na aplicação |
 | Validade     | date   | Sim         | -       | "mm/aa" | Data de expiração do cartão  |
 | CVV          | int    | Sim         | -       | -       | Código de seguranã do cartão |
 | PortadorNome | string | Sim         | -       | -       | Nome do portador do cartão   |
