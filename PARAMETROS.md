@@ -103,7 +103,6 @@ Endereço
 | UF          | string | Sim         | 2 Carácteres | ex: BH          | Código do estado        |
 | CEP         | string | Sim         | -            | -               | Código Postal           |
 | Pais        | string | Sim         | 2 Carácteres | ex: BR          | Código do país          |
-| Tipo        | string | Sim         | -            | ex: Residencial | Tipo de endereço        |
 
 Cliente
 -------
@@ -119,6 +118,8 @@ Cliente
 | Email        | string | Sim           | -         | -                                                                                             | E-mail do cliente                                                                                                                       |
 | DDD          | string | Sim           | 2 Digitos | ex: 41                                                                                        | DDD do telefone                                                                                                                         |
 | Telefone     | string | Sim           | -         | -                                                                                             | Telefone do cliente                                                                                                                     |
+
+| TelefoneTipo| string | Não         | -            | ex: Residencial | Tipo do telefone        |
 
 Pagamento
 ---------
