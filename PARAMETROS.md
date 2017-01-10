@@ -39,6 +39,7 @@ Pedido
       <Email></Email>
       <DDD></DDD>
       <Telefone></Telefone>
+      <TelefoneTipo></TelefoneTipo>
    </Cliente>
    <Endereco>
       <Logradouro></Logradouro>
@@ -49,7 +50,6 @@ Pedido
       <UF></UF>
       <CEP></CEP>
       <Pais></Pais>
-      <Tipo></Tipo>
    </Endereco>
    <Rateios>
        <Rateio>
