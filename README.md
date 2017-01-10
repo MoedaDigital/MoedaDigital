@@ -18,6 +18,7 @@ Dentro da área do usuário na plataforma Moeda Digital é  possível:
 - Acompanhar os pedidos gerados pelo seu negócio.
 - Analisar seus pedidos e recebimentos.
 - Criar novas aplicações.
+- Pedir a habilitação da loja para começar as vendas.
 
 Integrações
 ----------------
