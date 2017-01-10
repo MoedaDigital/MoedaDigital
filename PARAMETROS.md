@@ -139,8 +139,8 @@ Pagamento
 | *Parcelamento*<br><nobr>&emsp;ValorSemJuros</nobr>  | int   | *Sim*<br><nobr>&emsp;Sim</nobr> | -      |Valor com 2 casas decimais sem pontuação ex: 10000 para R$100.00 | Valor total a ser pago sem os juros |                                                 
 | *Parcelamento*<br><nobr>&emsp;Parcelas</nobr> | int    | *Sim*<br><nobr>&emsp;Sim</nobr>  | máx 2 dígitos | valor entre 1 e 12| Número de parcelas da compra ( 1 para meios difrente de crédito )                   |
 | *Parcelamento*<br><nobr>&emsp;ValorParcela</nobr> | int   | *Sim*<br><nobr>&emsp;Sim</nobr> | -      |Valor com 2 casas decimais sem pontuação ex: 10000 para R$100.00 | Valor de cada parcela |    
-| Cartão    | objeto | Não         |     |                                                                        | Elemento contendo informações do cartão (Válido para os meios de pagamento DEBITO ou CREDITO), se não enviado será retornado o link para pagamento via By Page                 |
-
+| [Cartao](#parametros-cartao)    | objeto | Não         |  -   | &lt;Cartao&gt;&lt;/Cartao&gt; | Elemento contendo informações do cartão (Válido para os meios de pagamento DEBITO ou CREDITO), se não enviado será retornado o link para pagamento via By Page                 |
+  
 Cartão
 ------
 
