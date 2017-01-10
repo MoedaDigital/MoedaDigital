@@ -93,7 +93,7 @@ Checkout Transparente HTML
 
 1. **Iniciar Pagamento**:
 
-	Nesta etapa a sua aplicação deverá enviar um XML contendo as informações do pedido para ser registrado na Moeda Digital, esta retornará um XML contendo, entre outras informações, um código  HTML a ser exibido ao cliente nos casos dos meios de pagamento diferentes de crédito.
+	Nesta etapa a sua aplicação deverá enviar um XML contendo as informações do pedido para ser registrado na Moeda Digital, esta retornará um XML contendo, entre outras informações, um código  HTML a ser exibido ao cliente para proceder o pagamendo (ex: o link com a imagem do boleto).Nos casos dos meios de pagamento de crédito ou debito se enviados com os dados do cartão não haverá um link para ser mostrado, apenas o status da transação.
 
 	O XML contendo o pedido deve ser enviado como parâmetro através dos métodos **GET** ou **POST** para a URL: https://moeda.digital/gateway.asmx/IniciarPagamentoXML
 
@@ -106,7 +106,7 @@ Checkout Transparente HTML
 
 1. **Exibir o código ao cliente**:
 	
-	>Nota: Caso o meio de pagamento seja Crédito, não há o que ser exibido ao cliente.
+	>Nota: Caso o meio de pagamento seja Crédito ou Débito juntamente com o envio dos dados do cartão, não há o que ser exibido ao cliente.
 
 	O passo 2 retorna um XML com informações e o status do pedido, em caso de ter sido bem sucedido, ele possui um código HTML para ser exibido ao cliente para proceder o pagamento.
 
@@ -185,7 +185,7 @@ Checkout Transparente
 
 1. **Iniciar Pagamento**:
 
-	Nesta etapa a sua aplicação deverá enviar  um XML contendo as informações do pedido para ser registrado na Moeda Digital, esta retornará um XML contendo, entre outras informações, um código  HTML a ser exibido ao cliente nos casos dos meios diferentes de crédito.
+	Nesta etapa a sua aplicação deverá enviar um XML contendo as informações do pedido para ser registrado na Moeda Digital, esta retornará um XML contendo, entre outras informações, um código  HTML a ser exibido ao cliente para proceder o pagamendo (ex: o link com a imagem do boleto).Nos casos dos meios de pagamento de crédito ou debito se enviados com os dados do cartão não haverá um link para ser mostrado, apenas o status da transação.
 
 	O XML contendo o pedido deve ser enviado como parâmetro através dos métodos **GET** ou **POST** para a URL: https://moeda.digital/gateway.asmx/IniciarPagamentoXML
 
@@ -199,7 +199,7 @@ Checkout Transparente
 
 1. **Exibir o código ao cliente**:
 	
-	>Nota: Caso o meio de pagamento seja Crédito, não há o que ser exibido ao cliente, pular para o passo 5.
+	>Nota: Caso o meio de pagamento seja Crédito ou Débito juntamente com os dados do cartão, não há o que ser exibido ao cliente, pular para o passo 5.
 
 	O passo 2 retorna um XML com informações e o status do pedido, em caso de ter sido bem sucedido, ele possui um código HTML para ser exibido ao cliente para proceder o pagamento.
 
