@@ -183,7 +183,7 @@ Retorno do Pedido XML
 | &lt;NSU&gt;              |                                  | String      | 
 | &lt;Mensagem&gt;         |                                  | String      | 
 | &lt;Retorno&gt;          |                                  |             | 
-| &lt;PedidoStatus&gt;     | Status atual do Pedido        |String: <nobr><br>-APROVADO <br> -INVALIDO<br> -PENDENTE<br> -NEGADO<br> -CANCELADO<br> -CHARGEBACK</nobr> |
+| &lt;PedidoStatus&gt;     | Status atual do Pedido        |<nobr><br>APROVADO<br>INVALIDO<br>PENDENTE<br>NEGADO<br>CANCELADO<br>ESTORNADO<br>CHARGEBACK</nobr> |
 | &lt;Conteúdo&gt;         |                                  | String      | 
 | &lt;PedidoNumeroLoja&gt; | Identificador do pedido na loja. | String      | 
 
