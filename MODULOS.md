@@ -72,7 +72,7 @@ WooCommerce
 
  1. Faça o Download do módulo:
 	 [GitHub Download](https://github.com/MoedaDigital/WooCommercePlugin/archive/master.zip)
-	 *Descompacte o arquivo e compacte apenas a pasta* **src**
+	 >**Nota:** Descompacte o arquivo e compacte apenas a pasta **src**
 
  2. No painel de admin do wordpress vá em ***Plugins → Adicionar Novo***
 
