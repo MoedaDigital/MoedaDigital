@@ -1,62 +1,25 @@
-INTEGRANDO
+INTEGRATING
 ===========
 
-Link e Botão de Compras
------------------------
-
-####Pré-requisitos:
-
--- Possuir Aplicação configurada como "**Link Carrinho de Compras - Cobrança Instantânea**" 
-
-####Aplicabilidade:
-
- - Envio de cobrança por E-mail ou outros meios de comunicação.
- - Inserção em páginas WEB.
-
-####Como utilizar:
-
-1. Entre em sua Conta MD na plataforma.
-
-2. No menu principal acesse ***Administração → Gerar Carrinho***
-
-3. Preencha os campos e escolha entre URL, Botão ou Link.
->**Nota:** A diferença entre as opções é apenas a formatação na qual a URL é fornecida, o Botão fornece configurações de estilização em HTML.
-
-4. Copie o texto que é mostrado na caixa de texto ao lado das opções.
-
-5. Cole o texto copiado junto ao corpo do E-mail ou mensagem de cobrança a ser enviada.
-
-6. Aguarde o pagamento.
-
-####Campos de configuração do pagamento:
-
-| Campo    | O que é | O que faz|
-| :-----------------| :---- | :--- |
-|Aplicação|	Nome da Aplicação configurada para essa cobrança|Define os meios de pagamento e outras configurações da cobrança.|
-|Número do Pedido|	Identificador único de cada pedido por aplicação|Serve para o acompanhamento do pagamento através da plataforma.|
-|Valor|O valor total a ser cobrado. **O valor 0 configura a opção de doação**| Define o valor que será cobrado do cliente |
-|Texto do Botão| Texto que será mostrado no botão --- Apenas serve para o caso do botão | Muda o texto mostrado no botão.|
-|Tipo |Escolhe entre Link, URL e Botão| Fornece diferentes modos de formatação.|
-
-Checkout Transparente HTML
+Custom Checkout HTML
 ---------------------------
 
-####Pré-requisitos:
+####Requirements:
 
--- Possuir Aplicação configurada como "**Integração com desenvolvimento próprio**"
+-- Owing a application configured as "**Integração com desenvolvimento próprio**"
 
-####Aplicabilidade:
+####Applicability:
 
- - Vendas de maior variedade de itens.
- - Maior controle sobre as vendas.
- - Suporte automático a novos meios de pagamento.
+ - Selling major variety of itens.
+ - Major controll over your sales.
+ - Automatic support to new payment methods.
 
-####Fluxo:
+####Flow:
 
 <pre>
 <div class="mermaid">sequenceDiagram
-    participant Cliente
-    participant Loja
+    participant Client
+    participant Store
     participant MD
     Cliente->>+Loja: 1 - Comprar
     Loja->>MD: 2 - Consultar Meios de Pagamento
@@ -68,13 +31,13 @@ Checkout Transparente HTML
     Loja->>-Cliente: 8 - Compra Finalizada</div> 
 </pre>
 
-####Como utilizar:
+####Steps:
 
-1. **Consultar Meios de Pagamento**:
+1. **Consulting payment methods**:
 
-	A consulta meios de pagamento serve para ver os Meios de pagamento que estão habilitados pela aplicação. Para fazer essa consulta deve-se enviar uma requisição HTTP através dos métodos **GET** ou **POST** para a URL: https://moeda.digital/gateway.asmx/ConsultaMeiosDePagamentoHTMLv2
+	This step is usefull to check the avaiable payment methods on the application, to do this you need to make a HTTP request through the methods **GET** or **POST** to the URL: https://moeda.digital/gateway.asmx/ConsultaMeiosDePagamentoHTMLv2
 
-	Na consulta devem ser enviados como parâmetros:
+	Parameters to send:
 
  - Token da Loja: **Loja**
  - Nome da aplicação: **Aplicacao**
@@ -82,55 +45,55 @@ Checkout Transparente HTML
  - Valor total da compra: **Valor**
  - Idioma do cliente: **Idioma** \*
 
-	\* Com esse parâmetro você escolhe quais os meios entre os habilitados na aplicação que apareceram como opção de pagamento, os valores aceitos são ( "Todos" , "Credito", "Debito", "Boleto" , etc..) 
+	\* With these parameters you can choose which methods between the application's enabled ones that will appear as an payment option, the current accepted values are ( "Todos" , "Credito", "Debito", "Boleto" , etc..) 
 
-	\* O idioma pode ser ( "PT-BR", "EN_US", "ES_ES")
+	\* The language (Idioma) can be ( "PT-BR", "EN_US", "ES_ES")
 
-	Você receberá como resposta o XML .... que contém um código HTML para ser exibido ao cliente dentro de um formulário.
+	As a response you will receive a XML that contains the HTML code snippet to be shown to the client inside the payment form.
 
-	**Exemplos**:
+	**Example**:
 	<div class="code-sample-options">[Code](../code-example/ConsultarMeiosDePagamentoHTMLv2.md)<div>
 
-1. **Iniciar Pagamento**:
+1. **Initiate payment**:
 
-	Nesta etapa a sua aplicação deverá enviar um XML contendo as informações do pedido para ser registrado na Moeda Digital, esta retornará um XML contendo, entre outras informações, um código  HTML a ser exibido ao cliente para proceder o pagamendo (ex: o link com a imagem do boleto).Nos casos dos meios de pagamento de crédito ou debito se enviados com os dados do cartão não haverá um link para ser mostrado, apenas o status da transação.
+	In this step your application must send a XML containing the order informations to be registered at Moeda Digital, receiving in response a XML within among other informations, a code snippet to be shown to the client so he can proceed (ex: a link to the client bank to complete the TEF). If the order is sent with the credit or debit card information in it, the transaction will be done in real time and the response will contain it's status, without needing to display anything else.
 
-	O XML contendo o pedido deve ser enviado como parâmetro através dos métodos **GET** ou **POST** para a URL: https://moeda.digital/gateway.asmx/IniciarPagamentoXML
+	The XML containing the order must be sent as a parameter troughout the HTTP methods **GET** or **POST** to the URL: https://moeda.digital/gateway.asmx/IniciarPagamentoXML
 
-	Nome do parâmetro: ***PedidoXML***
+	Parameter's name: ***PedidoXML***
 
-	O valor PedidoXML está definido no item [Parâmetros / **Pedido**](#parametros-pedido).
+	The PedidoXML parameter is defined in the item [References / **Pedido**](#parametros-pedido).
 
-	**Exemplos**:
+	**Examples**:
 	<div class="code-sample-options">[Code](../code-example/IniciarPagamentoXML.md)<div>
 
-1. **Exibir o código ao cliente**:
+1. **Showinig the code to the client**:
 	
-	>Nota: Caso o meio de pagamento seja Crédito ou Débito juntamente com o envio dos dados do cartão, não há o que ser exibido ao cliente.
+	>Note: When ordering with credit or debit card as payment method along with the card information there will be nothing from Moeda Digital response to be shown to the client.
 
-	O passo 2 retorna um XML com informações e o status do pedido, em caso de ter sido bem sucedido, ele possui um código HTML para ser exibido ao cliente para proceder o pagamento.
+	The second step returns a XML containing te informations and the status of the order, in case of beeing succefull it will contain a HTML code snippet to be displayed to the client so he can proceed the payment.
 
-	O Retorno do Pedido está definido no item Parâmetros XML.
+	The return of the order is defined in the item [References / **Retorno do Pedido XML**](#parametros-retorno-do-pedido-xml).
 
-1. **Acompanhar o Status do pedido**:
+1. **Monitoring the orders' status**:
 
-	Após o pedido ser registrado, ele pode ser acompanhado através de métodos disponibilizados para consulta pela Moeda Digital e por meio de WebHook, descritos neste manual nas áreas : Consultar Status do Pedido e WebHook - URL de retorno
+	After registering a order, it can be monitored through our consulting methods or by WebHook, both of them described further in this manual as: [Monitoring / **Consulting Status**](#acompanhamento-dos-pedidos-consultar-status) and [Monitoring / **Consulting Status**](#acompanhamento-dos-pedidos-webhook-url-de-retorno) 
 
 
-Checkout Transparente
------------------------
+Custom Checkout 
+---------------------------
 
-####Pré-requisitos:
+####Requirements:
 
--- Possuir Aplicação configurada como "**Integração com desenvolvimento próprio**"
+-- Owing a application configured as "**Integração com desenvolvimento próprio**"
 
-####Aplicabilidade:
+####Applicability:
 
- - Vendas de maior variedade de itens.
- - Maior controle sobre as vendas.
- - Maior capacidade de costumização do processo.
+ - Selling major variety of itens.
+ - Major controll over your sales.
+ - Fully costumizable.
 
-####Fluxo:
+####Flow:
 
 <pre>
 <div class="mermaid">sequenceDiagram
@@ -149,11 +112,11 @@ Checkout Transparente
     Loja->>-Cliente: Resultado do pedido</div> 
 </pre>
 
-####Como utilizar:
+####Steps:
 
-1. **(Opcional) Consultar Meios de Pagamento**:
+1. **(Optional) Consultar Meios de Pagamento**:
 
-	A consulta meios de pagamento serve para ver os Meios de pagamento que estão habilitados pela aplicação. Para fazer essa consulta deve-se enviar uma requisição HTTP através dos métodos **GET** ou **POST** para a URL: https://moeda.digital/gateway.asmx/ConsultaMeiosDePagamento
+	This step is usefull to check the avaiable payment methods on the application, to do this you need to make a HTTP request through the methods **GET** or **POST** to the URL: https://moeda.digital/gateway.asmx/ConsultaMeiosDePagamentoHTMLv2
 
 	Na consulta devem ser enviados como parâmetros:
 

@@ -1,4 +1,4 @@
-Introdução
+Introduction
 =========
 
 Moeda Digital
@@ -61,49 +61,46 @@ You can configure the receiving methods( credit card, interests, "boleto", e etc
 5. Create an application for production and ask for permission to start your operation. Inside the menu ***Administração → Conta*** finish completing your informations, verify the transactions fees and accept the user agreement so your store can go into our analysis and be enabled to go into production.
 
 
-Criando Conta
+Creating an Account
 --------------------
 
-Criar uma conta na Moeda Digital é muito simples, basta:
+To register at Moeda Digital you just need to:
 
-1. Acessar o site da Moeda Digital e clicar em "CRIAR CONTA".
-2. Preencher o formulário com as informações requisitadas.
+1. Visit our webpage and click on ["Cadastre-se"](https://moeda.digital/signup.aspx).
+2. Fill the form with the requested information.
 
-Feito isso, você conseguirá entrar na plataforma da Moeda Digital através do site da Moeda digital clicando em "Acessar"; de lá você pode verificar relatórios, criar aplicações, fazer testes de integração entre outras funcionalidades. 
+Done that you will receive a confirmation email and then gain the acess to Moeda Digital's platform.
 
-
-Criando Aplicação
+Creating Applications
 -------------------------
 
-####Pré-requisitos:
+####Requirements:
 
--- Ter uma Conta MD.
+-- Owing a MD account.
 
-####Passos:
+####Steps:
 
-1. Entre com seu usuário na plataforma.
+1. Login into the platform.
 
-2. No menu superior vá na área  ***Administração → Aplicações*** 
-Aqui você encontrará um campo de seleção com a opção "Criar uma Nova Aplicação"
+2. In the superior menu go to  ***Administração → Aplicações*** 
+There you will find the option "Criar uma Nova Aplicação"
 
-3. Preencha os campos com as configurações escolhidas e clique em Salvar.
->**Nota:** Você encontrará uma descrição dos campos mais abaixo. 
+3. Fill the fields with the choosen configurations and click on "Salvar".
+>**Note:** You can find the fields descriptions further. 
 
-4. Pronto, você possui uma nova aplicação.
+####Fields: 
 
-####Campos: 
-
-| Campo    | O que é | O que faz|
+| Field    | Description |
 | :-----------------| :---- | :--- |
-| Código da Aplicação| Identificador único de cada aplicação dentro de sua conta MD|Identificar a aplicação referente a cada pedido.|
-| Token | Identificador único de cada conta MD|Identificar a qual conta MD o pedido se refere.|
-| Tipo de Aplicação|Campo que define que tipo de integração foi escolhida para a aplicação|Mostra como o pedido deve proceder.|
-|URL de Retorno|Um link para a Moeda Digital avisar as mudanças de status de cada pedido.|Quando um pedido muda de status a Moeda Digtal faz uma requisição ao link avisando sobre a mudança.|
-|Meios de Pagamento|Os meios de pagamento que serão aceitos por você|Permite que o cliente pague apenas com os meios selecionados.|
-|Quantidade Máxima de Parcelas| Campo com as opções de parcelamento | Determina até quantas vezes o cliente poderá parcelar a compra no cartão  |
-|Não cobrar juros para as parcelas|Campo com opções de parcelamento  | Determina a quantidade de parcelas que não serão cobrados juros do cliente |
-|Valor mínimo da parcela| Valores mínimos para aceitar parcelemaneto | Define o valor mínimo que será aceito para cada parcela de uma compra |
-|Conceder desconto a vista para Boleto e TEF| % de desconto para compras a vista | Define valor a ser utilizado no cálculo de desconto para compras a vista em boleto ou TEF |
+| Código da Aplicação| Unique identifier of each application inside your account |
+| Token | Private unique identifier of each MD account, *Do not share it with anyone*|
+| Tipo de Aplicação| Defines the type of the application and the way it works|
+|URL de Retorno| Your system URL that will receive notifications from Moeda Digital of changes in orders' status|
+|Meios de Pagamento|The payment methods that your system allows|
+|Quantidade Máxima de Parcelas| The maximum number of installments when paying with credit card |
+|Não cobrar juros para as parcelas| Defines how many installments won't be charged with interests |
+|Valor mínimo da parcela| Minimum installment value|
+|Conceder desconto a vista para Boleto e TEF| Disccount for purchases with "Boleto" or electronic transfer  | 
 
 
 
