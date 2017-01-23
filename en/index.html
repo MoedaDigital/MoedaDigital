@@ -43,7 +43,7 @@
   <script>
 
     $(document).ready(function(){
-      var hostname = $('meta[name=hostname]/en').attr("content");
+      var hostname = $('meta[name=hostname]').attr("content") +'en/';
 
       Flatdoc.run({
         //fetcher: Flatdoc.github('MoedaDigital/MoedaDigital')      
