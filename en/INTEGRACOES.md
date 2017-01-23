@@ -39,11 +39,11 @@ Custom Checkout HTML
 
 	Parameters to send:
 
- - Token da Loja: **Loja**
- - Nome da aplicação: **Aplicacao**
- - Meios de pagamento: **Meios** \*
- - Valor total da compra: **Valor**
- - Idioma do cliente: **Idioma** \*
+ - Store's Token: **Loja**
+ - Application's name: **Aplicacao**
+ - Payment methods: **Meios** \*
+ - Purchase total value: **Valor**
+ - Client's language: **Idioma** \*
 
 	\* With these parameters you can choose which methods between the application's enabled ones that will appear as an payment option, the current accepted values are ( "Todos" , "Credito", "Debito", "Boleto" , etc..) 
 
@@ -62,7 +62,7 @@ Custom Checkout HTML
 
 	Parameter's name: ***PedidoXML***
 
-	The PedidoXML parameter is defined in the item [References / **Pedido**](#parametros-pedido).
+	The PedidoXML parameter is defined in the item [References / **Pedido**](#references-pedido).
 
 	**Examples**:
 	<div class="code-sample-options">[Code](../code-example/IniciarPagamentoXML.md)<div>
@@ -73,11 +73,11 @@ Custom Checkout HTML
 
 	The second step returns a XML containing te informations and the status of the order, in case of beeing succefull it will contain a HTML code snippet to be displayed to the client so he can proceed the payment.
 
-	The return of the order is defined in the item [References / **Retorno do Pedido XML**](#parametros-retorno-do-pedido-xml).
+	The return of the order is defined in the item [References / **Retorno do Pedido XML**](#references-retorno-do-pedido-xml).
 
 1. **Monitoring the orders' status**:
 
-	After registering a order, it can be monitored through our consulting methods or by WebHook, both of them described further in this manual as: [Monitoring / **Consulting Status**](#acompanhamento-dos-pedidos-consultar-status) and [Monitoring / **Consulting Status**](#acompanhamento-dos-pedidos-webhook-url-de-retorno) 
+	After registering a order, it can be monitored through our consulting methods or by WebHook, both of them described further in this manual as: [Monitoring / **Consulting Status**](#monitoring-consultar-status) and [Monitoring / **Consulting Status**](#monitoring-webhook-url-de-retorno) 
 
 
 Custom Checkout 
@@ -120,13 +120,13 @@ Custom Checkout
 
 	Parameters to send:
 
- - Token da Loja: **Loja**
- - Nome da aplicação: **Aplicacao**
- - Meios de pagamento: **Meios** \*
+ - Store's Token: **Loja**
+ - Application's name: **Aplicacao**
+ - Payment methods: **Meios** \*
 
 	\* With these parameters you can choose which methods between the application's enabled ones that will appear as an payment option, the current accepted values are ( "Todos" , "Credito", "Debito", "Boleto" , etc..) 
 
-	As a response you will receive a XML explained in [References / **Array Retorno Meios de Pagamento**](#parametros-array-retorno-meios-de-pagamento-xml).
+	As a response you will receive a XML explained in [References / **Array Retorno Meios de Pagamento**](#references-array-retorno-meios-de-pagamento-xml).
 
 	**Examples**:
 	<div class="code-sample-options">[Code](../code-example/ConsultarMeiosDePagamento.md)<div>
@@ -137,11 +137,11 @@ Custom Checkout
 
 	Parameters to send:
 
- - Token da Loja: **Loja**
- - Nome da aplicação: **Aplicacao**
- - Valor da compra: **Valor** ( sem pontuação )
+ - Store's Token: **Loja**
+ - Application's name: **Aplicacao**
+ - Purchase value: **Valor** ( sem pontuação )
 
-	As a response you will receive a XML explained in [References / **Retorno de Parcelas Array**](#parametros-retorno-parcelas-array)..
+	As a response you will receive a XML explained in [References / **Retorno de Parcelas Array**](#references-retorno-parcelas-array)..
 	
 	**Examples**:
 	<div class="code-sample-options">[Code](../code-example/ConsultaParcelasArray.md)<div>
@@ -154,7 +154,7 @@ Custom Checkout
 
 	Parameter's name: ***PedidoXML***
 
-	The PedidoXML parameter is defined in the item [References / **Pedido**](#parametros-pedido).
+	The PedidoXML parameter is defined in the item [References / **Pedido**](#references-pedido).
 
 	**Examples**:
 	<div class="code-sample-options">[Code](../code-example/IniciarPagamentoXML.md)<div>
@@ -165,11 +165,11 @@ Custom Checkout
 
 	The second step returns a XML containing te informations and the status of the order, in case of beeing succefull it will contain a HTML code snippet to be displayed to the client so he can proceed the payment.
 
-	The return of the request is defined in the item [References / **Retorno do Pedido XML**](#parametros-retorno-do-pedido-xml).
+	The return of the request is defined in the item [References / **Retorno do Pedido XML**](#references-retorno-do-pedido-xml).
 
 1. **Monitoring the orders' status**:
 
-	After registering a order, it can be monitored through our consulting methods or by WebHook, both of them described further in this manual as: [Monitoring / **Consulting Status**](#acompanhamento-dos-pedidos-consultar-status) and [Monitoring / **Consulting Status**](#acompanhamento-dos-pedidos-webhook-url-de-retorno) 
+	After registering a order, it can be monitored through our consulting methods or by WebHook, both of them described further in this manual as: [Monitoring / **Consulting Status**](#monitoring-consultar-status) and [Monitoring / **Consulting Status**](#monitoring-webhook-url-de-retorno) 
 
 
 MONITORING ORDERS
@@ -184,11 +184,11 @@ Consulting Status
  
  Parameters to send:
 
- - Token da Loja: Loja
- - Nome da aplicação: Aplicação
- - Identificador do pedido: Pedido 
+ - Store's Token: Loja
+ - Application's name: Aplicação
+ - Merchant's order identifier: Pedido 
 
-   The return of the request is defined in the item [Monitoring / **Consulting Status**](#parametros-retorno-status-pagamento-xml)
+   The return of the request is defined in the item [Monitoring / **Consulting Status**](#references-retorno-status-pagamento-xml)
 
 
 WebHook - URL de retorno
@@ -208,9 +208,9 @@ For each application it is possible to configure a return **URL** that will be c
 
 	**Parameters**:
 
- - Order's merchant id: **Pedido** 
+ - Merchant's order id: **Pedido** 
  
-5. As security measures after receiving the status change notification your application should make a request to consult the status of the received order merchant id as described in the [Monitoring / **Consulting Status**](#acompanhamento-dos-pedidos-consultar-status) session.
+5. As security measures after receiving the status change notification your application should make a request to consult the status of the received order merchant id as described in the [Monitoring / **Consulting Status**](#monitoring-consultar-status) session.
 
 
 **Exemplos de Requisição**:

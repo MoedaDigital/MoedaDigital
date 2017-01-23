@@ -25,10 +25,6 @@ $request->setQueryData(array(
   'Valor' => '10000'
 ));
 
-$request->setHeaders(array(
-  'postman-token' => 'e262013d-6cab-fd3c-f840-51a091ebb751',
-  'cache-control' => 'no-cache'
-));
 
 try {
   $response = $request->send();
