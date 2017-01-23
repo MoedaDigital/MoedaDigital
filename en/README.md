@@ -8,116 +8,57 @@ Somos uma empresa que oferece soluções para facilitar o processo de recebiment
 
 Oferecemos diversas maneiras de uma  pessoa ou empresa começar a receber pagamentos de forma segura e conforme as necessidades de cada um; essas maneiras são chamadas de formas de integração, e cada uma possui aplicações distintas além de esforços diferentes para coloca-las em prática.
 
-Conta MD
+MD Account
 -------------
 
-A conta MD é o cadastro na Moeda Digital que permite a empresa ou o profissional acessar a plataforma online e começar a receber. 
-Dentro da área do usuário na plataforma Moeda Digital é  possível:
+The MD account is the store profile in Moeda Digital that allows the company or professional to access our online platform.
+Inside the store's area you can:
 
-- Fazer testes de integração.
-- Acompanhar os pedidos gerados pelo seu negócio.
-- Analisar seus pedidos e recebimentos.
-- Criar novas aplicações.
-- Pedir a habilitação da loja para começar as vendas.
+- Do integration tests.
+- Track your orders.
+- Analyse your orders and cashflow.
+- Create new applications.
+- Make the request to go into production and start selling.
 
-Integrações
+Integrations
 ----------------
 
-###Botão de Compras e Link de Pagamento
+###Custom Checkout HTML
+
+####Description
+
+In the custom checkout html the store receives a HTML code snippet to show their clients in their own site displaying all the allowed payment methods, avoiding the need to make changes in the code when a new payment method is added or removed.
+
+The client never leaves your page to conclude the payment.
+
+###Custom Checkout
 
 ####Descrição
 
-O Botão de Compras e o Link de Pagamento são as formas mais simples e rápidas para começar a receber pagamentos, sua principal finalidade é fazer cobranças de itens individuais ou receber doações de qualquer valor. Em ambos os casos o cliente será redirecionado para um ambiente seguro de pagamento fornecido pela moeda digital. Em poucos minutos você estará apto a mandar e-mails com cobranças ou gerar um botão em HTML para ser colocado em sua página de vendas.  
+In the custom checkout the payment process is fully costumized by the store, all the steps of the payment are done inside the store's page. 
 
-####Indicação
-Algumas aplicações podem ser:
-
-- Lojistas que querem vender seus produtos através de páginas como facebook.
--  Fazer cobranças por e-mail.
-- Profissionais que queiram receber por seus serviços de forma on-line. 
-- Lojistas com pouca variedade de produtos e com pouco conhecimento em desenvolvimento e queiram incluir um botão de compra em sua página.
-- Eventos.
-
-###Checkout Transparente HTML
-
-####Descrição
-
-O checkout transparente HTML é o Checkout Transparente porém permite que a loja utilize de um HTML pronto com os meios de pagamento, possibilitando a adesão de novos meios de pagamento disponíveis sem a necessidade de mexer no site. 
-
-Assim como no Checkout Transparente, o cliente não precisa deixar sua página para encerrar o pagamento, 
-
-####Indicação
-
-É a solução indicada para quem quer maior personalização e tenha condições técnicas para implementação, além de querer a possibilidade de mudar os meios de pagamento aceitos sem a necessidade mudanças no código.
-
-O Checkout transparente possuí também um menor índice de desistência pelos compradores.
-
-###Checkout Transparente
-
-####Descrição
-
-No Checkout transparente todo o processo de compra ocorre na página do E-commerce, o usuário não percebe a existência da Moeda Digital e o lojista tem a possibilidade de customizar todas as etapas em sua página.
-
-####Indicação
-
-É a solução indicada para quem quer maior personalização de sua página e tenha condições técnicas mais avançadas para implementação. 
-
-O Checkout transparente possuí também um menor índice de desistência pelos compradores.
+The client never leaves your page to conclude the payment.
 
 
-Recorrência
-------------
-
-####Descrição
-
-A recorrência é uma maneira de fazer cobranças automáticas mensais no cartão do seu cliente, caso a primeira transação seja aprovada, serão agendadas cobranças pelo tempo especificado de até 12 meses.
-
-
-####Indicação
-
-- Vendas por assinatura.
-- Serviços por assinatura.
-
-Split / Rateio
---------------
-
-####Descrição
-
-O Rateio é a forma de dividir os valores recebidos entre uma ou mais contas, nele a aplicação segue o mesmo caminho do checkout transparente, porém informa com quais contas previamente cadastradas os valores devem ser divididos.
-
-Após os recebimentos, o dono da aplicação pode solicitar as transferências dos valores disponíveis para cada conta.
-
-####Indicação
-
-- Market Places
-- Aplicações com multiplos recebedores
-
-
-
-
-PRIMEIROS PASSOS
+FIRST STEPS
 ================
 
-Resumo
+Resume
 -----------
 
-A lista a seguir é uma breve descrição de todos os passos necessários do início ao fim do processo de integração.
+The following list is a description of all the necessary steps to go through the integration process.
 
-1. Criação da conta na Moeda Digital , através dela você terá acesso à plataforma e às ferramentas de  pagamento oferecidas.
+1. Create a MD account, by that you gain access to the platform and can start testing.
 
-2. Criar e Configurar uma Aplicação: 
-<br>Cada conta MD pode criar diversas aplicações com distintas configurações;
-Deve-se escolher o tipo de integração da aplicação
-Deve-se escolher as opções de recebimento ( cartão, juros, boleto, número de parcelas aceitas, e etc)
->**Nota:** Inicialmente deve-se criar uma aplicação para teste que permite iniciar a integração. (Utilizar aplicações reais apenas é possível após entrar em contato com nossa equipe)
+2. Create and Configure an application: 
+<br>Each MD account can create diverses applications with different configurations;
+You have to choose the integration type.
+You can configure the receiving methods( credit card, interests, "boleto", e etc)
+>**Note:** Initially is recommended to create a testing application. (To be able to make real transactions you have to ask for permission inside the store's profile area).
 
-3. Caso o tipo de integração escolhido seja o Link de Compras ou o Botão de Compras você pode pular esta etapa, caso contrário deve-se desenvolver a integração com o seu sistema, utilizando-se de nossa documentação e módulos existentes.
+4. Start testing, you can create transactions and verify if the orders are beeing correctly generated and processed.
 
-4. Começar os testes, você poderá gerar transações para a aplicação de teste e verificar se os pedidos estão sendo gerados e processados corretamente, além de se acostumar com o painel da plataforma onde poderá ver relatórios sobre suas transações.
-
-5. Habilitar sua aplicação real, basta pedir a habilitação da sua loja através da plataforma. No menu ***Administração → Conta*** termine o preenchimento dos seus dados cadastrais, verifique as tarifas combinadas e aceite o termo de uso para que sua loja entre em análise e seja habilitada para poder operar em produção.
-
-6. Receber!
+5. Create an application for production and ask for permission to start your operation. Inside the menu ***Administração → Conta*** finish completing your informations, verify the transactions fees and accept the user agreement so your store can go into our analysis and be enabled to go into production.
 
 
 Criando Conta
