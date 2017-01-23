@@ -54,7 +54,7 @@ The following list is a description of all the necessary steps to go through the
 <br>Each MD account can create diverses applications with different configurations;
 You have to choose the integration type.
 You can configure the receiving methods( credit card, interests, "boleto", e etc)
->**Note:** Initially is recommended to create a testing application. (To be able to make real transactions you have to ask for permission inside the store's profile area).
+>**Note:** Initially it is recommended to create a testing application. (To be able to make real transactions you have to ask for permission inside the store's profile area).
 
 4. Start testing, you can create transactions and verify if the orders are beeing correctly generated and processed.
 

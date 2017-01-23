@@ -1,5 +1,5 @@
 
-PARÂMETROS
+REFERENCES
 ==========
 
 Pedido
@@ -20,7 +20,7 @@ Pedido
 | [Rateios](#parametros-rateios)       | objeto | Não         | -       | &lt;Rateios&gt;&lt;/Rateios&gt;     | Elemento contendo as divisões do valor recebido                      |
 
 
-###Exemplo
+###Example
 
 ```xml
 <?xml version='1.0' encoding='utf-16'?>
