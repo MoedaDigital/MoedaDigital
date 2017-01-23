@@ -26,7 +26,7 @@ The client never leaves your page to conclude the payment.
 
 ###Custom Checkout
 
-####Descrição
+####Description
 
 In the custom checkout the payment process is fully costumized by the store, all the steps of the payment are done inside the store's page. 
 

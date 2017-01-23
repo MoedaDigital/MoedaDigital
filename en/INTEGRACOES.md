@@ -213,5 +213,5 @@ For each application it is possible to configure a return **URL** that will be c
 5. As security measures after receiving the status change notification your application should make a request to consult the status of the received order merchant id as described in the [Monitoring / **Consulting Status**](#monitoring-orders-consulting-status) session.
 
 
-**Exemplos de Requisição**:
+**Example**:
 	<div class="code-sample-options">[Code](../code-example/WebHook.md)</div>
