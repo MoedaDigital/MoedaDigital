@@ -77,7 +77,7 @@ Custom Checkout HTML
 
 1. **Monitoring the orders' status**:
 
-	After registering a order, it can be monitored through our consulting methods or by WebHook, both of them described further in this manual as: [Monitoring / **Consulting Status**](#monitoring-consultar-status) and [Monitoring / **Consulting Status**](#monitoring-webhook-url-de-retorno) 
+	After registering a order, it can be monitored through our consulting methods or by WebHook, both of them described further in this manual as: [Monitoring / **Consulting Status**](#monitoring-orders-consultar-status) and [Monitoring / **Consulting Status**](#monitoring-orders-webhook-url-de-retorno) 
 
 
 Custom Checkout 
@@ -169,7 +169,7 @@ Custom Checkout
 
 1. **Monitoring the orders' status**:
 
-	After registering a order, it can be monitored through our consulting methods or by WebHook, both of them described further in this manual as: [Monitoring / **Consulting Status**](#monitoring-consultar-status) and [Monitoring / **Consulting Status**](#monitoring-webhook-url-de-retorno) 
+	After registering a order, it can be monitored through our consulting methods or by WebHook, both of them described further in this manual as: [Monitoring / **Consulting Status**](#monitoring-orders-consultar-status) and [Monitoring / **Consulting Status**](#monitoring-orders-webhook-url-de-retorno) 
 
 
 MONITORING ORDERS
@@ -188,7 +188,7 @@ Consulting Status
  - Application's name: Aplicação
  - Merchant's order identifier: Pedido 
 
-   The return of the request is defined in the item [Monitoring / **Consulting Status**](#references-retorno-status-pagamento-xml)
+   The return of the request is defined in the item [References / **Retorno Status Pagamento XML**](#references-retorno-status-pagamento-xml)
 
 
 WebHook - URL de retorno
@@ -210,7 +210,7 @@ For each application it is possible to configure a return **URL** that will be c
 
  - Merchant's order id: **Pedido** 
  
-5. As security measures after receiving the status change notification your application should make a request to consult the status of the received order merchant id as described in the [Monitoring / **Consulting Status**](#monitoring-consultar-status) session.
+5. As security measures after receiving the status change notification your application should make a request to consult the status of the received order merchant id as described in the [Monitoring / **Consulting Status**](#monitoring-orders-consultar-status) session.
 
 
 **Exemplos de Requisição**:
