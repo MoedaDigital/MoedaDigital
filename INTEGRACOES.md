@@ -137,8 +137,8 @@ Checkout Transparente
     participant Cliente
     participant Loja
     participant MD
-    Cliente->>+Loja: (opcional) - Comprar
-    Loja->>+MD: Consultar Meios de Pagamento
+    Cliente->>+Loja: Comprar
+    Loja->>+MD: (opcional) Consultar Meios de Pagamento
     MD-->>-Loja: Retorno Meios de Pagamento
     Loja->>+MD: (opcional) - Consultar Parcelas
     MD-->>-Loja: Cálculo dos valores parcelados

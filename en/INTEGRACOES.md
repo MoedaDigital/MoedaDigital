@@ -21,14 +21,14 @@ Custom Checkout HTML
     participant Client
     participant Store
     participant MD
-    Cliente->>+Loja: 1 - Comprar
-    Loja->>MD: 2 - Consultar Meios de Pagamento
-    MD-->>Loja: 3 - Retorno Meios de Pagamento
-    Loja-->>-Cliente: 4 - Html com meios de pagamento
-    Cliente->>+Loja: 5 - Dados de Pagamento
-    Loja->>MD: 6 - Iniciar Pagamento
-    MD-->>Loja: 7 - Retorno do Pedido
-    Loja->>-Cliente: 8 - Compra Finalizada</div> 
+    Client->>+Store: 1 - Purchase
+    Store->>MD: 2 - Consulting payment methods
+    MD-->>Store: 3 - Receives Retorno Meios de Pagamento
+    Store-->>-Client: 4 - Displays Html with payment methods
+    Client->>+Store: 5 - Payment data
+    Store->>MD: 6 - Initiate payment
+    MD-->>Store: 7 - Receives Retorno do Pedido
+    Store->>-Client: 8 - Done</div> 
 </pre>
 
 ####Steps:
@@ -97,24 +97,24 @@ Custom Checkout
 
 <pre>
 <div class="mermaid">sequenceDiagram
-    participant Cliente
-    participant Loja
+    participant Client
+    participant Store
     participant MD
-    Cliente->>+Loja: (opcional) - Comprar
-    Loja->>+MD: Consultar Meios de Pagamento
-    MD-->>-Loja: Retorno Meios de Pagamento
-    Loja->>+MD: (opcional) - Consultar Parcelas
-    MD-->>-Loja: Cálculo dos valores parcelados
-    Loja-->>-Cliente: Página 100% própria de pagamento
-    Cliente->>+Loja: Dados de Pagamento
-    Loja->>MD: Iniciar Pagamento
-    MD-->>Loja: Retorno do Pedido
-    Loja->>-Cliente: Resultado do pedido</div> 
+    Client->>+Store: Purchase
+    Store->>+MD: (optional) Consulting payment methods
+    MD-->>-Store:  Retorno Meios de Pagamento
+    Store->>+MD: (optional) Consult Installments
+    MD-->>-Store: Calculated installments
+    Store-->>-Client: Costumized checkout page
+    Client->>+Store: Payment data
+    Store->>MD: Initiate payment
+    MD-->>Store: Receives Retorno do Pedido
+    Store->>-Client: Displays Resultado do pedido</div> 
 </pre>
 
 ####Steps:
 
-1. **(Optional) Consultar Meios de Pagamento**:
+1. **(Optional) Consulting payment methods**:
 
 	This step is usefull to check the avaiable payment methods on the application, to do this you need to make a HTTP request through the methods **GET** or **POST** to the URL: https://moeda.digital/gateway.asmx/ConsultaMeiosDePagamentoHTMLv2
 
