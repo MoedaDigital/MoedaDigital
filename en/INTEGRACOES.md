@@ -89,7 +89,7 @@ Checkout Transparente HTML
 	Você receberá como resposta o XML .... que contém um código HTML para ser exibido ao cliente dentro de um formulário.
 
 	**Exemplos**:
-	<div class="code-sample-options">[Code](code-example/ConsultarMeiosDePagamentoHTMLv2.md)<div>
+	<div class="code-sample-options">[Code](../code-example/ConsultarMeiosDePagamentoHTMLv2.md)<div>
 
 1. **Iniciar Pagamento**:
 
@@ -102,7 +102,7 @@ Checkout Transparente HTML
 	O valor PedidoXML está definido no item [Parâmetros / **Pedido**](#parametros-pedido).
 
 	**Exemplos**:
-	<div class="code-sample-options">[Code](code-example/IniciarPagamentoXML.md)<div>
+	<div class="code-sample-options">[Code](../code-example/IniciarPagamentoXML.md)<div>
 
 1. **Exibir o código ao cliente**:
 	
@@ -166,7 +166,7 @@ Checkout Transparente
 	Você receberá como resposta o XML Array de Retorno Meios Pagamento XML descrito mais a baixo.
 
 	**Exemplos**:
-	<div class="code-sample-options">[Code](code-example/ConsultarMeiosDePagamento.md)<div>
+	<div class="code-sample-options">[Code](../code-example/ConsultarMeiosDePagamento.md)<div>
 
 1. **(Opcional) Consultar Parcelas:**
 
@@ -181,7 +181,7 @@ Checkout Transparente
 	Você receberá como resposta o XML Retorno Parcelas Array descrito mais a baixo.
 	
 	**Exemplos**:
-	<div class="code-sample-options">[Code](code-example/ConsultaParcelasArray.md)<div>
+	<div class="code-sample-options">[Code](../code-example/ConsultaParcelasArray.md)<div>
 
 1. **Iniciar Pagamento**:
 
@@ -194,7 +194,7 @@ Checkout Transparente
 	O valor PedidoXML está definido no item [Parâmetros / **Pedido**](#parametros-pedido).
 
 	**Exemplos**:
-	<div class="code-sample-options">[Code](code-example/IniciarPagamentoXML.md)<div>
+	<div class="code-sample-options">[Code](../code-example/IniciarPagamentoXML.md)<div>
 
 
 1. **Exibir o código ao cliente**:
@@ -259,4 +259,4 @@ Para cada aplicação é possível fornecer uma **URL** de retorno que será cha
 	Você receberá como resposta o XML Array de Retorno Meios Pagamento XML descrito mais a baixo.
 
 **Exemplos de Requisição**:
-	<div class="code-sample-options">[Code](code-example/WebHook.md)</div>
+	<div class="code-sample-options">[Code](../code-example/WebHook.md)</div>
