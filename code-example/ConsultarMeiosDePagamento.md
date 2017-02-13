@@ -6,7 +6,7 @@ C#
 
 ```C#
 
-var client = new RestClient("http://localhost:23296/Gateway.asmx/ConsultaMeiosDePagamento?Loja=xxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxx&Aplicacao=app-teste&Meios=TODOS");
+var client = new RestClient("https://moeda.digital/Gateway.asmx/ConsultaMeiosDePagamento?Loja=xxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxx&Aplicacao=app-teste&Meios=TODOS");
 var request = new RestRequest(Method.GET);
 
 IRestResponse response = client.Execute(request);
@@ -61,7 +61,7 @@ Retorno
     <Nome>ITAU-BOLETO</Nome>
     <Descricao>Visa</Descricao>
     <Tipo>BOLETO</Tipo>
-    <Parcelado>S</Parcelado>
+    <Parcelado>N</Parcelado>
     <Imagem>https://moeda.digital/Imagens/Bandeiras/boleto.png</Imagem>
     <Mensagem />
   </RetornoMeiosPagamento>
