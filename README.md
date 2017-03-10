@@ -130,7 +130,7 @@ Criar uma conta na Moeda Digital é muito simples, basta:
 
 Feito isso, você conseguirá entrar na plataforma da Moeda Digital através do site da Moeda digital clicando em "Acessar"; de lá você pode verificar relatórios, criar aplicações, fazer testes de integração entre outras funcionalidades. 
 
->**Nota:** Para poder realizar uma venda real, entre em Administração -> Conta, preencha os campos necessários e solicite a habilitação de sua loja. 
+>**Nota:** Para poder realizar uma venda real, entre em ***Administração → Conta*** , preencha os campos necessários e solicite a habilitação de sua loja. 
 
 
 Criando Aplicação
