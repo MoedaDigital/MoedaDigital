@@ -82,6 +82,7 @@ Pedido
            <Validade></Validade>
            <CVV></CVV>
            <PortadorNome></PortadorNome>
+           <Bandeira></Bandeira>
        </Cartao>
    </Pagamento>
 </Pedido>
@@ -117,9 +118,8 @@ Cliente
 | Idioma       | string | Sim           | -         | ES_ES<br>PT-BR<br>EN_US                                                                       | Idioma do cliente                                                                                                                       |
 | Email        | string | Sim           | -         | -                                                                                             | E-mail do cliente                                                                                                                       |
 | DDD          | string | Sim           | 2 Digitos | ex: 41                                                                                        | DDD do telefone                                                                                                                         |
-| Telefone     | string | Sim           | -         | -                                                                                             | Telefone do cliente                                                                                                                     |
-
-| TelefoneTipo| string | Não         | -            | ex: Residencial | Tipo do telefone        |
+| Telefone     | string | Sim           | -         | -     | Telefone do cliente          |
+| TelefoneTipo| string | Sim         | -            | ex: Residencial | Tipo do telefone        |
 
 Pagamento
 ---------
