@@ -103,7 +103,9 @@ WooCommerce
  3. Clique em salvar. Pronto! o seu site está configurado para utilizar a Moeda Digital.
  
  4. Dentro das configurações da aplicação no painel da Moeda Digital, configure a URL de retorno para 
+	``` 
 	***dominio****/index.php?wc-api=callbackmoeda&?* 
+	```
 	substituindo **dominio** pelo endereço de seu site. 
 
  5. Escolha tipo de retorno : **URL** 
