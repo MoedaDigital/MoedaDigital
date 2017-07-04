@@ -104,7 +104,7 @@ WooCommerce
  
  4. Dentro das configurações da aplicação no painel da Moeda Digital, configure a URL de retorno para 
 	``` 
-	dominio/index.php?wc-api=retorno_moeda_digital&
+	dominio/index.php?wc-api=retorno_moeda_digital&?
 	```
 	substituindo **dominio** pelo endereço de seu site. 
 
