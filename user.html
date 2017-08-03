@@ -1,0 +1,81 @@
+<!doctype html> 
+
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Moeda Digital</title>
+<link rel="shortcut icon" type="image/png" href="https://moeda.digital/favicon.ico"/>
+  <!-- Jquery -->
+  <script src="assets/jquery/1.9.1/jquery.min.js"></script>
+
+  <!-- Flatdoc Script -->
+  <script src="assets/flatdoc/v0.9.0/legacy.js"></script>
+  <script src="assets/flatdoc/v0.9.0/flatdoc.js"></script>
+
+  <!-- BootStrap -->
+  <link  href='assets/bootstrap.css' rel='stylesheet'>
+  <link  href='assets/bootstrap-theme.css' rel='stylesheet'>
+  <link  href='assets/bootstrap-callout.css' rel='stylesheet'>
+
+  <!--LightBox -->
+  <link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
+
+  <!-- Mermaid -->
+  <script type="text/javascript" src="assets/mermaid/mermaid.js"></script>
+
+  <!-- Pretty Print -->
+  <script type="text/javascript" src="assets/code-prettify/prettify.js"></script>
+
+
+  <!--Custom -->
+  <link  href='assets/style.css' rel='stylesheet'>
+  <script src="assets/script.js"></script>
+
+  <!-- Meta -->
+  <meta content="Moeda Digital" property="og:title">
+  <meta content="Manual de integração" name="description">
+  <meta content="http://docs.moeda.digital/" name="hostname">
+
+  <!-- Initializer -->
+  <script>
+
+    $(document).ready(function(){
+      var hostname = $('meta[name=hostname]').attr("content");
+
+      Flatdoc.run({
+        //fetcher: Flatdoc.github('MoedaDigital/MoedaDigital')      
+        fetcher: Flatdoc.file([hostname+'user/README.md'])
+      });
+
+    });
+
+
+  </script>
+</head>
+<body class='no-literate' role='flatdoc'>
+  <div class='header'>
+    <div class='left'>
+
+        <ul>
+      <a href="https://www.moeda.digital">
+      <img class='no-lightbox' src="https://moeda.digital/assets/Admin/images/md_logo.png" height="59" alt="Moeda Digital">
+      </a>
+      </ul>
+    </div>
+    <div class='right'>
+      <a href="/en/index.html">EN</a>
+    </div>
+  </div>
+  <div class='content-root'>
+    <div class='menubar'>
+      <div class='menu section' role='flatdoc-menu'></div>
+    </div>
+    <div role='flatdoc-content' class='content'></div>
+  </div>
+
+  <script src="assets/lightbox/js/lightbox.js"></script>
+</body>
+</html>
