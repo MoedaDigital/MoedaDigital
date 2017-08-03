@@ -60,8 +60,39 @@ Suas aplicações podem ser criadas e configuradas em:  ***Administração → A
 Link de Cobrança
 ----------------
 
+####Aplicabilidade:
+
+ - Envio de cobrança por E-mail ou outros meios de comunicação.
+ - Inserção em páginas WEB.
+
 O link de cobrança é uma url que pode ser enviada por email ou ser disponibilizada na web para que sejam feitos pagamentos dentro de uma página da Moeda Digital.
 
 Toda conta após ser Habilitada na moeda digital possuí acesso à esta funcionalidade que se encontra em: ***Ferramentas → Link de Cobrança*** 
+
+
+####Como utilizar:
+
+1. Entre em sua Conta MD na plataforma.
+
+2. No menu principal acesse ***Ferramentas → Link de Cobrança*** 
+
+3. Preencha os campos e escolha entre URL, Botão ou Link.
+>**Nota:** A diferença entre as opções é apenas a formatação na qual a URL é fornecida, o Botão fornece configurações de estilização em HTML.
+
+4. Copie o texto que é mostrado na caixa de texto ao lado das opções.
+
+5. Cole o texto copiado junto ao corpo do E-mail, código no seu site ou mensagem de cobrança a ser enviada.
+
+6. Aguarde o pagamento.
+
+####Campos de configuração do pagamento:
+
+| Campo    | O que é | O que faz|
+| :-----------------| :---- | :--- |
+|Aplicação|	Nome da Aplicação configurada para essa cobrança|Define os meios de pagamento e outras configurações da cobrança.|
+|Número do Pedido|	Identificador único de cada pedido por aplicação|Serve para o acompanhamento do pagamento através da plataforma.|
+|Valor|O valor total a ser cobrado. **O valor 0 configura a opção de doação**| Define o valor que será cobrado do cliente |
+|Texto do Botão| Texto que será mostrado no botão --- Apenas serve para o caso do botão | Muda o texto mostrado no botão.|
+|Tipo |Escolhe entre Link, URL e Botão| Fornece diferentes modos de formatação.|
 
 >**Nota:** Caso o número do pedido seja preenchido o link poderá ser utilizado apenas uma vez ( apenas um pagamento aprovado ).
