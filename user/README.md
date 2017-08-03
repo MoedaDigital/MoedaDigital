@@ -66,10 +66,18 @@ O link de cobrança é uma url que pode ser enviada por email ou ser disponibili
 
 Toda conta após ser Habilitada na moeda digital possuí acesso à esta funcionalidade que se encontra em: ***Ferramentas → Link de Cobrança*** 
 
-####Aplicabilidade:
+####Descrição
 
- - Envio de cobrança por E-mail ou outros meios de comunicação.
- - Inserção em páginas WEB.
+O Botão de Compras e o Link de Pagamento são as formas mais simples e rápidas para começar a receber pagamentos, sua principal finalidade é fazer cobranças de itens individuais ou receber doações de qualquer valor. Em ambos os casos o cliente será redirecionado para um ambiente seguro de pagamento fornecido pela moeda digital. Em poucos minutos você estará apto a mandar e-mails com cobranças ou gerar um botão em HTML para ser colocado em sua página de vendas.  
+
+####Indicação
+
+- Lojistas que querem vender seus produtos através de páginas como facebook.
+- Envio de cobrança por E-mail ou outros meios de comunicação.
+- Profissionais que queiram receber por seus serviços de forma on-line. 
+- Lojistas com pouca variedade de produtos e com pouco conhecimento em desenvolvimento e queiram incluir um botão de compra em sua página (Inserção em páginas WEB).
+- Eventos.
+ 
 
 ####Como utilizar:
 
@@ -104,3 +112,5 @@ Calculadora
 Para poder saber o quanto será cobrado de juros sobre uma compra parcelada e poder repassar este valor para o cliente desponibilizamos uma calculadora em: ***Ferramentas → Calculadora*** 
 
 >**Nota:** Os juros são sobrados sobre o valor descontado das taxas, portanto se sua tarifa for 4% o juros serão cobrados sobre o valor total menos os 4% do total.
+
+

@@ -23,21 +23,6 @@ Dentro da área do usuário na plataforma Moeda Digital é  possível:
 Integrações
 ----------------
 
-###Botão de Compras e Link de Pagamento
-
-####Descrição
-
-O Botão de Compras e o Link de Pagamento são as formas mais simples e rápidas para começar a receber pagamentos, sua principal finalidade é fazer cobranças de itens individuais ou receber doações de qualquer valor. Em ambos os casos o cliente será redirecionado para um ambiente seguro de pagamento fornecido pela moeda digital. Em poucos minutos você estará apto a mandar e-mails com cobranças ou gerar um botão em HTML para ser colocado em sua página de vendas.  
-
-####Indicação
-Algumas aplicações podem ser:
-
-- Lojistas que querem vender seus produtos através de páginas como facebook.
--  Fazer cobranças por e-mail.
-- Profissionais que queiram receber por seus serviços de forma on-line. 
-- Lojistas com pouca variedade de produtos e com pouco conhecimento em desenvolvimento e queiram incluir um botão de compra em sua página.
-- Eventos.
-
 ###Checkout Transparente HTML
 
 ####Descrição
