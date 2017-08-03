@@ -23,8 +23,8 @@ Dentro da área do usuário na plataforma Moeda Digital é  possível:
 - Acompanhar seus pedidos.
 - Acessar relatórios sobre suas vendas.
 - Solcitar saques.
-- Simular o custo de transações parceladas (Calculadora).
-- Gerar links para cobrança instantanea [(Link de Cobrança)](#link-de-cobranca)..
+- Simular o custo de transações parceladas  [(Calculadora)](#calculadora).
+- Gerar links para cobrança instantanea [(Link de Cobrança)](#link-de-cobranca).
 - Criar Aplicações
 - Utilizar a plataforma de testes (Ambiente Sandbox).
 
@@ -56,6 +56,8 @@ Na Moeda Digital é possível dividir o seu negócio em diversas aplicações pa
 
 Suas aplicações podem ser criadas e configuradas em:  ***Administração → Aplicações*** 
 
+Ferramentas
+===========
 
 Link de Cobrança
 ----------------
@@ -95,3 +97,10 @@ Toda conta após ser Habilitada na moeda digital possuí acesso à esta funciona
 |Tipo |Escolhe entre Link, URL e Botão| Fornece diferentes modos de formatação.|
 
 >**Nota:** Caso o número do pedido seja preenchido o link poderá ser utilizado apenas uma vez ( apenas um pagamento aprovado ).
+
+Calculadora
+----------------
+
+Para poder saber o quanto será cobrado de juros sobre uma compra parcelada e poder repassar este valor para o cliente desponibilizamos uma calculadora em: ***Ferramentas → Calculadora*** 
+
+>**Nota:** Os juros são sobrados sobre o valor descontado das taxas, portanto se sua tarifa for 4% o juros serão cobrados sobre o valor total menos os 4% do total.
