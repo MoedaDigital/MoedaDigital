@@ -52,7 +52,7 @@ Pronto, sua conta entrará em uma análise rápida e logo ficará habilitada par
 Aplicações
 -----------
 
-Na Moeda Digital é possível dividir o seu negócio em diversas aplicações para que você possua maior versatilidade sobre suas vendas, podendo possuir uma ou mais integrações além de gerar links de cobrança com configurações distintas.
+Na Moeda Digital é possível dividir o seu negócio em diversas aplicações para que você possua maior versatilidade sobre suas vendas, podendo fazer uma ou mais integrações além de gerar links de cobrança com configurações distintas.
 
 Suas aplicações podem ser criadas e configuradas em:  ***Administração → Aplicações*** 
 
