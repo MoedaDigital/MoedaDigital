@@ -60,15 +60,14 @@ Suas aplicações podem ser criadas e configuradas em:  ***Administração → A
 Link de Cobrança
 ----------------
 
-####Aplicabilidade:
-
- - Envio de cobrança por E-mail ou outros meios de comunicação.
- - Inserção em páginas WEB.
-
 O link de cobrança é uma url que pode ser enviada por email ou ser disponibilizada na web para que sejam feitos pagamentos dentro de uma página da Moeda Digital.
 
 Toda conta após ser Habilitada na moeda digital possuí acesso à esta funcionalidade que se encontra em: ***Ferramentas → Link de Cobrança*** 
 
+####Aplicabilidade:
+
+ - Envio de cobrança por E-mail ou outros meios de comunicação.
+ - Inserção em páginas WEB.
 
 ####Como utilizar:
 
