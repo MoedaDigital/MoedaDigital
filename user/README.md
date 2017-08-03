@@ -23,8 +23,8 @@ Dentro da área do usuário na plataforma Moeda Digital é  possível:
 - Acompanhar seus pedidos.
 - Acessar relatórios sobre suas vendas.
 - Solcitar saques.
-- Simular o custo de transações parceladas  [(Calculadora)](#calculadora).
-- Gerar links para cobrança instantanea [(Link de Cobrança)](#link-de-cobranca).
+- Simular o custo de transações parceladas  [(Calculadora)](#ferramentas-calculadora).
+- Gerar links para cobrança instantanea [(Link de Cobrança)](#ferramentas-link-de-cobranca).
 - Criar Aplicações
 - Utilizar a plataforma de testes (Ambiente Sandbox).
 
