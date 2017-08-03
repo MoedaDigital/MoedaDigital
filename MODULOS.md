@@ -71,7 +71,7 @@ WooCommerce
 ###Instalação
 
  1. Faça o Download do módulo:
-	 [GitHub Download](https://github.com/MoedaDigital/WooCommercePlugin/archive/master.zip) (v1.1.0)
+	 [GitHub Download](https://github.com/MoedaDigital/WooCommercePlugin/archive/master.zip) (v1.1.1)
 	 >**Nota:** Descompacte o arquivo e compacte apenas a pasta **moedadigital**
 
  2. No painel de admin do wordpress vá em ***Plugins → Adicionar Novo***
