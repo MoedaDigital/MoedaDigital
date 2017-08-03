@@ -695,10 +695,10 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
     border-left: solid 1px #dfe2e7;
     margin-left: 15px;
   }
-  .header li {
+/*  .header li {
     border-left: solid 1px rgba(255,255,255,0.5);
     border-right: solid 1px #dfe2e7;
-  }
+  }*/
   .header li:last-child {
     border-right: 0;
   }
