@@ -7,7 +7,7 @@ Utilize os Plugins e Módulos disponíveis para integrar com as principais plata
 
 >**Nota**: Não se esqueça de se cadastrar na Moeda Digital para poder configurar os plugins corretamente. 
 
-OpenCart
+<!-- OpenCart
 --------
 
 ###Instalação
@@ -63,7 +63,7 @@ OpenCart
 	![Configuração](images/modulos/opencart/4.png)
 
  5. Clique no botão salvar, pronto, a Moeda Digital está configurada na sua aplciação!
-
+ -->
 
 WooCommerce
 -----------
