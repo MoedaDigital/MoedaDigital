@@ -23,6 +23,7 @@ Dentro da área do usuário na plataforma Moeda Digital é  possível:
 - Acompanhar seus pedidos.
 - Acessar relatórios sobre suas vendas.
 - Solcitar saques.
+- Fazer uma cobrança em um cartão de crédito  [(Cobrança instantánea)](#ferramentas-cobranca-instantanea).
 - Simular o custo de transações parceladas  [(Calculadora)](#ferramentas-calculadora).
 - Gerar links para cobrança instantanea [(Link de Cobrança)](#ferramentas-link-de-cobranca).
 - Criar Aplicações
@@ -59,6 +60,27 @@ Suas aplicações podem ser criadas e configuradas em:  ***Administração → A
 Ferramentas
 ===========
 
+Cobrança instantánea
+--------------------
+
+Esta ferramenta possibilita fazer uma cobrança utilizando o número do cartão de crédito do cliente.
+
+
+####Indicação
+ - Agências de viagem.
+ - Hostels, Pousadas e Hoteis
+ - Qualquer um que possua os dados do cartão de crédito do cliente e necessite fazer uma cobrança no mesmo.
+
+####Como utilizar:
+
+1. Entre em sua Conta MD na plataforma.
+
+2. No menu principal acesse ***Ferramentas → Cobrança*** 
+
+3. Preencha os dados e clique em **Efetuar Cobrança**
+
+
+
 Link de Cobrança
 ----------------
 
@@ -66,9 +88,6 @@ O link de cobrança é uma url que pode ser enviada por email ou ser disponibili
 
 Toda conta após ser Habilitada na moeda digital possuí acesso à esta funcionalidade que se encontra em: ***Ferramentas → Link de Cobrança*** 
 
-####Descrição
-
-O Botão de Compras e o Link de Pagamento são as formas mais simples e rápidas para começar a receber pagamentos, sua principal finalidade é fazer cobranças de itens individuais ou receber doações de qualquer valor. Em ambos os casos o cliente será redirecionado para um ambiente seguro de pagamento fornecido pela moeda digital. Em poucos minutos você estará apto a mandar e-mails com cobranças ou gerar um botão em HTML para ser colocado em sua página de vendas.  
 
 ####Indicação
 
