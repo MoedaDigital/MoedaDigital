@@ -117,13 +117,13 @@ Toda conta após ser Habilitada na moeda digital possuí acesso à esta funciona
 
 | Campo    | O que é | O que faz|
 | :-----------------| :---- | :--- |
-|Aplicação|	Nome da Aplicação configurada para essa cobrança|Define os meios de pagamento e outras configurações da cobrança.|
-|Número do Pedido|	Identificador único de cada pedido por aplicação|Serve para o acompanhamento do pagamento através da plataforma.|
 |Valor|O valor total a ser cobrado. **O valor 0 configura a opção de doação**| Define o valor que será cobrado do cliente |
 |Texto do Botão| Texto que será mostrado no botão --- Apenas serve para o caso do botão | Muda o texto mostrado no botão.|
 |Tipo |Escolhe entre Link, URL e Botão| Fornece diferentes modos de formatação.|
+|Parcelar até |Número de parcelas permitidas para escolha do cliente||
+|Juros Após | Após quantas parcelas o juros será repassado para o cliente||
+|Meios | Quais os meios de pagamento permitido||
 
->**Nota:** Caso o número do pedido seja preenchido o link poderá ser utilizado apenas uma vez ( apenas um pagamento aprovado ).
 
 Calculadora
 ----------------
