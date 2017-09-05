@@ -155,7 +155,7 @@ O ambiente sandbox é disponibilizado para fazer testes de integração, ele pod
 
 No canto superior do painel é possiível alterar para o painel de sandbox, nele é possível verificar os pedidos de teste feitos e alterar seus status acionando o webhook.
 
-Para fazer pedidos em homologação basta utilizar a url **http://sandbox.moeda.digital/** nos métodos fornecidos.
+Para fazer pedidos em homologação basta utilizar a url **http://sandbox.moeda.digital/gateway.asmx/** nos métodos fornecidos.
 
 Números de Cartão para teste que serão aprovados em homologação:  
     
