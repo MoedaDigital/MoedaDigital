@@ -93,13 +93,11 @@ A lista a seguir é uma breve descrição de todos os passos necessários do in�
 <br>Cada conta MD pode criar diversas aplicações com distintas configurações;
 Deve-se escolher o tipo de integração da aplicação
 Deve-se escolher as opções de recebimento ( cartão, juros, boleto, número de parcelas aceitas, e etc)
->**Nota:** Inicialmente deve-se criar uma aplicação para teste que permite iniciar a integração. (Utilizar aplicações reais apenas é possível após entrar em contato com nossa equipe)
-
-3. Caso o tipo de integração escolhido seja o Link de Compras ou o Botão de Compras você pode pular esta etapa, caso contrário deve-se desenvolver a integração com o seu sistema, utilizando-se de nossa documentação e módulos existentes.
+>**Nota:** Inicialmente deve-se criar uma aplicação para teste que permite iniciar a integração. (Utilizar aplicações em produção apenas é possível após entrar em contato com nossa equipe)
 
 4. Começar os testes, você poderá gerar transações para a aplicação de teste e verificar se os pedidos estão sendo gerados e processados corretamente, além de se acostumar com o painel da plataforma onde poderá ver relatórios sobre suas transações.
 
-5. Habilitar sua aplicação real, basta pedir a habilitação da sua loja através da plataforma. No menu ***Administração → Conta*** termine o preenchimento dos seus dados cadastrais, verifique as tarifas combinadas e aceite o termo de uso para que sua loja entre em análise e seja habilitada para poder operar em produção.
+5. Habilitar sua conta em produção, basta pedir a habilitação da sua loja através da plataforma. No menu ***Administração → Conta*** termine o preenchimento dos seus dados cadastrais, verifique as tarifas combinadas e aceite o termo de uso para que sua loja entre em análise e seja habilitada para poder operar em produção.
 
 6. Receber!
 
@@ -148,7 +146,25 @@ Aqui você encontrará um campo de seleção com a opção "Criar uma Nova Aplic
 |Quantidade Máxima de Parcelas| Campo com as opções de parcelamento | Determina até quantas vezes o cliente poderá parcelar a compra no cartão  |
 |Não cobrar juros para as parcelas|Campo com opções de parcelamento  | Determina a quantidade de parcelas que não serão cobrados juros do cliente |
 |Valor mínimo da parcela| Valores mínimos para aceitar parcelemaneto | Define o valor mínimo que será aceito para cada parcela de uma compra |
-|Conceder desconto a vista para Boleto e TEF| % de desconto para compras a vista | Define valor a ser utilizado no cálculo de desconto para compras a vista em boleto ou TEF |
+
+
+Sandbox
+--------
+
+O ambiente sandbox é disponibilizado para fazer testes de integração, ele pode ser utilizado ainda que a loja não esteja habilitada.
+
+No canto superior do painel é possiível alterar para o painel de sandbox, nele é possível verificar os pedidos de teste feitos e alterar seus status acionando o webhook.
+
+Para fazer pedidos em homologação basta utilizar a url **http://sandbox.moeda.digital/** nos métodos fornecidos.
+
+Números de Cartão para teste que serão aprovados em homologação:  
+    
+- 4242424242424242
+- 5555555555554444
+- 378282246310005
+- 6011111111111117
+- 30569309025904
+
 
 
 
